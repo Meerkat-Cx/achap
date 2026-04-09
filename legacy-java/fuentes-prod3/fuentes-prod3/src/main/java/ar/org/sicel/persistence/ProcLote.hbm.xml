@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.ProcLote"
+        table="Pr_Lote"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_pr_lote</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-ProcLote.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="numLote"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="numLote" 
+                unique-key="numLote_ECLO"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="TCreacion"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="creacion"
+        />
+
+        <property
+            name="TEnvio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="envio" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="TRecep"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="recep"
+        />
+
+        <property
+            name="TInicioProc"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="inicioProc"
+        />
+
+        <property
+            name="TiFinProc"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="finProc"
+        />
+
+        <property
+            name="TRetorno"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="retorno"
+        />
+
+        <set
+            name="procMsgsses"
+            table="Pr_MsgLote"
+            lazy="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="lote"
+                  foreign-key="FK_Pr_mlot_lote"
+            >
+            </key>
+
+            <many-to-many
+                class="ar.org.sicel.persistence.ProcMsg"
+                column="msg"
+                outer-join="auto"
+                foreign-key="FK_Pr_mlot_msg"
+             />
+
+        </set>
+
+        <many-to-one
+            name="eclo"
+            class="ar.org.sicel.persistence.Eclo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_lote_eclo"
+        >
+            <column
+                name="eclo" 
+                unique-key="numLote_ECLO"
+            />
+        </many-to-one>
+
+        <many-to-one
+            name="sistema"
+            class="ar.org.sicel.persistence.Sistema"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_lote_sist"
+            column="sistema"
+            not-null="true"
+        />
+		<many-to-one
+            name="centroComputo"
+            class="ar.org.sicel.persistence.CentroDeComputo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_lote_centro"
+            column="centro"
+            not-null="false"
+        />   
+        <set
+            name="procEstablecimientos"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="lote"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.ProcEstablecimiento"
+            />
+
+        </set>
+
+        <one-to-one
+            name="procProces"
+            class="ar.org.sicel.persistence.ProcProces"
+            cascade="none"
+            outer-join="auto"
+            constrained="false"
+            property-ref="procLote"
+        />
+        <!-- 	sort="ar.org.sicel.persistence.FichaAnimalesOrdenadosPorRP"-->
+        <set
+            name="fichasAnimal"
+            lazy="true"
+            inverse="false"
+            cascade="all"
+             sort="unsorted"
+           
+           
+        >
+        	<key
+                column="lote_id"
+            >            
+            </key>            
+            <one-to-many
+                  class="ar.org.sicel.persistence.FichaAnimalPendiente"
+            />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-ProcLote.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

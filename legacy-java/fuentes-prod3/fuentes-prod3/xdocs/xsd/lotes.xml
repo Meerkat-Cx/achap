@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Versionado del XSD</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="xsd, schema,xml,lotes,eventos"/>
+  </head>
+  <body>
+    <section name="Lote">
+    <p>Lotes    </p>
+    </section>
+    
+     <section name="Informacion Relacionada">
+          <ul>
+         </ul>
+	 </section>
+  </body>
+</document>  

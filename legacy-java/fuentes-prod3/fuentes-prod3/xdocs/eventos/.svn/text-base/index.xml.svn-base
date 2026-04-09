@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Eventos</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,estado,transicion"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+    <p>	En esta seccion se definiran los diferentes eventos que deberán utilizar
+			los PSCL para enviar informacion a Sicel 3.   
+     </p>
+     <p>	Cada evento puede estar referido a un animal en particular, o a un
+     		establecimiento en general.
+     </p>
+    </section>
+    <section name="Eventos de Animal">
+    <p>	Son aquellos que le ocurren a un animal, existente en los registros de
+			Sicel,  a lo largo de su vida.
+    </p>
+    <p>	Cada evento de este tipo informa el animal, fecha y establecimiento
+			donde se produjo el evento, ademas de los datos propios del tipo de 
+			evento informado.
+    </p>
+    <p>
+    <ul>
+		<li><a href="produccion.html">Produccion</a></li>
+		<li><a href="secada.html">Secada</a></li>		
+		<li><a href="servicio.html">Servicio</a></li>
+	    <li><a href="preniez.html">Preñez</a></li>				
+		<li><a href="reproduccion.html">Reproducción</a></li>
+		<li><a href="estado.html">Estado</a></li>
+		<li>Baja</li>
+		<li><a href="transferencia.html">Transferencia</a></li>
+		<li>Informacion</li>
+    </ul>
+    </p>
+    </section>
+        <section name="Eventos Establecimiento">
+		<p>	Son aquellos que informan sobre la actividad de un establecimiento, y no
+				sobre un animal particular ya existente en los registros de Sicel.
+		</p>
+		<p> 	En particular es por un evento de este tipo que un establecimiento
+				puede, por ejemplo dar de alta animales adquiridos a terceros que no
+				esten registrados previamente en ACHA.
+		</p>
+		<p>
+			<ul>
+				<li><a href="alta.html">alta</a></li>
+				<li><a href="ordenie.html">ordeñe</a></li>
+				<li><a href="semen.html">Semen</a></li>
+			</ul>
+		</p>
+    </section>
+  </body>
+</document>
+
+    
+    
+

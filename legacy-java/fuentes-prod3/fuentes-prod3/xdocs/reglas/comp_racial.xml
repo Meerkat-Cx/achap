@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Composición Racial</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="composicion racial,regla,raza"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+    <p>
+    A cada animal dentro de Sicel 3 se le asocia su Composición Racial.     
+    </p>
+    <p>
+    El calculo de la composicion racial de un animal se realiza tomando encuenta la de sus
+    progenitores genéticos.  Por ejemplo, si un animal es tiene como padre a un Toro 100% JY 
+    y  por madre a un animal 100% Holando, entonces el animal es 50% JY, 50% Holando.
+    </p>
+    <p>
+<source>
+Se toman las Composiciones Raciales del padre y la madre (si alguno es
+desconocidos se toma como composición racial de ese progenitor 
+100% desconocido).
+La composicion racial del hijo sera luego 50% debido a de las 
+contribuciones por parte de la madre y 50% por parte del padre. 
+</source>
+	</p>
+   </section>
+	<section name="Utilización">
+	<p>La composición racial de un animal se utilizará para llevar un registro de la
+	composición de razas de los animales asociados, para su utilización por parte de 
+	A.C.H.A.
+	</p>
+	<p>
+	La composición racial es utilizada para el calculo de la denominada <b>Raza Calculada</b>
+	de un animal. Esta se utiliza en informes, fichas, y en general en cualquier documentación
+	generada por Sicel3.	
+	</p> 
+	<p>	
+	Sin embargo, se puede, por ejemplo porque un controlador vio al animal y certifica que <b>es
+	Holando</b> especificar una <a href="raza_declarada.html">raza declarada</a> distinta 
+	a la calculada por Sicel3.
+	</p>
+	<p>
+	Si el porcentaje de una de las razas componentes en la composición racial llegara a superar
+	el limite de <b>PUREZA_RACIAL</b> (15/16, quince dieciseisavos), se dice que el animal
+	es puro por cruza, y la raza calculada del animal será simplemente aquella, descartando
+	las demás componentes menores a 1/16.
+	</p>
+	</section>   
+	<section name="Ejemplos">
+		<p>
+	<source>
+Padre = 100% Holando
+Madre = 100% Holando
+
+Hijo => 100% Holando
+		=>Raza Calculada = Holando
+	</source>
+	</p>
+
+	<p>
+	<source>
+Padre = DESCONOCIDO
+Madre = 75% Holando, 25% JY
+
+Hijo => 50% DESCONOCIDO, 37.5% Holando, 12,5% JY	
+		=> Raza Calculada = Cruza.
+	</source>
+	</p>
+	<p>
+	<source>
+Padre = 100% Holando
+Madre = 80% Holando, 20% DESCONOCIDO
+
+Hijo => 90%Holando, 10%	DESCONOCIDO
+		=>Raza Calculada = Cruza
+	</source>
+	</p>
+	<p>
+	<source>
+	Padre = 100% Holando
+	Madre = 90%Holando, 10% DESCONOCIDO
+	
+	Hijo = 95%Holando, 5% DESCONOCIDO
+			=>Raza Calculada = Holando
+	
+	</source>
+	(Es mas de 15/16 Holando)	
+	</p>
+	
+	</section>
+   <section name="Composición Racial y PSCLs">
+   <p>
+   Los PSCL no están obligados a mantener o procesar de algun modo información, sino
+   que Sicel3 la calculara a partir de la ascendencia de cada animal.
+   </p>
+   <p>
+   Hay un casa en que los PSCL podrian, si lo desean, informar de la composición racial
+   de un animal: Al <a href="../eventos/alta.html">darlo de alta </a>.  Las reglas a aplicar aqui son
+   sencillas: Las razas deben ser aceptadas por A.C.H.A., y la suma de los porcentajes
+   debe ser 100%.
+   </p>
+   </section>
+ </body>
+</document>
+

@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib
+END
+joda-time-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/joda-time-1.0.jar
+END
+avalon-framework-impl-4.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/avalon-framework-impl-4.2.0.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/jstl.jar
+END
+ehcache-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/ehcache-1.1.jar
+END
+commons-io-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-io-1.2.jar
+END
+jaybird-full-2.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/jaybird-full-2.0.1.jar
+END
+davis_tags-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/davis_tags-1.0.jar
+END
+avalon-framework-api-4.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/avalon-framework-api-4.2.0.jar
+END
+commons-digester-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-digester-1.6.jar
+END
+ant-1.5.3-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/ant-1.5.3-1.jar
+END
+log4j-1.2.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/log4j-1.2.8.jar
+END
+ojdbc14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/ojdbc14.jar
+END
+commons-fileupload-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-fileupload-1.1.1.jar
+END
+ojdbc14dms.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/ojdbc14dms.jar
+END
+batik-1.5-fop-0.20-5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/batik-1.5-fop-0.20-5.jar
+END
+commons-validator-1.1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-validator-1.1.4.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/standard.jar
+END
+oro-2.0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/oro-2.0.8.jar
+END
+fop-0.20.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/fop-0.20.5.jar
+END
+xalan-2.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/xalan-2.7.0.jar
+END
+struts-menu-2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/struts-menu-2.3.jar
+END
+struts-1.2.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/struts-1.2.7.jar
+END
+c3p0-0.9.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/c3p0-0.9.1.jar
+END
+nls_charset12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/nls_charset12.jar
+END
+extremecomponents-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/extremecomponents-1.0.1.jar
+END
+jta-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/jta-1.0.jar
+END
+dom4j-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/dom4j-1.4.jar
+END
+asm-attrs-1.5.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/asm-attrs-1.5.3.jar
+END
+cglib-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/cglib-2.1.jar
+END
+xercesImpl-2.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/xercesImpl-2.6.2.jar
+END
+orai18n.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/orai18n.jar
+END
+antlr-2.7.5H3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/antlr-2.7.5H3.jar
+END
+asm-1.5.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/asm-1.5.3.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/mail.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/hibernate3.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-collections-3.1.jar
+END
+commons-lang-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-lang-2.0.jar
+END
+itext-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/itext-1.3.1.jar
+END
+servlet-api-2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/servlet-api-2.3.jar
+END
+ojdbc14_g.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/ojdbc14_g.jar
+END
+poi-3.0-alpha2-20060616.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/poi-3.0-alpha2-20060616.jar
+END
+commons-logging-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-logging-1.0.4.jar
+END
+displaytag-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/displaytag-2.0.jar
+END
+junit-3.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/junit-3.8.1.jar
+END
+jasperreports-3.0.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/jasperreports-3.0.0.jar
+END
+jasperreports-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/jasperreports-3.0.1.jar
+END
+classes12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/classes12.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/commons-beanutils-1.7.0.jar
+END
+ojdbc14dms_g.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/ojdbc14dms_g.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/activation.jar
+END
+hibernate-3.0.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/hibernate-3.0.5.jar
+END
+castor-0.9.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/webapp/WEB-INF/lib/castor-0.9.6.jar
+END

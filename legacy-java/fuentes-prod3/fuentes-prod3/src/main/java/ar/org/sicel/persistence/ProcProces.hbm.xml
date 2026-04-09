@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.ProcProces"
+        table="Pr_Proces"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_pr_proces</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-ProcProces.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <many-to-one name="usuario" column="id_Usuario" foreign-key="FK_Usuario" lazy="false"/>
+        <many-to-one name="usuarioProcesador" column="usuarioProcesador" foreign-key="FK_Usuario_Proc" lazy="false"/>
+		<property name="fechaEntrada" column="fechaEntrada"/>
+		<property name="observaciones" column="observaciones" type="string"/>
+		<property name="fechaSalida" column="fechaSalida"/>
+		<property name="observacionSalida" column="observacionSalida" type="string"/>
+		<property name="descargadaEclo" column="descargadaEclo" type="boolean"/>
+		<property name="descargadaAdmin" column="descargadaAdmin" type="boolean"/>
+		<property name="estado" column="estado" type="string"/>
+		<property name="nombreArchivoEntrada" column="nombreArchivoEntrada" type="string"/>
+		<property name="contenidoEntrada" column="contenidoEntrada" type="blob"/>
+		<property name="contenidoSalida" column="contenidoSalida" type="blob"/>
+        <property
+            name="fecha"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="fecha" 
+            />
+        </property>
+
+        <set
+            name="procMsgsses"
+            table="Pr_MsgProces"
+            lazy="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="proces"
+                  foreign-key="FK_Pr_mproc_proces"
+            >
+            </key>
+
+            <many-to-many
+                class="ar.org.sicel.persistence.ProcMsg"
+                column="msg"
+                outer-join="auto"
+                foreign-key="FK_Pr_mproc_msg"
+             />
+
+        </set>
+
+        <many-to-one
+            name="procLote"
+            class="ar.org.sicel.persistence.ProcLote"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_proces_lote"
+        >
+            <column
+                name="pr_lote"
+                unique-key="UN_Pr_Proes_lote"
+            />
+        </many-to-one>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-ProcProces.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

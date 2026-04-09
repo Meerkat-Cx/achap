@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Funcion"
+        table="Sg_Funcion"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+        <generator class="native"/>
+        </id>
+
+        <property
+            name="link"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="link" 
+                length="100"
+            />
+        </property>
+
+	
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="subreporteDatosEstablecimientosPropietario"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="489"
+		 pageHeight="802"
+		 columnWidth="489"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="PROPIETARIO_ID" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="ID_ECLO" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="DIR_REPORTES" isForPrompting="false" class="java.lang.String"/>
+	<queryString><![CDATA[select distinct e.ID as id_estan,c.NOMBRE as nombre_estan,e.ACTIVO as estado
+from en_estancia e,en_establecimiento estab,en_propietario p,en_contacto c
+where p.ID = $P{PROPIETARIO_ID} and p.ID = estab.PROPIETARIO and estab.ECLO = $P{ID_ECLO} and estab.ESTANCIA = e.ID and e.ID = c.ID
+order by e.ID]]></queryString>
+
+	<field name="id_estan" class="java.lang.Integer"/>
+	<field name="nombre_estan" class="java.lang.String"/>
+	<field name="estado" class="java.lang.Integer"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="25"  isSplitAllowed="false" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="489"
+						height="25"
+						key="staticText-1"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+				<text><![CDATA[Establecimientos]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="50"  isSplitAllowed="false" >
+				<staticText>
+					<reportElement
+						x="8"
+						y="0"
+						width="93"
+						height="14"
+						key="staticText-2"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Id Establecimiento:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="8"
+						y="14"
+						width="46"
+						height="14"
+						key="staticText-3"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Nombre:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="7"
+						y="28"
+						width="51"
+						height="14"
+						key="staticText-4"
+						positionType="Float"/>
+					<box></box>
+					<textElement>
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Estado:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="101"
+						y="0"
+						width="83"
+						height="14"
+						key="textField-1"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{id_estan}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="54"
+						y="14"
+						width="130"
+						height="14"
+						key="textField-2"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{nombre_estan}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="53"
+						y="28"
+						width="131"
+						height="14"
+						key="textField-3"
+						positionType="Float"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{estado} == 1 ? "ACTIVO" : "INACTIVO"]]></textFieldExpression>
+				</textField>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="186"
+						y="0"
+						width="299"
+						height="42"
+						key="subreport-1"/>
+					<subreportParameter  name="PROPIETARIO_ID">
+						<subreportParameterExpression><![CDATA[$P{PROPIETARIO_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="ID_ESTAN">
+						<subreportParameterExpression><![CDATA[$F{id_estan}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="ID_ECLO">
+						<subreportParameterExpression><![CDATA[$P{ID_ECLO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{DIR_REPORTES}+"/subreporteDatosTambosPropietario.jasper"]]></subreportExpression>
+				</subreport>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

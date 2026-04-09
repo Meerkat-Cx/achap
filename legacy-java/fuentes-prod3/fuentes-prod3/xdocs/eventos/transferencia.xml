@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Transferencia</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,transferencia,propietario,establecimiento"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>
+		En Sicel3 cada animal:
+		<ul>
+			<li>pertenece a un y solo un propietario </li>
+			<li>en cada momento se encuentra dentro de un y solo un establecimiento.</li>
+		</ul>
+		</p>
+		<p>
+		El evento transferencia se utiliza para informar cambios de propietario, establecimiento
+		o ambos. De esta manera, si no se especifica un nuevo propietario pero si un nuevo 
+		establecimiento, lo que tenemos es una transferencia entre tambos, de un animal que sigue
+		perteneciendo al mismo dueño.
+		</p>
+		<p>
+		En cualquier tipo de transferencia, siempre se debe especificar el nuevo RP asignado
+		al animal. En caso de no cambiar, se debera informar el mismo RP que ya poseía.  
+		</p>
+		</section>
+	 <section name="Requisitos Previos">
+	 <p>En general no hay condiciones en cuanto a en que momento se puede efectuar una transferencia.
+	 Normalmente se puede efectuar independientemente del estado del animal.
+	 </p>
+	 <p>
+	 Siempre es el establecimiento de <b>origen</b> el que esta encargado de informar la transferencia,
+	 es decir si un animal se transfiere del establecimiento <b>A</b> al establecimiento <b>B</b>, entonces
+	 es <b>A</b> quien debe generar un evento Transferencia indicando el destino del animal.
+	 </p>
+	 </section>
+	 
+	 <section name="Principales reglas a controlar">
+	 <ul>
+	 <li>El RP debe ser único para animales del mismo establecimiento.</li>
+	 </ul>
+	 </section>
+
+	 <section name="Informacion Relacionada">
+          <ul>
+              <li>Las transferencias pueden tener influencia en la delimitación de las lactancias. Ver <a href="/eventos/lactancia.html">Lactancia</a> y <a href="../ref/matriz.html">Matriz de Transición</a></li>
+         </ul>
+	 </section>
+ </body>
+</document>

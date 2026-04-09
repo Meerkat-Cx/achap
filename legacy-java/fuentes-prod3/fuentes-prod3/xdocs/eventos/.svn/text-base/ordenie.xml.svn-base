@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Evento Ordeñe</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,establecimiento,ordeñe,produccion"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>	El evento <b>Ordeñe</b> es un evento de establecimiento, que ocurre sobre todos los animales ordeñados.
+		</p>
+		<p>	Mediante este evento, se informan los datos relativos a un control de producción realizado
+		en el establecimiento. El evento engloba los ordenies de un mismo día. Se especifica:
+		<ul>
+			<li>Tipo de Muestreo utilizado</li>
+			<li>Método de Control utilizado</li>
+		</ul>
+		</p>
+		<p>Se indican tambien los horarios de cada ordenie del día. La cantidad de 
+			horarios determina el numero de ordenies, 
+			y el horario determina si es de mañana o tarde, para controlar las reglas en el 
+			caso de tipo de muestreo que lo requiera (e.g. alternado)</p>
+		<p>El evento incluye los controles de todos los animales. Por cada animal se incluye la identificacion del animal
+			y una cantidad de controles que debe ser igual a la cantidad de horarios (id est, el numero
+			de ordenies). Cada animal, entonces, tiene varios controles (evitandose de esta forma incluir la 
+			identificacion del animal en cada ordenie).</p>
+				<p>		
+			 Cada control puede informar, opcionalmente, el horario de inicio y fin (esto es, el horario de ordenie de cada animal ordeñado)
+			 y obligatoriamente alguna medición (que es el objetivo de haber realizado un control). Las mediciones se realizan sobre 
+			 sobre distintos objetos, por ejemplo, kg de leche y porcentaje de grasa, y normalmente provienen de 
+			 un controlador y del laboratorio.</p>
+		</section>
+		<section name="Requisitos Previos">
+			<p></p>
+		</section>
+		<section name="Informacion Relacionada">
+			<p></p>
+	 	</section>
+	</body>
+</document>

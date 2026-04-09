@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Resultados</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="xsd, schema,xml,lotes,eventos"/>
+  </head>
+  <body>
+	  <section name="General">
+		 <p> Luego de procesado un lote, Sicel3 genera un archivo en formato xml, conteniendo los resultados
+		  obtenidos al procesar.</p>
+		  <p>El formato de este archivo sigue el mismo xsd que el utilizado para informar por parte de los SCL. De
+		  echo, el funcionamiento general es tomar el lote enviado, y a medida que se va procesando cada sección, 
+		  se van agregando a ese mismo lote los resultados obtenidos, información relacionada, etc. </p>
+		  <p>Para esto se introdujo en diversos lugares de la especificación xsd, un nodo especial  denominado
+		  <b>rdo</b> (Resultado)</p>
+	  </section>
+
+	  <section name="Nodo resultado">
+		  <p>En cada resultado se informan 4 componentes:
+		  <ul>
+			  <li>El codigo de mensaje</li>
+			  <li>El nivel de error</li>
+			  <li>Informacion Textual</li>
+			  <li>Una secuencia de valores</li>
+		  </ul>
+		  </p>
+		  <p>
+		  El codigo de mensaje indica la naturaleza de lo que se esta informando, se puede consultar la
+		  lista de codigos, junto con una descripción de cada uno  en la <a href="../ref/mensajes.html">tabla
+		  de codigos de mensajes</a>
+		  </p>
+		  <p>
+		  El nivel de error indica si lo que se esta informando corresponde a un error (y de que gravedad ) o es 
+		  informacion normal. Puede ver <a href="mensajes_niveles.html">aquí</a> una descripción mas detallada.
+		  </p>
+		  <p>
+		  La información textual es información brindada en un formato leible e interpretable por el usuario
+		  final.
+		  </p>
+		  <p>
+		  La secuencia de valores corresponde a valores particulares que se quieren informar junto con el mensaje.
+		  Cada tipo de mensaje tiene asociado los valores que se van a informar junto con él. Por ejemplo,
+		  </p>
+		  <p>
+		  Por ejemplo, si se informa de un evento para un animal, con fecha anterior a otro evento ya informado
+		  para el mismo animal, se obtendra un resultado correspondiente a:
+		  <dl>
+			   <dt>Codigo</dt>
+					 <dd>FEEVANT</dd>
+				<dt>Nivel de Error</dt>	 
+					<dd>80 (error)</dd>
+				<dt>Valores</dt>	
+					<dd>Dos fechas: la fecha declarada para este evento, y la fecha del evento posterior a este ya
+					 informada que causa el conflicto</dd>
+			 </dl>
+		  </p>
+	  </section>
+  
+    <section name="Eventos">
+    <p>	Como ya se introdujo anteriormente, la informacion de los lotes consistira en lo que llamamos eventos.
+			Cada evento informado por una ECLO tiene un numero único para esta ECLO.
+	</p>
+	<p>	Luego de procesado un evento, en el xml resultado se informará el identificador que
+			Sicel 3 le otorgo internamete, el cual podra ser utilizado luego por los PSCL para una
+			rápida individualización de un evento particular. Es decir, una ves procesado, el evento
+			podra ser individualizado de dos maneras: por el par [Eclo,NumeroEvento] asignado
+			por cada PSCL, o por el idEvento , asignado por Sicel 3 a todos los eventos procesados
+			satisfactoriamente. 
+	</p>
+	<p>
+		Notar que si un evento es rechazado por algún motivo, entonces no se le asignara 
+		identificador alguno.
+	</p>
+			
+    </section>
+    
+    mensajes_niveles.html
+    
+  </body>
+</document>  

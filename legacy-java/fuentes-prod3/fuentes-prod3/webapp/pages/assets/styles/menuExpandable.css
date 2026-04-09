@@ -1,0 +1,97 @@
+/* These id's are static, so keep the same names */
+#menuDiv {
+  background-color: #eff3e3;
+  border: 1px solid #CCC;
+  color: #000;
+  width: 200px;
+}
+
+#menuList {
+  margin: 0px;
+  padding: 5px 0px 5px 10px;
+}
+
+.menubarplus{
+  background: url(../images/plus.gif) no-repeat 0em 0.3em;
+}
+
+.menubarminus{
+  background: url(../images/minus.gif) no-repeat 0em 0.3em;
+}
+
+
+li.menubar {
+  /*background: url(../images/plus.gif) no-repeat 0em 0.3em;*/
+  font-size: 12px;
+  line-height: 1.5em;
+  list-style: none outside;
+}
+
+.menu, .submenu {
+  display: none;
+  margin-left: 15px;
+  padding: 0px;
+}
+
+.menu li, .submenu li  {
+  background: url(../images/square.gif) no-repeat 0em 0.3em;
+  list-style: none outside;
+}
+
+li.menubar a.standalone {
+  background: url(../images/square.gif) no-repeat 0em 0.2em !important;
+}
+
+a.actuator, a.standalone {
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.menu li a, .submenu li a {
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+a.actuator:hover, .menu li a:hover, submenu li a:hover, li a.standalone:hover {
+  text-decoration: underline;
+}
+
+/* styles to allow for base links */
+li a.base, li a.base:visited {
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+li a.base:hover {
+  color: #CC0000;
+  text-decoration: none;
+}
+
+span.key {
+  text-decoration: underline;
+}
+
+}
+a.highlight {
+    color: #529b28!important;
+    font-weight: bold;
+}
+a.actuator { font-family: Tahoma }
+a.standalone  { font-family: Tahoma }
+.menu {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #286008;
+
+}
+
+

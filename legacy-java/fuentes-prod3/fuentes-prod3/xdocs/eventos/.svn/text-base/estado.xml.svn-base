@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Evento Estado</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,estado,transicion"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>	El evento <b>Estado</b> fue creado para cubrir aquellos casos donde se 
+				interrumpe el flujo normal de eventos de un animal hacia el sistema, 
+				por ejemplo ante la inhabilitación de un establecimiento, o ante las 
+				circunstancias de fuerza mayor que imposibilitan acceder físicamente al 
+				mismo, como en una inundación.</p>
+		<p>	En el evento "Estado" se indica el estado actual del animal de acuerdo 
+				al modelo de estados del Sicel, la cantidad actual de lactancias cerradas, 
+				y la fecha de inicio de la ultima lactancia, si hubiera sido iniciada
+				dentro del período que cubre el evento.</p>
+		</section>
+		<section name="Requisitos Previos">
+			<p>	Este evento no tiene requisitos previos puntuales,
+					se podra utilizar dependiendo exclusivamente de las
+					transiciones que ACHA permita informar mediante este evento.</p>
+			<p> Basicamente:
+<source>
+si Acepta_Transicion de animal.estadoActual a evento.nuevoEstado mediante EventoEstado
+	entonces animal.estadoActual = evento.nuevoEstado
+</source> 
+					Donde Acepta_Transicion son parametros de configuracion que especifican
+					de que estado a que estado se puede pasar mediante este evento.
+			</p>
+		</section>
+		<section name="Informacion Relacionada">
+    	<ul>
+      	<li>El evento estado tiene influencia sobre la delimitacion de las lactancias. Ver <a href="/eventos/lactancia.html">Lactancia</a></li>
+        <li>El evento estado esta fuertemente relacionado con el modelo
+        		de estados de animal. Ver <a href="grl/estados_animal.html">Estados de Animal</a></li>
+        <li>Las transiciones posibles de informar mediante un evento estado dependen
+        		de la configuracion del sistema. Ver <a href="../ref/matriz.html"> Transiciones con Evento Estado </a></li> 
+      </ul>
+	 	</section>
+	</body>
+</document>

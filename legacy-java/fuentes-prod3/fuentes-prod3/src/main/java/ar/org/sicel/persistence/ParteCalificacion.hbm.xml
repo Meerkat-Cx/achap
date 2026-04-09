@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.ParteCalificacion"
+        table="Ca_Mdl_Parte"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_ca_mdl_parte</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-ParteCalificacion.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="codigo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="codigo" 
+                length="1"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="esPunteable"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esPunteable" 
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="modeloCalificacion"
+            class="ar.org.sicel.persistence.ModeloCalificacion"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Ca_Mdl_Parte"
+            column="modelo"
+            not-null="true"
+        />
+
+        <set
+            name="caracteristicaCalificacions"
+            lazy="true"
+            inverse="true"
+            cascade="delete"
+            sort="unsorted"
+        >
+
+            <key
+                column="parte"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.CaracteristicaCalificacion"
+            />
+
+        </set>
+
+        <set
+            name="defectoCalificacions"
+            lazy="true"
+            inverse="true"
+            cascade="delete"
+            sort="unsorted"
+        >
+
+            <key
+                column="parte"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.DefectoCalificacion"
+            />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-ParteCalificacion.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

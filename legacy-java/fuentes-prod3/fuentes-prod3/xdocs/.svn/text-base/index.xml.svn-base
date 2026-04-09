@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="adrianallende@yahoo.com.ar">Adrián Allende</author>
+    <title>Documentación del SICEL 3</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="ACHA,SICEL,about"/>
+  </head>
+  <body>
+    <section name="El SICEL">
+		<p>El SICEL (Sistema Integrado de Control de Especies Lecheras) es el sistema informático de ACHA para el registro de animales y producciones.</p>
+		<p>Globalmente, el sistema comprende la recepción, proceso y devolución de información elaborada por parte de las Entidades de Control Lechero Oficial (ECLOs) a partir de lo informado por los productores y por los controladores de esas entidades.</p>
+<p>El modelo de eventos es la pieza básica sobre la cual está construído el sistema para captar la información.</p>		
+		<p>Una vez que se recibe y procesa, controlandose todas las reglas propias del sistema informático, las del dominio y las de ACHA, se elaboran reportes, con resúmenes del proceso llevado a cabo, información detallada de errores, y fichas de los animales, que constituyen un documento oficial de la pertenencia y datos en los registros de ACHA.</p>
+		
+		
+		</section>
+	</body>
+</document>
+

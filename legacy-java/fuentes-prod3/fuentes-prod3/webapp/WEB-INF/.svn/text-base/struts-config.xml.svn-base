@@ -1,0 +1,1687 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- ========== Data Sources Definitions =================================== -->
+	<!--
+		Define your Struts data sources in a file called struts-data-sources.xml and place
+		it in your merge directory.
+	-->
+
+	<!-- ========== Form Bean Definitions =================================== -->
+	<form-beans>
+
+		<form-bean name="cargaMasivaForm"
+			type="ar.org.sicel.web.altaEdicion.forms.CargaMasivaForm" />
+
+		<form-bean name="ecloForm"
+			type="ar.org.sicel.web.altaEdicion.forms.EcloForm" />
+		<form-bean name="entidadRegionalForm"
+			type="ar.org.sicel.web.altaEdicion.forms.EntidadRegionalForm" />
+
+		<form-bean name="establecimientoForm"
+			type="ar.org.sicel.web.altaEdicion.forms.EstablecimientoForm" />
+
+		<form-bean name="propietarioForm"
+			type="ar.org.sicel.web.altaEdicion.forms.PropietarioForm" />
+		<form-bean name="sistemaForm"
+			type="ar.org.sicel.web.altaEdicion.forms.SistemaForm" />
+		<form-bean name="controlAnimalForm"
+			type="ar.org.sicel.web.altaEdicion.forms.ControlAnimalForm" />
+		<form-bean name="personaForm"
+			type="ar.org.sicel.web.altaEdicion.forms.PersonaForm" />
+		<form-bean name="conjuntoAtributosForm"
+			type="ar.org.sicel.web.altaEdicion.forms.ConjuntoAtributosForm" />
+		<form-bean name="atributoForm"
+			type="ar.org.sicel.web.altaEdicion.forms.AtributoForm" />
+		<form-bean name="valorForm"
+			type="ar.org.sicel.web.altaEdicion.forms.ValorForm" />
+		<form-bean name="valorAdmitidoForm"
+			type="ar.org.sicel.web.altaEdicion.forms.ValorAdmitidoForm" />
+		<form-bean name="animalForm"
+			type="ar.org.sicel.web.altaEdicion.forms.AnimalForm" />
+		<form-bean name="ubicacionForm"
+			type="ar.org.sicel.web.altaEdicion.forms.UbicacionForm" />
+		<form-bean name="razaForm"
+			type="ar.org.sicel.web.altaEdicion.forms.RazaForm" />
+		<form-bean name="atributosVariablesForm"
+			type="ar.org.sicel.web.altaEdicion.forms.AtributosVariablesForm" />
+		<form-bean name="pedigreeForm"
+			type="ar.org.sicel.web.altaEdicion.forms.PedigreeForm" />
+		<form-bean name="lactanciasGeneticasForm"
+			type="ar.org.sicel.web.altaEdicion.forms.LactanciasGeneticasForm" />
+
+		<form-bean name="loginForm"
+			type="org.apache.struts.validator.DynaValidatorActionForm">
+			<form-property name="userName" type="java.lang.String" />
+			<form-property name="password" type="java.lang.String" />
+		</form-bean>
+
+		<form-bean name="procProcesForm"
+			type="org.apache.struts.validator.DynaValidatorActionForm">
+			<form-property name="procProcesId" type="java.lang.Long"
+				initial="" />
+			<form-property name="procProces"
+				type="ar.org.sicel.persistence.ProcProces" />
+			<form-property name="mensajes" type="java.util.Set" />
+		</form-bean>
+
+		<form-bean name="procLoteForm"
+			type="org.apache.struts.validator.DynaValidatorActionForm">
+			<form-property name="procLoteId" type="java.lang.Long"
+				initial="" />
+			<form-property name="procLote"
+				type="ar.org.sicel.persistence.ProcLote" />
+		</form-bean>
+
+		<form-bean name="procEstablecimientoForm"
+			type="org.apache.struts.validator.DynaValidatorActionForm">
+			<form-property name="procEstablecimientoId"
+				type="java.lang.Long" initial="" />
+			<form-property name="procEstablecimiento"
+				type="ar.org.sicel.persistence.ProcEstablecimiento" />
+			<form-property name="procEvtEstArrayList"
+				type="ar.org.sicel.web.util.ArrayListWithGetItem" />
+		</form-bean>
+
+		<form-bean name="procAnimalForm"
+			type="org.apache.struts.validator.DynaValidatorActionForm">
+			<form-property name="procAnimalId" type="java.lang.Long"
+				initial="" />
+			<form-property name="procAnimal"
+				type="ar.org.sicel.persistence.ProcAnimal" />
+			<form-property name="procEvtAnimalArrayList"
+				type="ar.org.sicel.web.util.ArrayListWithGetItem" />
+		</form-bean>
+
+		<!-- son de upload ex Uploadprocess -->
+
+		<form-bean name="uploadFileForm"
+			type="ar.org.sicel.upload.forms.UploadFileForm">
+		</form-bean>
+
+		<form-bean name="usuarioForm"
+			type="ar.org.sicel.web.altaEdicion.forms.UsuarioForm" />
+
+
+		<form-bean name="estanciaForm"
+			type="ar.org.sicel.web.altaEdicion.forms.EstanciaForm" />
+
+		<form-bean name="cambiarClaveForm"
+			type="ar.org.sicel.web.login.CambiarClaveForm" />
+
+
+		<form-bean name="reportesEcloForm"
+			type="ar.org.sicel.web.find.ReportesEcloForm" />
+		<form-bean name="reporteEventosForm"
+			type="ar.org.sicel.web.find.ReporteEventosForm" />
+
+		<form-bean name="ecloBuscarForm"
+			type="ar.org.sicel.web.find.EcloBuscarForm" />
+
+		<form-bean name="filtroCalificacionForm"
+			type="ar.org.sicel.web.altaEdicion.forms.FiltroCalificacionForm" />
+
+		<form-bean name="calificacionForm"
+			type="ar.org.sicel.web.altaEdicion.forms.CalificacionForm" />
+		<form-bean name="reporteAchaForm"
+			type="ar.org.sicel.web.proc.ReporteAchaForm" />
+		<form-bean name="cambioRegistroForm"
+			type="ar.org.sicel.web.altaEdicion.forms.CambioRegistroForm" />
+		<form-bean name="intercambioForm"
+			type="ar.org.sicel.web.proc.IntercambioForm" />
+		<form-bean name="sinonimosForm"
+			type="ar.org.sicel.web.proc.SinonimosForm" />
+		<form-bean name="tiposRegistroForm"
+			type="ar.org.sicel.web.find.TiposRegistroForm" />
+		<form-bean name="centroDeComputoForm"
+			type="ar.org.sicel.web.altaEdicion.forms.CentroDeComputoForm" />
+		<form-bean name="busquedaEstanciaForm"
+			type="ar.org.sicel.web.find.BusquedaEstanciaForm" />
+
+		<form-bean name="busquedaCentroDeComputoForm"
+			type="ar.org.sicel.web.find.BusquedaCentroDeComputoForm" />
+		<form-bean name="buscarProcesosForm"
+			type="ar.org.sicel.web.find.BuscarProcesosForm" />
+		
+		<form-bean name="actualizacionSicelUnoForm"
+			type="ar.org.sicel.web.altaEdicion.forms.ActualizacionSicelUnoForm" />
+		<form-bean name="informeProcesoForm"
+			type="ar.org.sicel.web.proc.InformeProcesoForm" />
+
+		<form-bean name="informeProcesoForm"
+			type="ar.org.sicel.web.proc.InformeProcesoForm" />		
+			
+		<form-bean name="formularioC89Form"
+				type="ar.org.sicel.web.altaEdicion.forms.FormularioC89Form" />
+
+	
+		<form-bean name="informeTambosCriasForm"
+				type="ar.org.sicel.web.find.InformeTambosCriasForm" />
+				
+		<form-bean name="reporteIcarForm"
+				type="ar.org.sicel.web.find.ReporteIcarForm" />
+				
+		<form-bean name="reporteInscriptosForm"
+				type="ar.org.sicel.web.find.ReporteInscriptosForm" />
+				
+		<form-bean name="estadisticoLactanciaForm"
+				type="ar.org.sicel.web.find.EstadisticoLactanciaForm" />
+
+	<form-bean name="reporteNombreHBAForm"
+				type="ar.org.sicel.web.find.ReporteNombreHBAForm" />
+
+</form-beans>
+
+
+	<!-- ========== Global Exceptions Definitions =================================== -->
+	<!--
+		Define your exceptions in a file called global-exceptions.xml and place
+		it in your merge directory.
+	-->
+
+	<!-- ========== Global Forward Definitions =================================== -->
+	<!-- Global Forward -->
+	<global-forwards>
+		<!-- default forwards -->
+		<forward name="display" path="/pages/assets/styles/display.css" />
+		<forward name="menuExpandable"
+			path="/pages/assets/styles/menuExpandable.css" />
+		<forward name="jsmenuExpandable"
+			path="/pages/assets/js/menuExpandable.js" />
+		<forward name="estilos" path="/pages/assets/styles/estilos.css" />
+		<forward name="extremeComponents"
+			path="/pages/assets/styles/extremecomponents.css" />
+		<forward name="extremeComponentsJS"
+			path="/pages/assets/js/extremecomponents.js" />
+		<forward name="md5JS" path="/pages/assets/js/md5.js" />
+
+		<!-- Default forward to "Welcome" action -->
+		<!-- Demonstrates using index.jsp to forward -->
+		<forward name="main" path="/main.do" />
+		<forward name="login" path="/.enterLogin" />
+	</global-forwards>
+
+	<!-- ========== Action Mapping Definitions =================================== -->
+	<action-mappings>
+		<action path="/informeProcesosAction"
+			type="ar.org.sicel.web.proc.InformeProcesosAction"
+			name="informeProcesoForm" parameter="method" validate="false">
+			<forward name="init" path=".informeProceso" redirect="false" />
+
+		</action>
+		<action path="/realizarUnionSinonimosAction"
+			type="ar.org.sicel.web.proc.RealizarUnionSinonimosAction"
+			name="sinonimosForm" parameter="method" validate="false">
+			<forward name="init" path=".unirSinonimos" redirect="false" />
+
+		</action>
+		<action path="/listarTiposRegistroAction"
+			type="ar.org.sicel.web.find.ListarTiposRegistroAction"
+			name="tiposRegistroForm" validate="true" parameter="method">
+			<forward name="list" path=".listaTiposPage" />
+			<forward name="success" path=".tipoRegistroFormPage"
+				redirect="false" />
+		</action>
+		<action path="/cargaMasivaAction"
+			type="ar.org.sicel.web.altaEdicion.actions.CargaMasivaAction"
+			name="cargaMasivaForm" parameter="method" validate="false">
+			<forward name="init" path=".filtroCargaMasiva" />
+			<forward name="initCambioRP" path=".filtroCargaCambiosRP" />
+			<forward name="errorMail" path=".errorCargaMasivaPage"
+				redirect="false" />
+		</action>
+		
+		<action path="/actualizacionSicelUno"
+			type="ar.org.sicel.web.altaEdicion.actions.ActualizacionSicelUnoAction"
+			name="actualizacionSicelUnoForm" parameter="method" validate="false">
+			<forward name="init" path=".initActualizacionSicelUno" />
+			<forward name="mostrarDatos" path=".datosAnimalActualizacionSicelUno" />
+			<forward name="cambiarMadre" path=".cambioMadreAnimalActualizacionSicelUno" />
+			<forward name="cambiarPadre" path=".cambioPadreAnimalActualizacionSicelUno" />
+		</action>
+
+		<action path="/reportesAchaAction"
+			type="ar.org.sicel.web.proc.ReportesAchaAction"
+			name="reporteAchaForm" parameter="method" validate="false">
+			<forward name="success" path=".filtrosFacturacion"
+				redirect="false" />
+			<forward name="initBuscarPropietario"
+				path=".buscarPropietarioFacturacion" redirect="false" />
+			<forward name="failure" path=".datosBuscarCalif"
+				redirect="false" />
+			<forward name="initBuscar" path=".datosBuscarCalif"
+				redirect="false" />
+
+		</action>
+
+		<action path="/intercambiarEntrePropietariosAction"
+			type="ar.org.sicel.web.proc.IntercambiarEntrePropietariosAction"
+			name="intercambioForm" parameter="method" validate="false">
+			<forward name="success" path=".filtrosFacturacion"
+				redirect="false" />
+			<forward name="initBuscarPropietario"
+				path=".buscarPropietarioFacturacion" redirect="false" />
+			<forward name="failure" path=".datosBuscarCalif"
+				redirect="false" />
+			<forward name="initBuscar" path=".datosBuscarCalif"
+				redirect="false" />
+			<forward name="init" path=".intercambioEntreProp"
+				redirect="false" />
+
+		</action>
+		<action path="/filtrarCalificacionAction"
+			type="ar.org.sicel.web.altaEdicion.actions.FiltrarCalificacionAction"
+			name="filtroCalificacionForm" input=".datosBuscarCalif"
+			parameter="method" validate="false">
+			<forward name="success" path=".calificacionTable" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".datosBuscarCalif"
+				redirect="false" />
+			<forward name="initBuscar" path=".datosBuscarCalif"
+				redirect="false" />
+			<forward name="initBuscarEstancia"
+				path=".listaEstanciasPorNombre" />
+
+		</action>
+		<action path="/edicionAnimalPedigreeAction" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionAnimalPedigreeAction"
+			name="pedigreeForm" validate="false" scope="session">
+			<forward name="add" path=".pedigreeFormPage"
+				redirect="false" />
+			<forward name="initBuscarAnimal"
+				path=".buscarPadresPedigree" />
+			<forward name="initAddEspecial"
+				path="/edicionAnimalPedigreeAction.do?method=initAddEspecial" />
+			<forward name="initBuscarTambo" path=".buscarTamboPedigree" />
+			<forward name="initBuscarTamboCriador"
+				path=".buscarTamboPedigree" />
+			<forward name="initBuscarProp"
+				path=".buscarPropietarioPedigree" />
+			<forward name="initAdd"
+				path="/edicionAnimalPedigreeAction.do?method=initAdd" />
+			<forward name="initRegistros" path=".registroTable" />
+			<forward name="initComentarios" path=".comentarioTable" />
+			<forward name="initAddRegistro" path=".registroPedFormPage" />
+			<forward name="initAddComentario"
+				path=".comentarioPedFormPage" />
+			<forward name="initBuscar" path=".buscarAnimalPedigree" />
+			<forward name="initPadron" path=".padronPedigree" />
+			<forward name="listadoPadron" path=".listadoPadron" />
+			<forward name="comunicacion" path=".comunicacion" />
+
+
+
+		</action>
+		<action path="/descargaDocumentacionAction" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.DescargaDocumentacionAction"
+			name="pedigreeForm" validate="false" scope="session">
+			<forward name="listadoDOC" path=".listadoDOC" />
+
+
+
+
+		</action>
+
+		<action path="/cambioRegistroAction"
+			type="ar.org.sicel.web.altaEdicion.actions.CambioRegistroAction"
+			name="cambioRegistroForm" parameter="method" validate="false">
+			<forward name="cambio" path="/buscarAnim.do?method=porId" />
+			<forward name="init" path=".cambioRegistro"
+				redirect="false" />
+		</action>
+		<action path="/altaCalificacionAction"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaCalificacionAction"
+			name="calificacionForm" parameter="method" validate="true">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="initValores" path=".seteoCalificacion" />
+			<forward name="initBuscarPropietario"
+				path=".buscarPropietarioNombre" />
+			<forward name="initBuscarEstablecimiento"
+				path=".buscarEstablecimientoNombre" />
+			<forward name="buscarAnimal"
+				path=".buscarAnimalCalificacion" />
+			<forward name="boleta" path=".boleta" />
+			<forward name="boletaM1" path=".boletaM1" />
+			<forward name="boletaM2" path=".boletaM2" />
+			<forward name="boletaM3" path=".boletaM3" />
+			<forward name="boletaM3View" path=".boletaM3View" />
+			<forward name="iniciar"
+				path="/altaCalificacionAction.do?method=initSetValores"
+				redirect="true" />
+			<forward name="init"
+				path="/altaCalificacionAction.do?method=initEspecial"
+				redirect="true" />
+			<forward name="initAdd"
+				path="/altaCalificacionAction.do?method=initAdd" redirect="true" />
+			<forward name="initAddM3"
+				path="/altaCalificacionAction.do?method=initAddM3" redirect="true" />
+			<forward name="filtro"
+				path="/filtrarCalificacionAction.do?method=initBuscar"
+				redirect="false" />
+			<forward name="seguir"
+				path="/altaCalificacionAction.do?method=seguirCargando"
+				redirect="true" />
+			<forward name="boletaRemove" path=".remove" />
+
+
+		</action>
+
+		<action path="/listarRazas"
+			type="ar.org.sicel.web.find.ListarRazasAction" name="razaForm"
+			validate="false" parameter="method">
+			<forward name="list" path=".listaRazaPage" />
+			<forward name="agregar" path=".edicionRazaPage" redirect="true" />
+		</action>
+
+		<action path="/editarRazaValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionRazaAction"
+			name="razaForm" validate="true" scope="session"
+			input=".edicionRazaPage">
+			<forward name="failure" path="/listarRazas.do?method=listar"
+				redirect="false" />
+			<forward name="list" path="/listarRazas.do?method=listar"
+				redirect="true" />
+			<forward name="success" path=".edicionRazaPage"
+				redirect="true" />
+
+		</action>
+
+		<action path="/listarSistemas"
+			type="ar.org.sicel.web.find.ListarSistemasAction" name="sistemaForm"
+			validate="false" parameter="method">
+			<forward name="list" path=".listaSistemaPage" />
+		</action>
+
+		<action path="/editarSistemaValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionSistemaAction"
+			name="sistemaForm" validate="true" scope="session"
+			input=".edicionSistemaPage">
+			<forward name="failure"
+				path="/listarSistemas.do?method=listar" redirect="false" />
+			<forward name="list"
+				path="/listarSistemas.do?method=listar" />
+			<forward name="success" path=".edicionSistemaPage"
+				redirect="true" />
+
+		</action>
+
+
+
+		<action path="/listarEstancias"
+			type="ar.org.sicel.web.find.ListarEstanciaAction" name="estanciaForm"
+			validate="false" parameter="method">
+			<forward name="init" path=".listaEstanciaPage"
+				redirect="false" />
+		</action>
+		<action path="/listarEstablecimientoAction"
+			type="ar.org.sicel.web.find.ListarEstablecimientoAction"
+			name="establecimientoForm" validate="false" parameter="method">
+
+			<forward name="list" path=".listaEstablecimientoPage" />
+		</action>
+		<action path="/editarEstablecimientoValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionEstablecimientoAction"
+			name="establecimientoForm" validate="true" scope="session"
+			input=".edicionEstablecimientoPage">
+			<forward name="failure"
+				path="/editarEstablecimientoValidate.do?method=init"
+				redirect="true" />
+			<forward name="list" path=".listaEstablecimientoPage" />
+			<forward name="init" path=".listaEstablecimientoPage"
+				redirect="true" />
+			<forward name="mostrarId" path=".mostrarIdPage"
+				redirect="true" />
+			<forward name="listar"
+				path="/editarEstablecimientoValidate.do?method=init"
+				redirect="true" />
+			<forward name="success" path=".edicionEstablecimientoPage"
+				redirect="true" />
+			<forward name="initBuscarEstancia" path=".listaEstancias" />
+			<forward name="initBuscarEclo" path=".listaEclos" />
+			<forward name="errorMail" path=".errorEstablecimientoPage"
+				redirect="false" />
+
+		</action>
+		<action path="/editarPropietarioValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionPropietarioAction"
+			name="propietarioForm" validate="true" scope="session"
+			input=".edicionPropietarioPage">
+			<forward name="failure"
+				path="/editarPropietarioValidate.do?method=init" redirect="false" />
+			<forward name="list" path=".listaPropietarioPage" />
+			<forward name="init" path=".listaPropietarioPage" />
+			<forward name="listar"
+				path="/editarPropietarioValidate.do?method=init" />
+			<forward name="success" path=".edicionPropietarioPage"
+				redirect="true" />
+			<forward name="agregarNroSRA" path=".agregarNroSRA" />
+			<forward name="initEliminarSra" path=".eliminarSra" />
+			<forward name="initCambiarEstadoSra"
+				path=".cambiarEstadoSra" />
+			<forward name="mostrarEstablecimientos"
+				path="/pages/altaEdicion/mostrarEstablecimientos.jsp" />
+			<forward name="mostrarEstancias"
+				path="/pages/altaEdicion/mostrarEstancias.jsp" />
+			<forward name="errorMail" path=".errorPropietarioPage"
+				redirect="false" />
+			<forward name="mostrarId" path=".mostrarIdPage"
+				redirect="true" />
+
+		</action>
+
+
+		<action path="/editarEstanciaValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionEstanciaAction"
+			name="estanciaForm" validate="true">
+			<forward name="failure"
+				path="/listarEstancias.do?method=init" redirect="false" />
+			<forward name="list" path="/listarEstancias.do?method=init"
+				redirect="true" />
+			<forward name="success" path=".edicionEstanciaPage"
+				redirect="true" />
+			<forward name="mostrarId" path=".mostrarIdPage"
+				redirect="true" />
+
+		</action>
+
+		<action path="/listarEntidadRegional"
+			type="ar.org.sicel.web.find.ListarEntidadRegionalAction"
+			name="entidadRegionalForm" validate="false" parameter="method">
+			<forward name="list" path=".listaEntidadRegionalPage" />
+		</action>
+
+		<action path="/editarEntidadRegionalValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionEntidadRegionalAction"
+			name="entidadRegionalForm" validate="true" scope="session"
+			input=".edicionEntidadRegionalPage">
+			<forward name="failure"
+				path="/listarEntidadRegional.do?method=listar" redirect="false" />
+			<forward name="list"
+				path="/listarEntidadRegional.do?method=listar" redirect="true" />
+			<forward name="success" path=".edicionEntidadRegionalPage"
+				redirect="false" />
+			<forward name="initAddUbicacion"
+				path="/edicionUbicacion.do?method=initAddUbicacion" />
+			<forward name="mostrarId" path=".mostrarIdPage"
+				redirect="true" />
+		</action>
+
+
+		<action path="/editarEcloValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionEcloAction"
+			name="ecloForm" validate="true" scope="session"
+			input=".edicionEcloPage">
+			<forward name="success" path=".edicionEcloPage"
+				redirect="false" />
+			<forward name="list" path="/listarEclos.do?method=listar"
+				redirect="true" />
+			<forward name="failure" path="/listarEclos.do?method=listar"
+				redirect="false" />
+			<forward name="initAddUbicacion"
+				path="/edicionUbicacion.do?method=initAddUbicacion" />
+			<forward name="mostrarId" path=".mostrarIdPage"
+				redirect="true" />
+		</action>
+
+
+		<action path="/edicionUbicacion" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionUbicacionAction"
+			name="ubicacionForm" validate="true" scope="request"
+			input=".edicionUbicacionPage">
+			<forward name="listarUbicaciones" path=".listaUbicacionPage"
+				redirect="true" />
+			<forward name="initAdd" path=".edicionUbicacionPage" />
+			<forward name="success"
+				path="/edicionUbicacion.do?method=listarUbicaciones" />
+		</action>
+
+
+
+
+
+
+		<action path="/bajaUbicacion"
+			type="ar.org.sicel.web.bajas.BajaUbicacionAction"
+			name="ubicacionForm" scope="request" input=".datosModificarUbicacion"
+			unknown="false" validate="true">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<action path="/login" type="ar.org.sicel.web.login.LoginAction"
+			name="loginForm" scope="request" parameter="method" unknown="false"
+			validate="false">
+			<forward name="success" path=".main" redirect="false" />
+			<forward name="failure" path=".enterLogin" redirect="false" />
+		</action>
+
+		<action path="/preAltaEclo"
+			type="ar.org.sicel.web.altaEdicion.actions.PreAltaEcloAction"
+			name="ecloForm" scope="request" unknown="false" validate="false">
+			<forward name="success" path=".altaEcloPage"
+				redirect="false" />
+			<forward name="edicion" path=".edicionEclo"
+				redirect="false" />
+		</action>
+		<action path="/BuscarValoresAdmitidos"
+			type="ar.org.sicel.web.find.BuscarValoresAdmitidosAction"
+			unknown="false" validate="false">
+			<forward name="listado" path=".valoresAdmitidosTable"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<action path="/altaValorAdmitido"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaValorAdmitidoAction"
+			name="valorAdmitidoForm" scope="request" unknown="false"
+			validate="false">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="refreshPopup" path=".refreshPopup"
+				redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+		</action>
+		<action path="/buscarProcProces"
+			type="ar.org.sicel.web.find.BuscarProcProcesAction"
+			name="procProcesForm" scope="request" input=".main" unknown="false"
+			validate="true">
+			<forward name="success" path=".procProcesDetalle"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<!--<action
+			path="/preBuscarEclo"
+			type="ar.org.sicel.web.find.PreBuscarEcloAction"
+			name="busquedaForm"
+			scope="request"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="success"
+			path=".buscarEclo"
+			redirect="false"
+			/>
+			</action>-->
+		<!--    <action
+			path="/altaEclo"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaEcloAction"
+			name="ecloForm"
+			scope="request"
+			input=".altaEcloPage"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="success"
+			path=".ECLODetalle"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".altaEcloPage"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action>-->
+		<!-- action
+			path="/modificarUbicacion"
+			type="ar.org.sicel.web.modificar.ModificarUbicacionAction"
+			name="ubicacionForm"
+			scope="request"
+			input=".datosModificarUbicacion"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="failure"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action-->
+		<action path="/buscarResponsableEclo"
+			type="ar.org.sicel.web.find.BuscarResponsableEcloAction"
+			name="personaForm" scope="request" unknown="false" validate="true">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+			<forward name="edicion" path=".edicionResponsableEclo"
+				redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+			<forward name="detalle" path=".personaDetalle"
+				redirect="false" />
+		</action>
+		<!-- <action
+			path="/preBuscarEntidadRegional"
+			type="ar.org.sicel.web.find.PreBuscarEntidadRegionalAction"
+			name="busquedaForm"
+			scope="request"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="success"
+			path=".buscarEntidadRegional"
+			redirect="false"
+			/>
+			</action>-->
+		<action path="/buscarAtributosVariables"
+			type="ar.org.sicel.web.find.BuscarAtributosVariablesAction"
+			name="atributosVariablesForm" scope="request" unknown="false"
+			validate="false">
+			<forward name="listado" path=".atributosVariables"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<!--    <action
+			path="/buscarRegional"
+			type="ar.org.sicel.web.find.BuscarRegionalAction"
+			name="entidadRegionalForm"
+			scope="request"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="success"
+			path=".regionalDetalle"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="edicion"
+			path=".edicionEntidadRegional"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			<forward
+			name="listado"
+			path=".regionalTable"
+			redirect="false"
+			/>
+			</action>-->
+		<action path="/buscarAnim"
+			type="ar.org.sicel.web.find.BuscarAnimAction" name="animalForm"
+			scope="request" input=".datosBuscarAnim" parameter="method"
+			unknown="false" validate="false">
+			<forward name="initBuscarTambo"
+				path=".buscarAnimalPorTambo" />
+			<forward name="initBuscarPropietario"
+				path=".buscarAnimalPorPropietario" />
+			<forward name="initBuscarEclo" path=".buscarAnimalPorEclo" />
+			<forward name="initRegistros" path=".cambioRegistro"
+				redirect="false" />
+			<forward name="mostrarEventos"
+				path="/pages/detalle/mostrarEventosAnimal.jsp" redirect="false" />
+			<forward name="success" path=".datosBuscarAnim"
+				redirect="false" />
+			<forward name="successPorId" path=".animalDetalle"
+				redirect="false" />
+			<forward name="successPorRPyEstab" path=".animsTable"
+				redirect="false" />
+			<forward name="successPorTipoyNumero" path=".animsTable"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".datosBuscarAnim"
+				redirect="false" />
+			<forward name="edicion" path=".edicionAnimal"
+				redirect="false" />
+			<forward name="errorAcceso" path=".globalError"
+				redirect="false" />
+		</action>
+		<action path="/preBuscarEstablecimiento"
+			type="ar.org.sicel.web.find.PreBuscarEstablecimientoAction"
+			name="busquedaForm" scope="request" unknown="false"
+			validate="false">
+			<forward name="success" path=".buscarEstablecimiento"
+				redirect="false" />
+		</action>
+		<action path="/listarConjuntoAtributos"
+			type="ar.org.sicel.web.find.ConjuntoAtributosAction"
+			name="conjuntoAtributosForm" validate="false" parameter="method">
+			<forward name="init" path=".conjuntoAtTable"
+				redirect="false" />
+			<forward name="detalle" path=".conjuntoAtributosDetalle"
+				redirect="false" />
+			<forward name="redefinition"
+				path=".redefinicionAtributoDetalle" redirect="false" />
+		</action>
+		<action path="/edicionConjuntoAtributos"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionConjuntoAtributosAction"
+			name="atributoForm" validate="true" parameter="method">
+			<forward name="edicion" path=".edicionConjuntoAtributos"
+				redirect="false" />
+			<forward name="list"
+				path="/listarConjuntoAtributos.do?method=detalle" redirect="false" />
+			<forward name="failure"
+				path="/listarConjuntoAtributos.do?method=detalle" redirect="false" />
+		</action>
+
+		<action path="/edicionAtributosRedefinidos"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionAtributosRedefinidosAction"
+			name="valorForm" validate="true" parameter="method">
+			<forward name="edicion" path=".atributoFormPage"
+				redirect="false" />
+			<forward name="alta" path=".atributoFormPage"
+				redirect="false" />
+			<forward name="select" path=".busquedaAtributo" />
+			<forward name="list"
+				path="/listarConjuntoAtributos.do?method=listaRedefinidos"
+				redirect="true" />
+			<forward name="failure"
+				path="/listarConjuntoAtributos.do?method=listaRedefinidos"
+				redirect="false" />
+		</action>
+
+		<!--<action
+			path="/altaEntidadRegional"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaEntidadRegionalAction"
+			name="entidadRegionalForm"
+			scope="request"
+			input=".altaEntidadRegionalPage"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="success"
+			path=".regionalDetalle"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".altaEntidadRegionalPage"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action>-->
+		<!-- action
+			path="/bajaValorAdmitido"
+			type="ar.org.sicel.web.bajas.BajaValorAdmitidoAction"
+			name="atributoForm"
+			scope="request"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="refreshPopup"
+			path=".refreshPopup"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".main"
+			redirect="false"
+			/>
+			</action-->
+		<action path="/edicionResponsableSistema"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionResponsableSistemaAction"
+			name="personaForm" scope="request" input=".altaPersonaPage"
+			unknown="false" validate="false">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+			<forward name="refreshClosePopup"
+				path=".refreshParentAndClosePopup" redirect="false" />
+		</action>
+		<action path="/buscarPropietario"
+			type="ar.org.sicel.web.find.BuscarPropietarioAction"
+			name="propietarioForm" parameter="method">
+			<forward name="success" path=".datosBuscarPropietario"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".datosBuscarPropietario"
+				redirect="false" />
+			<forward name="edicion" path=".edicionPropietario"
+				redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+			<forward name="detalle"
+				path="/pages/detalle/verPropietario.jsp" />
+		</action>
+		<action path="/imagen"
+			type="ar.org.sicel.web.images.ImageAction" unknown="false"
+			validate="true">
+			<forward name="main" path=".main" redirect="false" />
+		</action>
+		<!-- action
+			path="/buscarAtributo"
+			type="ar.org.sicel.web.find.BuscarAtributoAction"
+			name="atributoForm"
+			scope="request"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="success"
+			path=".atributoFormPage"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			<forward
+			name="detalle"
+			path=".atributoDetalle"
+			redirect="false"
+			/>
+			</action-->
+		<action path="/buscarProcLote"
+			type="ar.org.sicel.web.find.BuscarProcLoteAction" name="procLoteForm"
+			scope="request" input=".main" unknown="false" validate="true">
+			<forward name="success" path=".procLoteDetalle"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<action path="/altaPropietario"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaPropietarioAction"
+			name="propietarioForm" scope="request" input=".altaPropietarioPage"
+			unknown="false" validate="false">
+			<forward name="success" path=".propietarioDetalle"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="refreshClosePopup"
+				path=".refreshParentAndClosePopup" redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+		</action>
+		<action path="/listarEclos"
+			type="ar.org.sicel.web.find.ListarEclosAction" name="ecloBuscarForm"
+			validate="false" parameter="method">
+			<forward name="list" path=".ecloTable" />
+		</action>
+		<action path="/buscaEclo"
+			type="ar.org.sicel.web.find.BuscaEcloAction" name="ecloBuscarForm"
+			scope="request" validate="true" parameter="method">
+			<forward name="init" path=".buscarEclo" redirect="false" />
+			<forward name="mostrarDetalle"
+				path="/pages/detalle/ECLODetalle.jsp" redirect="false" />
+
+
+			<!--      <forward
+				name="main"
+				path=".main"
+				redirect="false"
+				/>
+				<forward
+				name="failure"
+				path=".buscarEclo"
+				redirect="false"
+				/>
+				<forward
+				name="edicion"
+				path="/preAltaEclo.do"
+				redirect="false"
+				/>
+				<forward
+				name="closePopup"
+				path=".closePopup"
+				redirect="false"
+				/>
+				<forward
+				name="detalle"
+				path=".ECLODetalle"
+				redirect="false"
+				/>-->
+		</action>
+		<action path="/edicionAnimal"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionAnimalAction"
+			name="animalForm" scope="request" unknown="false" validate="false">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+			<forward name="refreshClosePopup"
+				path=".refreshParentAndClosePopup" redirect="false" />
+		</action>
+		<action path="/buscarProcEstablecimiento"
+			type="ar.org.sicel.web.find.BuscarProcEstablecimientoAction"
+			name="procEstablecimientoForm" scope="request" input=".main"
+			unknown="false" validate="true">
+			<forward name="success" path=".procEstablecimientoDetalle"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<!-- <action
+			path="/altaRaza"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaRazaAction"
+			name="razaForm"
+			scope="request"
+			input=".altaRazaPage"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="success"
+			path=".razaDetalle"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".altaRazaPage"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action>-->
+
+		<!--<action
+			path="/buscarSistema"
+			type="ar.org.sicel.web.find.BuscarSistemaAction"
+			name="sistemaForm"
+			scope="request"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="detalle"
+			path=".sistemaDetalle"
+			redirect="false"
+			/>
+			<forward
+			name="listado"
+			path=".sistemaTable"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="edicion"
+			path=".edicionSistema"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action>-->
+		<action path="/buscarResponsableSistema"
+			type="ar.org.sicel.web.find.BuscarResponsableSistemaAction"
+			name="personaForm" scope="request" unknown="false" validate="true">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+			<forward name="edicion" path=".edicionResponsableSistema"
+				redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+			<forward name="detalle" path=".personaDetalle"
+				redirect="false" />
+		</action>
+		<!-- <action
+			path="/altaSistema"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaSistemaAction"
+			name="sistemaForm"
+			scope="request"
+			input=".altaSistemaPage"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="success"
+			path=".sistemaDetalle"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".altaSistemaPage"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			<forward
+			name="edicion"
+			path=".edicionSistema"
+			redirect="false"
+			/>
+			</action>-->
+		<!-- action
+			path="/altaAtributo"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaAtributoAction"
+			name="atributoForm"
+			scope="request"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action-->
+		<action path="/buscarEstablecimiento"
+			type="ar.org.sicel.web.find.BuscarEstablecimientoAction"
+			name="establecimientoForm" parameter="method" validate="false">
+			<forward name="success" path=".buscarEstablecimiento"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".buscarEstablecimiento"
+				redirect="false" />
+			<forward name="detalle"
+				path="/pages/detalle/verEstablecimiento.jsp" redirect="false" />
+			<forward name="edicion" path="/preAltaEstablecimiento.do"
+				redirect="false" />
+		</action>
+		<action path="/logout"
+			type="ar.org.sicel.web.login.LogoutAction" unknown="false"
+			validate="false">
+			<forward name="success" path=".enterLogin" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<action path="/edicionResponsableEclo"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionResponsableEcloAction"
+			name="personaForm" scope="request" input=".altaPersonaPage"
+			unknown="false" validate="false">
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+			<forward name="refreshClosePopup"
+				path=".refreshParentAndClosePopup" redirect="false" />
+		</action>
+		<action path="/altaEstablecimiento"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaEstablecimientoAction"
+			name="establecimientoForm" scope="request"
+			input=".altaEstablecimientoPage" unknown="false" validate="false">
+			<forward name="success" path=".estabDetalle"
+				redirect="false" />
+			<forward name="failure" path=".altaEstablecimientoPage"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="refreshClosePopup"
+				path=".refreshParentAndClosePopup" redirect="false" />
+			<forward name="closePopup" path=".closePopup"
+				redirect="false" />
+		</action>
+		<action path="/buscarProcAnimal"
+			type="ar.org.sicel.web.find.BuscarProcAnimalAction"
+			name="procAnimalForm" scope="request" input=".main" unknown="false"
+			validate="true">
+			<forward name="success" path=".procAnimalDetalle"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<action path="/preAltaEstablecimiento"
+			type="ar.org.sicel.web.altaEdicion.actions.PreAltaEstablecimientoAction"
+			name="establecimientoForm" scope="request" unknown="false"
+			validate="false">
+			<forward name="success" path=".altaEstablecimientoPage"
+				redirect="false" />
+			<forward name="edicion" path=".edicionEstablecimiento"
+				redirect="false" />
+		</action>
+		<action path="/buscarProcesos"
+			type="ar.org.sicel.web.find.BuscarProcesosAction" unknown="false" name="buscarProcesosForm"
+			parameter="method"
+			validate="false">
+			<forward name="listado" path=".procProcesTable"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<!-- action
+			path="/bajaAtributo"
+			type="ar.org.sicel.web.bajas.BajaAtributoAction"
+			name="conjuntoAtributosForm"
+			scope="request"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".main"
+			redirect="false"
+			/>
+			</action-->
+		<action path="/buscarUbicacion"
+			type="ar.org.sicel.web.find.BuscarUbicacionAction"
+			name="ubicacionForm" scope="request" input=".main" unknown="false"
+			validate="false">
+			<forward name="success" path=".datosModificarUbicacion"
+				redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+		</action>
+		<action path="/buscarRaza"
+			type="ar.org.sicel.web.find.BuscarRazaAction" name="razaForm"
+			scope="request" parameter="method" unknown="false"
+			validate="false">
+			<forward name="listado" path=".razaTable" redirect="false" />
+			<forward name="main" path=".main" redirect="false" />
+			<forward name="failure" path=".main" redirect="false" />
+			<forward name="success" path=".altaRazaPage"
+				redirect="false" />
+			<forward name="detalle" path=".razaDetalle"
+				redirect="false" />
+			<forward name="edicion" path=".edicionRaza"
+				redirect="false" />
+		</action>
+		<!-- <action
+			path="/buscarEntidadRegional"
+			type="ar.org.sicel.web.find.BuscarEntidadRegionalAction"
+			name="busquedaForm"
+			scope="request"
+			unknown="false"
+			validate="true"
+			>
+			<forward
+			name="success"
+			path=".regionalTable"
+			redirect="false"
+			/>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="failure"
+			path=".buscarEntidadRegional"
+			redirect="false"
+			/>
+			</action>-->
+		<!-- action
+			path="/altaAtributoVariable"
+			type="ar.org.sicel.web.altaEdicion.actions.AltaAtributoVariableAction"
+			name="atributosVariablesForm"
+			scope="request"
+			unknown="false"
+			validate="false"
+			>
+			<forward
+			name="main"
+			path=".main"
+			redirect="false"
+			/>
+			<forward
+			name="refreshClosePopup"
+			path=".refreshParentAndClosePopup"
+			redirect="false"
+			/>
+			<forward
+			name="closePopup"
+			path=".closePopup"
+			redirect="false"
+			/>
+			</action-->
+
+
+		<action path="/uploadProceso"
+			type="ar.org.sicel.web.proc.UploadProcesoAction" validate="false"
+			input=".uploadProceso">
+			<forward name="error" path=".uploadProcesoError"
+				redirect="false" />
+			<forward name="ok" path=".downloadProcesoEclo"
+				redirect="false" />
+		</action>
+
+
+
+		<action path="/cambiarClaveAction"
+			type="ar.org.sicel.web.login.CambiarClaveAction"
+			name="cambiarClaveForm" parameter="method" validate="true">
+			<forward name="success" path="/login.do" redirect="true" />
+			<forward name="init" path="/cambiarClavePage.do"
+				redirect="true" />
+			<!--	  <forward name="failure" path="/cambiarClavePage.do" redirect="true" />-->
+			<forward name="successMail" path="/cambiarClavePage.do"
+				redirect="true" />
+			<forward name="failure" path=".cambiarClave" />
+
+
+		</action>
+
+
+		<!--<action path="/mostrarEventos" 
+			validate="false"
+			forward=".mostrarEventos"/>    -->
+
+
+
+		<action path="/cambiarClavePage" validate="false"
+			forward=".cambiarClave" />
+
+
+		<action path="/uploadProcesoPage" validate="false"
+			forward=".uploadProceso" />
+
+		<action path="/downloadProcesoPage" validate="false"
+			forward=".downloadProceso" />
+			
+		<action path="/lotesProcesadosPage" validate="false"
+			forward=".lotesProcesadosPage" />
+
+		<action path="/viewMessagePage" validate="false"
+			forward=".viewMessage" />
+
+		<action path="/viewMessageProcessPage" validate="false"
+			forward=".viewMessageProcess" />
+
+		<action path="/processListFilePage" validate="false"
+			forward=".processList" />
+		<action path="/buscarAnimal" validate="false"
+			forward=".buscarAnimal" />
+		<action path="/verFichaAnimal" validate="false"
+			forward=".verFicha" />
+		<action path="/verInfoLote" validate="false"
+			forward=".verAnimalesLote" />
+		<action path="/verLotes" validate="false"
+			forward=".verInfoLotes" />
+
+		<action path="/buscarAnimalOrdenie" validate="false"
+			forward=".buscarAnimalOrdenie" />
+
+		<action path="/listarControles" validate="false"
+			forward=".listarControles" />
+
+		<action path="/confirmarBaja" validate="false"
+			forward=".confirmarBaja" />
+		<action path="/confirmarBusqueda" validate="false"
+			forward=".confirmarBusqueda" />
+		<action path="/confirmarBusquedaLote" validate="false"
+			forward=".confirmarBusquedaLote" />
+		<!-- action path="/altaAtributoPage" 
+			validate="false"
+			forward=".atributoFormPage"/-->
+		<action path="/datosModificarUbicacion" validate="false"
+			forward=".datosModificarUbicacion" />
+
+		<action path="/altaPersonaPage" validate="false"
+			forward=".altaPersonaPage" />
+
+		<action path="/altaPropietarioPage" validate="false"
+			forward=".altaPropietarioPage" />
+
+		<action path="/altaEcloPage" validate="false"
+			forward=".altaEcloPage" />
+		<action path="/altaEstablecimientoPage" validate="false"
+			forward=".altaEstablecimientoPage" />
+		<action path="/altaEstablecimientoPage" validate="false"
+			forward=".altaEstablecimientoPage" />
+
+		<!--<action path="/altaEntidadRegionalPage" 
+			validate="false"
+			forward=".altaEntidadRegionalPage"/>-->
+
+		<action path="/altaSistemaPage" validate="false"
+			forward=".altaSistemaPage" />
+
+		<action path="/main" validate="false" forward=".main" />
+
+		<action path="/enterLogin" validate="false"
+			forward=".enterLogin" />
+
+		<action path="/error" validate="false" forward=".globalError" />
+
+		<action path="/quienesSomos" validate="false"
+			forward=".quienesSomos" />
+
+		<action path="/glosario" validate="false" forward=".glosario" />
+
+		<action path="/construction" validate="false"
+			forward=".construction" />
+
+		<action path="/datosBuscarAnim" name="animalForm"
+			validate="false" forward=".datosBuscarAnim" />
+
+		<action path="/datosBuscarPropietario" name="contactoForm"
+			validate="false" forward=".datosBuscarPropietario" />
+
+		<!--<action path="/buscarEcloForm"
+			name="ecloForm"
+			validate="true"
+			forward=".buscarEclo"/>-->
+
+		<action path="/buscarEstablecimientoForm"
+			name="establecimientoForm" validate="true"
+			forward=".buscarEstablecimiento" />
+
+		<action path="/editarUsuarioValidate" parameter="method"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionUsuarioAction"
+			name="usuarioForm" validate="true" scope="session"
+			input=".edicionUsuarioPage">
+			<forward name="failure"
+				path="/listarUsuario.do?method=listar" redirect="false" />
+			<forward name="list" path="/listarUsuario.do?method=listar" />
+			<forward name="success" path=".edicionUsuarioPage"
+				redirect="false" />
+			<forward name="errorMail" path=".errorUsuarioPage"
+				redirect="false" />
+			<forward name="buscarContactos"
+				path=".filtroSeleccionContactoPage" redirect="false" />
+		</action>
+
+		<action path="/listarUsuario"
+			type="ar.org.sicel.web.find.ListarUsuarioAction" name="usuarioForm"
+			validate="false" parameter="method">
+			<forward name="list" path=".listaUsuarioPage" />
+		</action>
+
+		<!-- action de upload!!!!! -->
+		<action path="/uploadFileAction"
+			type="ar.org.sicel.upload.actions.UploadFileAction"
+			name="uploadFileForm" validate="false" parameter="method">
+			<forward name="message" path="/viewMessagePage.do" />
+
+			<forward name="cambiarLote"
+				path="/pages/uploadFiles/CambiarLote.jsp" redirect="false" />
+			<forward name="volverStandBy"
+				path="/downloadFileAction.do?method=initEnStandBy" redirect="true" />
+			<forward name="loadedFiles"
+				path="/downloadFileAction.do?method=initCargados" />
+		</action>
+		<action path="/downloadFileAction"
+			type="ar.org.sicel.upload.actions.DownloadFileAction"
+			name="uploadFileForm" validate="false" parameter="method">
+			<forward name="success" path="/downloadProcesoPage.do" />
+			<forward name="successFecha" path=".downloadProcesoFecha" />
+			<forward name="cargadosEclo" path=".downloadProcesoEclo" />
+			<forward name="standBy" path=".standBy" />
+			<forward name="successProcesados" path="/lotesProcesadosPage.do" />
+			<forward name="mostrarObservaciones" path="/mostrarObservaciones.do" />
+			<forward name="mostrarObservaciones"
+				path="/pages/uploadFiles/MostrarObservacionesPage.jsp" redirect="false" />
+
+		</action>
+		<action path="/mostrarObs" validate="false"
+			forward=".mostrarObs" />
+		<action path="/processFileAction"
+			type="ar.org.sicel.upload.actions.ProcessFileAction"
+			name="uploadFileForm" validate="false" parameter="method">
+			<forward name="success" path="/processListFilePage.do" />
+			<forward name="popup" path="/mostrarObs.do" />
+			<forward name="message" path="/viewMessageProcessPage.do" />
+		</action>
+
+		<action path="/visualizarReportesAchaAction"
+			type="ar.org.sicel.web.proc.VisualizarReportesAchaAction"
+			name="animalForm" validate="false" parameter="method">
+			<forward name="reporteMasivo" path=".reporteMasivo" />
+
+			<forward name="success" path="/buscarAnimal.do" />
+			<forward name="init"
+				path="/visualizarReportesAchaAction.do?method=init" />
+			<forward name="initLotes"
+				path="/visualizarReportesAchaAction.do?method=initLotes" />
+			<forward name="list" path="/verFichaAnimal.do" />
+			<forward name="confirma" path="/confirmarBusqueda.do" />
+			<forward name="confirmaLote"
+				path="/confirmarBusquedaLote.do" />
+			<forward name="listLote" path="/verInfoLote.do" />
+			<forward name="listLotes" path="/verLotes.do" />
+			<forward name="filtroLotes" path=".filtroLotes" />
+			<forward name="buscarPropietarios" path=".findPropByEclo" />
+		</action>
+		<action path="/reportesPropietariosAchaAction"
+			type="ar.org.sicel.web.proc.ReportesPropietariosAchaAction"
+			name="propietarioForm" validate="false" parameter="method">
+			<forward name="reporteTambos" path=".reporteTambos" />
+
+
+		</action>
+
+		<action path="/reporteEventos" validate="false"
+			forward=".reporteEventos" />
+		<action path="/buscarEstablecimientoAcha" validate="false"
+			forward=".buscarEstablecimientoAcha" />
+		<action path="/buscarEcloAcha" validate="false"
+			forward=".buscarEcloAcha" />
+
+		<action path="/generarReporteEventosAction"
+			type="ar.org.sicel.web.proc.GenerarReporteEventosAction"
+			name="reporteEventosForm" validate="true" parameter="method">
+			<forward name="success" path="/reporteEventos.do" />
+			<forward name="initBuscarEstablecimiento"
+				path="/buscarEstablecimientoAcha.do" />
+			<forward name="initBuscarEclos" path="/buscarEcloAcha.do" />
+			<forward name="initBuscar" path="/buscarLactancia.do" />
+
+		</action>
+		<action path="/verControl" validate="false"
+			forward=".verControl" />
+		<action path="/bajaControlAnimalAction"
+			type="ar.org.sicel.web.proc.BajaControlAnimalAction"
+			name="controlAnimalForm" validate="false" parameter="method">
+			<forward name="list" path="/listarControles.do" />
+			<forward name="confirma" path="/confirmarBaja.do" />
+
+			<forward name="verControl" path="/verControl.do" />
+		</action>
+		<action path="/listarControlAnimalAction"
+			type="ar.org.sicel.web.proc.ListarControlAnimalAction"
+			name="animalForm" validate="false" parameter="method">
+			<forward name="init" path="/buscarAnimalOrdenie.do" />
+			<forward name="list" path="/listarControles.do" />
+			<forward name="confirma" path="/confirmarBaja.do" />
+		</action>
+
+		<!-- Accion para ABM de Centros de computos -->
+		<action path="/editarCentroDeComputoAction"
+			type="ar.org.sicel.web.altaEdicion.actions.EdicionCentroDeComputoAction"
+			name="centroDeComputoForm" validate="true" parameter="method">
+			<forward name="init" path=".mostrarCentroDeComputo" />
+			<forward name="edit" path=".edicionCentroDeComputo" />
+			<forward name="failure"
+				path="/editarCentroDeComputoAction.do?method=listar"
+				redirect="false" />
+			<forward name="mostrarId" path=".mostrarIdPage"
+				redirect="true" />
+		</action>
+
+		<!--  Listado de establecimientos (Estancia) -->
+		<action path="/buscarEstancia"
+			type="ar.org.sicel.web.find.BuscarEstanciaAction"
+			name="busquedaEstanciaForm" validate="true" parameter="method">
+			<forward name="init" path=".listarEstancias" />
+			<forward name="detalle"
+				path="/pages/detalle/verEstancia.jsp" redirect="false" />
+		</action>
+		
+		<!--  Listado de tambos-crias -->
+		<action path="/InformeTambosCriasAction"
+			type="ar.org.sicel.web.find.InformeTambosCriasAction"
+			name="informeTambosCriasForm" validate="false" parameter="method">
+			<forward name="init" path=".InformeTambosCrias" />
+		</action>
+		
+		<!--  Reporte estadistico de lactancias-->
+		<action path="/ReporteIcarAction"
+			type="ar.org.sicel.web.find.ReporteIcarAction"
+			name="reporteIcarForm" validate="false" parameter="method">
+			<forward name="init" path=".ReporteIcar" />
+		</action>
+		
+		<!--  Reporte INSCRIPTOS-->
+		<action path="/ReporteInscriptosAction"
+			type="ar.org.sicel.web.find.ReporteInscriptosAction"
+			name="reporteInscriptosForm" validate="false" parameter="method">
+			<forward name="init" path=".ReporteInscriptos" />
+		</action>
+		
+		<!--  Reporte estadistico de lactancia-->
+		<action path="/EstadisticoLactanciaAction"
+			type="ar.org.sicel.web.find.EstadisticoLactanciaAction"
+			name="estadisticoLactanciaForm" validate="false" parameter="method">
+			<forward name="init" path=".EstadisticoLactancia" />
+		</action>
+		
+		<!--  Reporte NOMBRES HBA-->
+		<action path="/ReporteNombreHBAAction"
+			type="ar.org.sicel.web.find.ReporteNombreHBAAction"
+			name="reporteNombreHBAForm" validate="false" parameter="method">
+			<forward name="init" path=".ReporteNombreHBA" />
+		</action>
+		
+
+		<!--  Listado de centros de computo (Estancia) -->
+		<action path="/buscarCentroDeComputo"
+			type="ar.org.sicel.web.find.BuscarCentroDeComputoAction"
+			name="busquedaCentroDeComputoForm" validate="true"
+			parameter="method">
+			<forward name="init" path=".listarCentrosDeComputo" />
+			<forward name="detalle"
+				path="/pages/detalle/verCentroDeComputo.jsp" redirect="false" />
+		</action>
+
+
+
+		<!-- ACCION QUE REDIRIGE A LA JSP PARA BUSCAR UN ANIMAL POR PARTE DE UNA ECLO-->
+		<action path="/buscarAnimalesRC" validate="false"
+			forward=".buscarAnimalesRC" />
+		<action path="/buscarAnimalReporteEclo" validate="false"
+			forward=".buscarAnimalEclo" />
+		<action path="/buscarEstablecimientoEclo" validate="false"
+			forward=".buscarEstablecimientoEclo" />
+
+
+		<!-- ACTION PARA LA GENERACION DE REPORTES POR PARTE DE UNA ECLO-->
+		<action path="/generarReportesEclo"
+			type="ar.org.sicel.web.find.GenerarReportesEcloAction"
+			name="reportesEcloForm" scope="session" validate="true"
+			parameter="method">
+			<forward name="success" path=".buscarAnimalEclo" />
+			<forward name="lista" path=".tablaAnimalesLactancia" />
+			<forward name="successRC" path="/buscarAnimalesRC.do" />
+			<forward name="initBuscarEstablecimiento"
+				path="/buscarEstablecimientoEclo.do" />
+			<forward name="initBuscarPropietario"
+				path=".buscarPropietarioEclo" />
+			<forward name="initBuscarEclo"
+				path=".buscarEcloRC" />
+			<forward name="rchbanumepagination"
+				path=".rchbanumepagination" />
+		</action>
+		
+		<action path="/actualizarLactancias"
+			type="ar.org.sicel.web.altaEdicion.actions.ActualizarLactanciasAction"
+			name="lactanciasGeneticasForm"
+			scope="session" validate="true"
+			parameter="method">
+			<forward name="init" path=".evaluacionesGeneticas" />
+		</action> 
+
+
+
+	</action-mappings>
+
+	<!-- Define your Struts controller in a file called struts-controller.xml and place it in your merge directory. -->
+
+	<message-resources parameter="ApplicationResources_es_ES" />
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config"
+			value="/WEB-INF/tiles-defs.xml" />
+	</plug-in>
+	<plug-in className="net.sf.navigator.menu.MenuPlugIn">
+		<set-property property="menuConfig"
+			value="/WEB-INF/menu-config.xml" />
+	</plug-in>
+
+</struts-config>

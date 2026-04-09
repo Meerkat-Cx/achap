@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Parametrización en la documentación</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="regla,parametro,documentacion"/>
+  </head>
+  <body>
+  <section name="Audiencia, perspectiva">
+  <p>La documenación presentada aquí tiene por audiencia principal a las personas involucradas en el sistema que necesitan conocer en general las reglas bajo las cuales se efectuan los procesos. De entre las personas involucradas se encuentras las de las ECLOs, que utilizan sus propios sistemas, y los proveedores de estos sistemas, por lo cual esta documentación contiene detalles informáticos y en general esta elaborado desde esa perspectiva. </p>
+  </section>
+    <section name="Parametrizaciones en la documentación">
+		<p>	Se utilizarán parámetros para definir situaciones similares donde la 
+				variación se pueda definir mediante el valor de una variable, que 
+				funcionará entonces como un parámetro para instanciar una parte de esta 
+				documentación.</p>
+		<p>	Conceptualmente, el conjunto de valores actuales de los parámetros 
+				representa al reglamento de ACHA, mientras que el conjunto de valores 
+				posibles representa futuras ampliaciones o desiciones aún no tomadas 
+				por ACHA.</p>
+		<p>	Por ejemplo, si se especifica en una regla para aceptar las 
+				inscripciones de crias:
+<source>
+Si cria.sexo = macho y no AceptaInscribirMacho
+	entonces MSG_NoMacho con nivel de ERROR
+</source>	
+				La regla anterior se podría traducir como:
+				"Si el sexo de la cria es macho, y no se acepta la inscripción de 
+				machos, el evento se rechazará con un mensaje de error".
+				Donde "AceptaInscribirMacho" es un parámetro, y MSG_NoMacho es un 
+				codigo de mensaje.</p>
+		</section>
+	</body>
+</document>
+

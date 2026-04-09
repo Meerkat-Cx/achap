@@ -1,0 +1,1025 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ACHA/SICELV3/!svn/ver/5726/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote
+END
+BajasEvt.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/BajasEvt.java
+END
+PrenezDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/PrenezDescriptor.java
+END
+OrdenieAnimalDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OrdenieAnimalDescriptor.java
+END
+ControlesDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ControlesDescriptor.java
+END
+TEvtProd.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtProd.java
+END
+Senasa.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Senasa.java
+END
+TEvtControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtControl.java
+END
+OrdenieDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OrdenieDescriptor.java
+END
+Ordenie.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Ordenie.java
+END
+Horarios.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Horarios.java
+END
+PesoAnimalDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/PesoAnimalDescriptor.java
+END
+MedsDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/MedsDescriptor.java
+END
+EmpadronarDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EmpadronarDescriptor.java
+END
+Medicion.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Medicion.java
+END
+OrdeniesAnimalDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OrdeniesAnimalDescriptor.java
+END
+Semens.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Semens.java
+END
+ReprodDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ReprodDescriptor.java
+END
+ClonDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ClonDescriptor.java
+END
+EmbrionDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EmbrionDescriptor.java
+END
+TEvtTrans.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtTrans.java
+END
+TSenasaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TSenasaDescriptor.java
+END
+TEvtAltaChoiceDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtAltaChoiceDescriptor.java
+END
+Evt.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Evt.java
+END
+TEvtBajaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtBajaDescriptor.java
+END
+Servsemen.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Servsemen.java
+END
+Anims.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Anims.java
+END
+Ordenies.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Ordenies.java
+END
+CompoRacialItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CompoRacialItem.java
+END
+TRdo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TRdo.java
+END
+Cria.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Cria.java
+END
+AltaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/AltaDescriptor.java
+END
+TEstabDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEstabDescriptor.java
+END
+Alta.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Alta.java
+END
+TEvtEstadoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtEstadoDescriptor.java
+END
+TEvtServ.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtServ.java
+END
+TEventoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEventoDescriptor.java
+END
+TLote.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TLote.java
+END
+CompoRacialDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CompoRacialDescriptor.java
+END
+CompoRacial.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CompoRacial.java
+END
+CambioRPDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CambioRPDescriptor.java
+END
+Info.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Info.java
+END
+RegistroDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/RegistroDescriptor.java
+END
+Horario.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Horario.java
+END
+SemenDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/SemenDescriptor.java
+END
+RdosDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/RdosDescriptor.java
+END
+Controles.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Controles.java
+END
+SenasaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/SenasaDescriptor.java
+END
+ValoresDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ValoresDescriptor.java
+END
+ServDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ServDescriptor.java
+END
+EstadoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EstadoDescriptor.java
+END
+ControlDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ControlDescriptor.java
+END
+TEvtBajaEvt.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtBajaEvt.java
+END
+EvtsDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EvtsDescriptor.java
+END
+Evts.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Evts.java
+END
+MadreGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/MadreGen.java
+END
+TEvtSecadaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtSecadaDescriptor.java
+END
+TEvtAltaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtAltaDescriptor.java
+END
+HorariosDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/HorariosDescriptor.java
+END
+TEvtOrdenieDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtOrdenieDescriptor.java
+END
+Trans.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Trans.java
+END
+PesoAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/PesoAnimal.java
+END
+Meds.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Meds.java
+END
+Empadronar.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Empadronar.java
+END
+SemensDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/SemensDescriptor.java
+END
+TEvtTransDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtTransDescriptor.java
+END
+NuevoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/NuevoDescriptor.java
+END
+EvtDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EvtDescriptor.java
+END
+EvtsEstabDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EvtsEstabDescriptor.java
+END
+TEvtBaja.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtBaja.java
+END
+ProdDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ProdDescriptor.java
+END
+Lote.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Lote.java
+END
+TAnimReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TAnimReg.java
+END
+CriaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CriaDescriptor.java
+END
+Padres.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Padres.java
+END
+SecadaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/SecadaDescriptor.java
+END
+OtraInfoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OtraInfoDescriptor.java
+END
+OtraInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OtraInfo.java
+END
+TEvtServDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtServDescriptor.java
+END
+Composicion.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Composicion.java
+END
+TEvento.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvento.java
+END
+DonanteDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/DonanteDescriptor.java
+END
+CambioRP.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CambioRP.java
+END
+BajasEvtDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/BajasEvtDescriptor.java
+END
+TEvtCambioRp.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtCambioRp.java
+END
+AnimalDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/AnimalDescriptor.java
+END
+Animal.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Animal.java
+END
+Prenez.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Prenez.java
+END
+AltasDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/AltasDescriptor.java
+END
+TEvtProdDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtProdDescriptor.java
+END
+OrdenieAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OrdenieAnimal.java
+END
+ModificaOBajaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ModificaOBajaDescriptor.java
+END
+TEvtSemen.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtSemen.java
+END
+BajaEvtDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/BajaEvtDescriptor.java
+END
+RegDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/RegDescriptor.java
+END
+Reg.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Reg.java
+END
+Control.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Control.java
+END
+MadreGenDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/MadreGenDescriptor.java
+END
+TEvtControlDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtControlDescriptor.java
+END
+RdoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/RdoDescriptor.java
+END
+TEvtAlta.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtAlta.java
+END
+TAnimRegSex.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TAnimRegSex.java
+END
+MedicionDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/MedicionDescriptor.java
+END
+TEvtOrdenie.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtOrdenie.java
+END
+Reprod.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Reprod.java
+END
+Clon.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Clon.java
+END
+Embrion.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Embrion.java
+END
+Nuevo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Nuevo.java
+END
+Estab.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Estab.java
+END
+TEvtInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtInfo.java
+END
+TEvtAltaChoice.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtAltaChoice.java
+END
+EvtsEstab.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EvtsEstab.java
+END
+Prod.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Prod.java
+END
+TAnimRegDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TAnimRegDescriptor.java
+END
+ServsemenDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ServsemenDescriptor.java
+END
+AnimsDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/AnimsDescriptor.java
+END
+TEvtPrenez.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtPrenez.java
+END
+PadresDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/PadresDescriptor.java
+END
+TiemposDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TiemposDescriptor.java
+END
+Secada.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Secada.java
+END
+ComposicionDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ComposicionDescriptor.java
+END
+TLoteDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TLoteDescriptor.java
+END
+Donante.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Donante.java
+END
+InfoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/InfoDescriptor.java
+END
+ElemRacial.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ElemRacial.java
+END
+TEvtReprod.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtReprod.java
+END
+HorarioDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/HorarioDescriptor.java
+END
+Altas.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Altas.java
+END
+Semen.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Semen.java
+END
+Rdos.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Rdos.java
+END
+ModificaOBaja.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ModificaOBaja.java
+END
+TEvtSemenDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtSemenDescriptor.java
+END
+Valores.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Valores.java
+END
+BajaEvt.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/BajaEvt.java
+END
+TEvtBajaEvtDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtBajaEvtDescriptor.java
+END
+Serv.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Serv.java
+END
+Estado.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Estado.java
+END
+EstabsDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EstabsDescriptor.java
+END
+ValoresOrdenieDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ValoresOrdenieDescriptor.java
+END
+Estabs.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Estabs.java
+END
+ValoresOrdenie.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ValoresOrdenie.java
+END
+TEvtSecada.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtSecada.java
+END
+Rdo.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Rdo.java
+END
+PadreGenDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/PadreGenDescriptor.java
+END
+TAnimRegSexDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TAnimRegSexDescriptor.java
+END
+PadreGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/PadreGen.java
+END
+TransDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TransDescriptor.java
+END
+OrdeniesAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OrdeniesAnimal.java
+END
+EstabDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/EstabDescriptor.java
+END
+TEvtInfoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtInfoDescriptor.java
+END
+TSenasa.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TSenasa.java
+END
+ComposicionItemDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ComposicionItemDescriptor.java
+END
+ComposicionItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ComposicionItem.java
+END
+LoteDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/LoteDescriptor.java
+END
+SistemaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/SistemaDescriptor.java
+END
+ValsDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ValsDescriptor.java
+END
+Sistema.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Sistema.java
+END
+TEvtPrenezDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtPrenezDescriptor.java
+END
+Vals.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Vals.java
+END
+OrdeniesDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/OrdeniesDescriptor.java
+END
+CompoRacialItemDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/CompoRacialItemDescriptor.java
+END
+TRdoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TRdoDescriptor.java
+END
+Tiempos.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Tiempos.java
+END
+TEstab.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEstab.java
+END
+TEvtEstado.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtEstado.java
+END
+BajaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/BajaDescriptor.java
+END
+Baja.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Baja.java
+END
+ElemRacialDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/ElemRacialDescriptor.java
+END
+TEvtReprodDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtReprodDescriptor.java
+END
+Registro.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/Registro.java
+END
+TEvtCambioRpDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/TEvtCambioRpDescriptor.java
+END

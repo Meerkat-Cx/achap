@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Atributo"
+        table="At_Atributo"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_at_atributo</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Atributo.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="100"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="descripcion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="descripcion"
+        />
+
+        <set
+            name="valoresAdmitidos"
+            lazy="false"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="atributo"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.ValorAdmAtr"
+            />
+
+        </set>
+
+        <many-to-one
+            name="valorPorDefecto"
+            class="ar.org.sicel.persistence.ValorAdmAtr"
+            cascade="save-update"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Atri_vaad"
+            column="valor_por_defecto"
+            not-null="false"
+        />
+
+		<many-to-one
+            name="conjuntoAt"
+            class="ar.org.sicel.persistence.ConjuntoAtributos"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_ATRI_COAT"
+            column="conjunto_at"
+            not-null="false"
+        />    
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Atributo.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Configuracion"
+        table="Configuracion"
+        lazy="true"
+    >
+
+        <id
+            name="nombre"
+            type="java.lang.String"
+        >
+                <column
+                    name="nombre" 
+                    length="32"
+                    not-null="true"
+                />
+            <generator class="assigned">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Configuracion.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="descripcion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="descripcion" 
+                length="40"
+            />
+        </property>
+
+        <many-to-one
+            name="atrVariables"
+            class="ar.org.sicel.persistence.AtrVariables"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Config_atrVariables"
+            unique-key="UN_Conf_atrVariables"
+            not-null="false"
+        >
+        </many-to-one>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Configuracion.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<sicel3>
+    <ambiente environment="standalone"/>
+<!--
+	<ambiente environment="j2ee"/>
+    <ambiente environment="standalone"/>
+    <ambiente environment="j2eejta"/>
+-->
+	<procesamiento>
+
+	<!-- <destinoDir>C:/sicel3/proc/</destinoDir>
+        <dirReportes>C:/sicel3/proc/reports/</dirReportes>
+		<xsltDir>C:/sicel3/proc/xslt/</xsltDir>
+		<dirImagenesReportes>C:/Temp/Sicel/proc/reports/imagenes/</dirImagenesReportes>
+        <destinoDir>C:/Temp/Sicel/proc/</destinoDir>
+        <dirReportes>C:/Temp/Sicel/proc/reports/</dirReportes>
+		<xsltDir>C:/Temp/Sicel/proc/xslt/</xsltDir> -->
+        <destinoDir>/reports/proc/</destinoDir>
+         <destinoDirEntrada>/reports/proc/entradas/</destinoDirEntrada>
+<!--         <dirReportes>/reports/reports/</dirReportes> -->
+<!-- esta es la ruta para la descarga del padron de machos de pedigre.
+	 esta ruta es absoluta, es una ubicacion dentro del server
+	 de test-->
+  <!--       <dirReporteExcel>/usr/local/tomcat-5.0/sicel/reportes/excel</dirReporteExcel>-->
+         <dirReporteExcel>reports/excel/</dirReporteExcel>
+         <dirReporteDoc>reports/doc/</dirReporteDoc>
+         <dirReporteDocAdmin>reports/doc/administrador/</dirReporteDocAdmin>
+         <dirReporteDocEclo>reports/doc/eclo/</dirReporteDocEclo>
+         <dirReporteDocProp>reports/doc/propietario/</dirReporteDocProp>
+         <dirReporteDocGral>reports/doc/general/</dirReporteDocGral>
+         <dirReporteDocReg>reports/doc/regional/</dirReporteDocReg>
+         <dirReporteDocData>reports/doc/data/</dirReporteDocData>
+         <dirReporteDocTecnica>reports/doc/tecnica/</dirReporteDocTecnica>
+         <dirReporteDocExterno>reports/doc/externo/</dirReporteDocExterno>
+         
+        
+        <dirReportes>reports/reports</dirReportes>
+		<dirImagenesReportes>reports/reports/imagenes/</dirImagenesReportes>
+<!-- 		<dirImagenesReportes>/reports/reports/imagenes/</dirImagenesReportes>		-->
+		<xsltDir>/reports/reports/xslt/</xsltDir>
+		
+		<!-- me parece que nunca se usa -->
+		<jasperDir>/reports/</jasperDir>
+
+	</procesamiento>
+	<ProcEstablecimientos>
+		<handlers>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Alta</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.estab.HandlerEvtAlta</handler-class>
+			</handler>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Semen</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.estab.HandlerEvtSemen</handler-class>
+			</handler>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Control</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.estab.HandlerEvtOrdenie</handler-class>
+			</handler>
+		<!--  by kjacobsen -->	
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.BajaEvt</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.estab.HandlerBajaEvento</handler-class>
+			</handler>
+		<!--  by kjacobsen -->				
+		</handlers>
+	</ProcEstablecimientos>
+	<ProcEventoAnimal>
+	
+		<handlers>
+		
+			<!-- Agregado --> 		
+		
+		    <handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Estado</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEvtEstado</handler-class>
+			</handler>
+			
+			<!--  Fin Agregado -->		
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Baja</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerBajaAnimal</handler-class>
+			</handler>
+			<!--
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Prod</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEvtProduccion</handler-class>
+			</handler>
+			-->
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.CambioRP</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEvtCambioRp</handler-class>
+			</handler>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Serv</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEvtServicio</handler-class>
+			</handler>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Reprod</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEventoReproduccion</handler-class>
+			</handler>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Info</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEvtInfo</handler-class>
+			</handler>
+			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Trans</castor-class>
+				<handler-class> 
+					ar.org.sicel.proc.handlers.animal.HandlerEvtTransferencia</handler-class>
+			</handler>
+			
+ 			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Secada</castor-class>
+				<handler-class>ar.org.sicel.proc.handlers.animal.HandlerEvtSecada</handler-class>	
+ 			</handler>
+ 			
+ 			<handler>
+				<castor-class>ar.org.sicel.proc.v1.lote.Prenez</castor-class>
+				<handler-class>ar.org.sicel.proc.handlers.animal.HandlerEvtPrenez</handler-class>	
+ 			</handler>
+
+		</handlers>
+	</ProcEventoAnimal>
+</sicel3>
+
+
+

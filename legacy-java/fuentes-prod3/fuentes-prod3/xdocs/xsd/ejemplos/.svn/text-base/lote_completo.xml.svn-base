@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Documents and Settings\pablo\workspace\Sicel3Local\resources\sicel\acha-eventos-v1.0.xsd">
+	<sistema>
+		<nombre>SisEclo</nombre>
+		<version>1.0</version>
+	</sistema>
+	<informante>12</informante>
+	<IDLoteInte>455</IDLoteInte>
+	<tiempos>
+		<tEnvi>2005-02-04T12:00:00</tEnvi>
+	</tiempos>
+	<estabs>
+		<estab>
+			<IDEstab>100</IDEstab>
+			<evtsEstab>
+				<altas>
+					<alta>
+						<IDEvt>1000</IDEvt>
+						<fecha>2004-12-04T12:00:00</fecha>
+						<rp>A12</rp>
+						<nombre>Cocuena</nombre>						
+						<sexo>F</sexo>
+						<fechaNacimiento>2002-11-04T12:00:00</fechaNacimiento>
+						<compoRacial>
+							<elemRacial>
+								<raza>HO</raza>						
+								<valor>0.8</valor>
+							</elemRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>0.2</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<!--  
+					Ejemplo: Dar de alta una hembra de nombre "Cocuena",  con RP: A12 , fecha de
+					nacimiento el 4 de noviembre del 2002, con una composicion racial de 80%
+					holando y 20% jersey.
+					La fecha del alta es el 4 de diciembre del 2004.
+					Despues de procesado el Evento, se informara el Registro (RC) asignado a este
+					animal, mediante un elemento en el nodo de resultados del evento.
+		<rdos>
+			<rdo>
+				<nivelErr>30</nivelErr>
+				<codigoMsg>REGASIGN</codigoMsg>
+				<info>Registro asignado para el animal con rp: A12 es: RC 9892</info>
+				<vals>
+					<val>A12</val>
+					<val>RC 9892</val>
+				</vals>
+			</rdo>
+		</rdos>
+
+					-->
+				</altas>	
+			</evtsEstab>
+			<anims>
+				<animal>
+					<rp>AC42</rp>
+					<reg>
+						<tReg>C</tReg>
+						<nReg>2342</nReg>
+					</reg>
+					<evts>
+						<evt>
+							<reprod>
+								<IDEvt>1001</IDEvt>
+								<fecha>2002-11-04T12:00:00</fecha>
+								<cria>
+									<sexo>F</sexo>
+									<estadoEsVivo>true</estadoEsVivo>
+									<inscribir>true</inscribir>
+									<rp>CR122</rp>
+								</cria>
+								<usarRazaMadre>true</usarRazaMadre>
+							</reprod>
+						</evt>
+						<!--
+						Parto producido el 4 de noviembre del 2002, con una cria, la cual es del sexo
+						femenino, se la quiere inscribir en los registros de A.C.H.A. y tiene como RP
+						CR122. Ademas, se quiere que a la cria se le asigne la misma raza declarada
+						que la de la madre.
+						Despues de procesado el Evento, se informara el Registro (RC) asignado a cada
+						una de las crias, mediante un elemento en el nodo de resultados del evento.
+
+		<rdos>
+			<rdo>
+				<nivelErr>30</nivelErr>
+				<codigoMsg>REGASIGN</codigoMsg>
+				<info>Registro asignado para el animal con rp: CR122 es: RC 10892</info>
+				<vals>
+					<val>CR122</val>
+					<val>RC 10892</val>
+				</vals>
+			</rdo>
+		</rdos>
+
+						-->
+						<evt>
+							<serv>
+								<IDEvt>1002</IDEvt>
+								<fecha>2002-02-01T12:00:00</fecha>
+								<nuevo>
+									<servsemen>
+										<padreGen>
+											<tReg>C</tReg>
+											<nReg>4564</nReg>
+										</padreGen>
+										<tipoServ>INAR</tipoServ>
+									</servsemen>
+								</nuevo>
+							</serv>
+						</evt>
+						<!--
+						Servicio por inseminacion artificial, realizado el primero de febrero del 2002,
+						utilizando semen proveniente del toro con registro RC 4564
+						-->
+						<evt>
+						<serv>
+							<IDEvt>1003</IDEvt>
+							<fecha>2002-10-04T12:00:00</fecha>
+							<nuevo>
+							<embrion>
+								<madreGen>
+									<nReg>4531</nReg>
+								</madreGen>
+								<padreGen>
+									<sexo>M</sexo>
+									<tReg>C</tReg>
+									<nReg>12345</nReg>
+								</padreGen>
+								<dias>8</dias>
+								<idEmbrion>a12</idEmbrion>
+							</embrion>
+							</nuevo>	
+						</serv>
+						</evt>
+						<!--
+						Transferencia embrionaria realizada el 4 d eoctubre del 2002, con un embrion
+						de 8 dias de gestacion. La madre genetica del embrion es el animal RC 4531 (al
+						no informar el tipo de registro, el tipo por defecto es RC), y el padre el animal
+						RC 12345. El identificador del embrion utilizado es "a12"
+						-->
+						
+						
+						<evt>
+							<trans>
+								<IDEvt>1004</IDEvt>
+								<fecha>2003-10-04T12:00:00</fecha>
+								<propNuevo>510</propNuevo>
+								<estabNuevo>100</estabNuevo>
+								<rpNuevo>4567</rpNuevo>
+							</trans>
+						</evt>
+						<!--
+						Transferencia ocurrida el 4 de octubre del 2003,  al propietario 510 y 		
+						establecimiento 100. El nuevo RP del animal es 4567.
+						Notar que el unico elemento obligatorio aqui (ademas de los comunes a todos
+						los eventos) es el rpNuevo, por lo tanto se puede informar de una transferencia
+						entre propietarios pero sin cambiar de establecimiento, o entre establecimientos
+						pero sin cambiar de propietario simplemente omitiendo el nodo adecuado.
+						-->
+						
+						<evt>
+						<estado>
+							<IDEvt>1005</IDEvt>
+							<fecha>2003-10-04T12:00:00</fecha>
+							<estado>PV</estado>
+							<cantLactTerm>2</cantLactTerm>
+						</estado>
+						</evt>
+						<!--
+						Se informa de un evento estado para sincronizar el estado del animal en Sicel 3
+						con	el estado REAL del animal, debido a un periodo de no informacion de 		
+						eventos del animal (por ejemplo por un periodo de tambo inavilitado).
+						En el ejemplo se informa que el animal esta en Produccion y Vacio (Ver ..)  y que
+						desde el último evento informado, ya ha finalizado 2 lactancias.
+						-->
+						
+					</evts>
+					
+				</animal>
+			</anims>
+		</estab>
+	</estabs>
+</lote>

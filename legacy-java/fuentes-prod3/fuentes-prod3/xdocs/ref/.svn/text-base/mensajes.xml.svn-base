@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Codigos de Mensajes</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="sicel3, codigos, mensajes"/>
+  </head>
+  <body>
+  <section name="Codigos de Mensajes">
+  <p>
+  <table>
+  	<thead>
+  	<tr>
+  		<th>Codigo</th>
+  		<th>Descripcion</th>
+	</tr>
+  	</thead>
+  	<tbody>
+  	  		<tr>
+  			<td>2En1    </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ANIMINEX</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ANIMOK  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ANNOESDU</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ANNOEST </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>AboCorto</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>AnimErr </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>COMPRINV</td>
+  			<td>La composicion racial especificada no es valida, la suma de las razas debe ser 1, y todas las razas deben ser de la misma especie</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>CRSINSEX</td>
+  			<td>Se informo de una cria viva sin especificar su sexo</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>CriaVaci</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ECLOInv </td>
+  			<td>La eclo informante no existe en el sistema</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EDMAXFER</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EDSERVIN</td>
+  			<td>El animal no tiene la edad minima para recivir un servicio de este tipo.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EDSTORIN</td>
+  			<td>El toro no tiene la edad minima para proporcionar un servicio de este tipo.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ERRFATAL</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ESTECLO </td>
+  			<td>El establecimiento no pertenece a la eclo informante.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ESTERROR</td>
+  			<td>Numero de establecimientos que no se procesaron, al encontrar algun error.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ESTINEX </td>
+  			<td>El establecimiento no existe en el sistema.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ESTOK   </td>
+  			<td>Numero de establecimientos procesados</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EVANER  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EVANOK  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EVESTERR</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EVESTOK </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EVTNOORD</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>EVTNOPR </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>FEEVANT </td>
+  			<td>La fecha declarada del  evento no es valida por ser anterior a la fecha del ultimo evento del animal.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>FEEVINV </td>
+  			<td>La fecha declarada del evento no es valida por ser anterior a la fecha de envio del lote.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>FELOINV </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>FinPre  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>IDORDINC</td>
+  			<td>El id del evento ordeñe suministrado no es válido</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>IEDPREMB</td>
+  			<td>La hembra no tiene suficiente edad para producir embriones.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>IMPESPAN</td>
+  			<td>Imposible resolver la especie del animal, se debe declarar la raza, o especificar al menos uno de los padres</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>INCRMUER</td>
+  			<td>No se puede inscribir una cria muerta.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>INSHEMBR</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>INSMACHO</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>InteTran</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>LAREXCOR</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>LOTEREP </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>MEDERR  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>MEOBJREP</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NECLO   </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NESTAB  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOCOMPAL</td>
+  			<td>No se acepta que se pase la composicion racial en el evento alta</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOCRPADR</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NODECLAL</td>
+  			<td>No se acepta que se especifique una raza declarada en el evento alta.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOESSERV</td>
+  			<td>Se requiere que se especifique la fecha de servicio para cada evento reproduccion.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOFSERPA</td>
+  			<td>No se acepta que se especifique la fecha del servicio en el evento reproduccion.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOHEMBRA</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOMACHO </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NORAMAPA</td>
+  			<td>No se acepta que se especifique usar la raza de la madre.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NOTIMPL </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NoEliEv </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NoEliPro</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NoLote  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NoRepro </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>NoSvc   </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PASINSER</td>
+  			<td>No se encontro servicio para esta reproduccion.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PEPARINV</td>
+  			<td>Parto cercano a otro parto o aborto.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PRESTMAP</td>
+  			<td>El propietario del establecimiento es distinto al propietario de la madre de parto. Se establece como propietariode la cria el propio del establecimiento.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PRODIESP</td>
+  			<td>El progenitor del animal no puede ser de otra especie</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PROPINEX</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PRSINORD</td>
+  			<td>No se ha informado de un ordeñe para este establecimiento en esta fecha.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PrMC    </td>
+  			<td>Metodo de control inexistente</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PrNumOrd</td>
+  			<td>NumOrdenies fuera de rango</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PrObj   </td>
+  			<td>Objeto de medicion de produccion inexistente</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>PrTMue  </td>
+  			<td>Tipo de Muestreo inexistente</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>ProdSeca</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>RADESCN1</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>RAMASEVA</td>
+  			<td>No se puede especificar usar raza madre, porque se conoce el padre para estas crias.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>RAZAINEX</td>
+  			<td>La raza no existe en los registros del sistema.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>REGASIGN</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>RPNOMACH</td>
+  			<td>El RP informado del animal no coincide con el de los registros de Sicel3.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>RPNOUNI </td>
+  			<td>Ya existe otro animal, con este RP en el establecimiento.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVDESC</td>
+  			<td>Se descarto otro servicio, que tambien pudo haber sido el causante del parto.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVENDE</td>
+  			<td>El servicio esta dentro del periodo de descanzo posterior a un parto</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVINEX</td>
+  			<td>No existe ningun servicio para este animal en la fecha especificada</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVINV </td>
+  			<td>El servicio especificado no se encuentra dentro del rango valido para este evento reproduccion.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVNOAP</td>
+  			<td>Existe otro servicio que esta mas cerca del promedio de dias de gestacion</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVNOEP</td>
+  			<td>Los animales involucrados en un servicio de tipo Corral o Campo deben pertenecer al mismo propietario o estar en el mismo establecimiento</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVSOPD</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SERVUSAD</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>SvcPre  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>TIREGINX</td>
+  			<td>El tipo de registro no existe en el sistema.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>TRANIMPL</td>
+  			<td>Se realizo una transferencia implicita.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>TRAN_NO </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>VALNOATR</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>VacPre  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>XmlInv  </td>
+  			<td>El formato del archivo a procesar no es válido.</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>YaBaja  </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>YaEstado</td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  		<tr>
+  			<td>YaSvc   </td>
+  			<td>*Sin descripcion*</td>
+  		</tr>
+  	
+  	  	</tbody>
+  	</table>
+  	</p>
+  	<p>
+  	Generado el 8/10/05
+  	</p>
+  	</section>
+  </body>
+ </document>

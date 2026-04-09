@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Compras de Semen</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento, general, regla"/>
+  </head>
+  <body>
+    <section name="Información General sobre Eventos en Sicel3">
+    <p>
+    En esta sección presentaremos información necesaria para comprender el
+    modelo de funcionamiento de los eventos en Sicel3.
+    </p>
+    <p>
+    Se introducirán conceptos como los <a href="estados_animal.html">posibles estados
+    de un animal</a>, <a href="matriz_transicion.html"> el pasaje de un estado a
+    otro</a>, etc.
+    </p>
+    <p>
+    Luego, se descutirá cada tipo de evento en forma particular.
+    </p>
+    <p>
+    Para conocer la sintaxis que debe emplearse para enviar eventos y recibir los
+	resultados, véase la sección <a href="../../procesamiento/xsd/index.html"> XSD </a>, etc.
+    </p>
+	
+    </section>
+  </body>
+</document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Modelo general de Procesamiento</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento, lote,procesamiento,eclo,pscl"/>
+  </head>
+  <body>
+    <section name="Procesamiento de ventos">
+    <p>
+	Los eventos enviados por las ECLOs se procesan en ACHA por el SICEL bajo las reglas mencionadas en esta documentación. Como resultado del proceso se entregan fichas en papel y un archivo comprimido (enviado por email) que a su vez contiene un archivo XML aumentado con los nodos de resultado, un archivo XML simple con los animales afectados por el proceso, un resumen del proceso en PDF, y por último un detalle de mensajes (errores, rechazos, advertencias o información adicional).
+	Si bien existen reglamentaciones para cada caso, se puede pensar que un envio mensual de novedades con una demora de una semana para procesamiento y entrega, logrará mantener al sistema con el flujo de datos necesario para evitar problemas al comprobar reglas con dependencias. 
+    </p>
+    </section>
+  </body>
+</document>

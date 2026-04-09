@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Manejo del esquema XSD</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="xsd, schema,xml,lotes"/>
+  </head>
+  <body>
+    <section name="Motivaciones">
+    <p> El objeto de esta especificación cambia, tanto por los cambios propios en 
+				el dominio, por normativas de ACHA, nacionales o internacionales, o bien 
+				por desarrollos técnicos y tecnológicos.</p>
+		<p> Es posible y deseable adelantarse a los cambios venideros razonables,
+				recurriendo a técnicas como la parametrización. Sin embargo, es
+				imposible pensar en congelar una especificacion de un objeto que cambia.</p>
+		<p>	Ya que no se puede fijar una version, se pretende fijar cual es la 
+				política para desarrollar, lanzar y administrar versiones de la especificacion 
+				de datos de entrada al Sicel para los PSCL.</p>
+    </section>
+  </body>
+</document>

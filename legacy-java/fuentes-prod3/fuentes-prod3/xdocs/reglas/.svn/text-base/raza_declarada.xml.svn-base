@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Composición Racial</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="composicion racial,raza declarada, raza calculada, regla,raza"/>
+  </head>
+  <body>
+    <section name="Raza Declarada">
+    <p>
+    Como se dijo en la <a href="comp_racial.html"> explicación de la composición racial</a>, 
+    Sicel3 lleva lo que denominamos "Raza Calculada" de cada animal.
+    </p>
+    <p>
+    Sin embargo, se puede, por ejemplo porque un controlador vio al animal y certifica que <b>es
+	Holando</b> especificar una raza declarada distinta a la calculada por Sicel3.
+	</p>
+	<p>
+	Si se informa la raza declarada, esta será la raza oficial del animal,  a cualquier propósito
+	en cuanto a A.C.H.A. se refiere. Como se dijo, las fichas, reportes, y demas documentos
+	utilizan la raza declarada en lugar de la calculada si esta está presente.
+	</p>
+    
+    </section>
+  </body>
+</document>
+

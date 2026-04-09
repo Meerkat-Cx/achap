@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ACHA/SICELV3/!svn/ver/5517/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/thread
+END
+ProcessThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/4023/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/thread/ProcessThread.java
+END
+RecalcularLactanciasThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/4893/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/thread/RecalcularLactanciasThread.java
+END
+RecalcularComposicionMasivaThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/ACHA/SICELV3/!svn/ver/5517/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/thread/RecalcularComposicionMasivaThread.java
+END

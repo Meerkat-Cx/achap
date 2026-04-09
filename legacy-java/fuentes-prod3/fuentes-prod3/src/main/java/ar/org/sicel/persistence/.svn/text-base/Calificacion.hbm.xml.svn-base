@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Calificacion"
+        table="Ca_Calif"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_ca_calif</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Calificacion.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="boleta"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="boleta" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="fecha"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="fecha" 
+                not-null="true"
+            />
+        </property>
+		
+        <property
+            name="puntaje"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="puntaje" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="numeroLactancia"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="numLact" 
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="comentarios"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="comentarios"
+        />
+
+        <property
+            name="inicioLactancia"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="iniLact" 
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="especial"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="esEspecial"
+        />
+
+        <property
+            name="catPuntaje"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="catPuntaje" 
+                length="2"
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="calificador"
+            class="ar.org.sicel.persistence.Calificador"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Calidor"
+            column="calificador"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="establecimiento"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Estab"
+            column="establecimiento"
+            not-null="false"
+        />
+
+        <many-to-one
+            name="estancia"
+            class="ar.org.sicel.persistence.Estancia"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Estan"
+            column="estancia"
+            not-null="false"
+        />
+
+        <many-to-one
+            name="dataEntry"
+            class="ar.org.sicel.persistence.Usuario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Data_Ent"
+            column="data_entry"
+            not-null="false"
+        />
+
+        <many-to-one
+            name="modeloCalificacion"
+            class="ar.org.sicel.persistence.ModeloCalificacion"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Modelo"
+            column="modelo"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="animal"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Animal"
+            column="animal"
+            not-null="true"
+        />
+
+        <map
+            name="calificacionDePartes"
+            table="Ca_Parte"
+            lazy="true"
+            sort="unsorted"
+            cascade="none"
+        >
+
+            <key
+                column="calificacion"
+                  foreign-key="FK_CaPa_cali"
+            >
+            </key>
+
+            <index-many-to-many
+                class="ar.org.sicel.persistence.ParteCalificacion"
+                column="parte"
+                foreign-key="FK_CaPa_mdl"
+            />
+
+            <composite-element
+                class="ar.org.sicel.persistence.CatPuntajeValor"
+            >
+        <property
+            name="categoriaPuntaje"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="cat_puntaje" 
+            />
+        </property>
+
+        <property
+            name="valor"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="valor" 
+                not-null="true"
+            />
+        </property>
+
+            </composite-element>
+
+        </map>
+
+        <map
+            name="calificacionDeDefectos"
+            table="Ca_Defecto"
+            lazy="true"
+            sort="unsorted"
+            cascade="none"
+        >
+
+            <key
+                column="calificacion"
+                  foreign-key="FK_Cade_cali"
+            >
+            </key>
+
+            <index-many-to-many
+                class="ar.org.sicel.persistence.DefectoCalificacion"
+                column="defecto" foreign-key="FK_Cali_cade"
+            />
+
+            <element
+                column="valor"
+                type="integer"
+                not-null="true"
+                unique="false"
+            />
+
+        </map>
+
+        <map
+            name="calificacionDeCaracteristicas"
+            table="Ca_Carac"
+            lazy="true"
+            sort="unsorted"
+            cascade="none"
+        >
+
+            <key
+                column="calificacion"
+                  foreign-key="FK_Cacr_cali"
+            >
+            </key>
+
+            <index-many-to-many
+                class="ar.org.sicel.persistence.CaracteristicaCalificacion"
+                column="caracteristica" foreign-key="FK_Cali_Cacr"
+            />
+
+            <element
+                column="valor"
+                type="integer"
+                not-null="true"
+                unique="false"
+            />
+
+        </map>
+        <many-to-one
+            name="eclo"
+            class="ar.org.sicel.persistence.Eclo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Eclo"
+            column="eclo"
+        />
+        <many-to-one
+            name="propietario"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cali_Prop"
+            column="propietario"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Calificacion.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

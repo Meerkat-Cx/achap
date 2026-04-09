@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Evento Secada</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,secada,estado,produccion"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>
+			    Mediante este evento se informa de la secada de un animal que se encontraba
+			    hasta este momento en producción.
+		</p>
+		<p>
+			Al informar de este echo, se informa también el motivo por el cual se realizó, por ejemplo
+			motivos sanitarios, motivos reproductivos, etc. 
+		</p>
+		</section>
+		<section name="Requisitos Previos">
+			<p>	El animal debe estar en alguno de los estados de producción para poder informar un evento
+					de esta clase.
+			</p>
+	 	</section>
+ 		<section name="Informacion Relacionada">
+ 		<ul>
+ 			<li><a href="grl/estados_animal.html">Estados</a> de un animal </li>
+ 			<li>	El evento secada puede tener influencia en la delimitación de las<a href="../reglas/lactancias.htm">
+					lactancias</a></li>
+ 		
+ 		</ul>
+ 		</section>
+	</body>
+</document>

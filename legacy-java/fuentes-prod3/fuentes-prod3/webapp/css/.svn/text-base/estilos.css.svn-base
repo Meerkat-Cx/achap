@@ -1,0 +1,97 @@
+/**************************************
+		Controles
+***************************************/
+
+.boton{
+ 	font-family: Verdana, Arial, sans-serif;  
+ 	font-size: 12px;  
+ 	font-weight: bold;    
+ 	color: #325D63;
+ 	border-color: #325D63;
+ 	border-style: solid;  
+ 	border-width: 2px; 
+ 	padding: 3px;
+ 	cursor: pointer;
+ 	background-color: #F2F2F2;
+}
+
+.mensaje{
+	/*padding: 5px;*/
+}
+
+.textBox{
+	border: 1px solid;
+	border-color: #345F63;
+ 	background-color:#F9F8F0;
+	font-size: 12px;
+	font-family: Verdana, Arial, sans-serif;   	
+}
+
+.tabla{
+	/*table-layout: fixed;*/
+	border-collapse: collapse;
+	border: 1px solid #7b99b4;
+}
+
+.tabla td{
+	padding: 10px;
+	border: 1px solid #7b99b4;
+	text-align: center;
+	background: #eff9f9;
+}
+
+.tabla tr{
+	border: 1px solid #7b99b4;
+}
+
+.tabla th{
+	color: white;
+	background: #7b99b4;
+	padding-left: 5px;
+	padding-right: 10px;
+	/*border: 1px solid white;*/
+	font-family: Verdada, Arial;
+	font-weight: normal;
+}
+
+
+
+/**************************************
+		Borde
+***************************************/	
+
+.homeDescription
+{
+	-moz-border-radius: 9px;
+	border: solid 1px #7b99b4;
+	background-color: #edf1f4;
+	margin-top: 0;
+	margin-bottom: 15px;
+	/*margin-left: 15%;
+	margin-right: 15%;*/
+}
+
+.homeDescription DIV
+{
+	padding: 5px;
+}
+
+.homeDescription .indexTitle
+{
+	color: White;
+	background-color: #7b99b4;
+	-moz-border-radius: 8px 8px 0 0;
+	color: White;
+	font-weight: bold;
+}
+
+.indexContent
+{
+	margin: 30px;
+}
+
+
+.indexTitle
+{
+	text-align:center;
+}

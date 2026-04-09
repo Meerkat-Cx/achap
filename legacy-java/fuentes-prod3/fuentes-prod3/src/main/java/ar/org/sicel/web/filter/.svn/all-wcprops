@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/web/filter
+END
+HibernateFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/web/filter/HibernateFilter.java
+END
+SecurityFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/web/filter/SecurityFilter.java
+END
+HttpServletRequestWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/web/filter/HttpServletRequestWrapper.java
+END

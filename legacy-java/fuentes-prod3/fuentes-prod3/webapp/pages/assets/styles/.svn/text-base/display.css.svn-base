@@ -1,0 +1,299 @@
+
+.displyTagCaption {
+	color:#FFF;
+	background:#00F;
+	font-weight:bold;
+	padding:1px 10px;
+}
+
+
+th.sorted {
+    background-color: orange;
+}
+
+
+th.sorted a, th.sortable a {
+	background-position: right;
+	display: block;
+	width: 100%;
+}
+
+th.sortable a {
+	background-image: url(../images/arrow_off.png);
+}
+
+th.order1 a {
+	background-image: url(../images/arrow_down.png);
+}
+
+th.order2 a {
+	background-image: url(../images/arrow_up.png);
+}
+
+tr.odd {
+  	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	background-color: #F7F9F0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+	height: 18px;
+}
+
+tr.tableRowEven, tr.even {
+  font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	background-color: #F7F9F0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+
+}
+
+table.its {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #529b28;
+	font-weight: bold;
+	width: 95%;
+	border: 1px solid #CCCCCC;
+
+}
+
+table.its thead tr {
+  background-color: #eff3e3;
+}
+
+table.its tr.even {
+  	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	background-color: #F7F9F0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+	height: 18px;
+}
+
+table.its tr.even a {
+ 	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	background-color: #F7F9F0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+	height: 18px;
+}
+
+table.its2 {
+	border: 1px solid #666;
+	text-align: left;
+	margin: 20px 0 20px 0;
+	vertical-align: middle;
+}
+
+table.its2 thead tr {
+  background-color: #69c;
+}
+
+table.its2 tr.even {
+  background-color: #def;
+}
+
+table.mars {
+	border: 1px solid #666;
+	text-align: center;
+	margin: 20px 0 20px 0;
+	vertical-align: middle;
+}
+
+table.mars thead tr {
+  background-color: #9c9;
+}
+table.mars tr.even {
+  background-color: #ccb;
+}
+table.mars tr.odd {
+  background-color: #eec;
+}
+
+table.simple {
+	border: 1px solid #666;
+	text-align: center;
+	margin: 20px 0 20px 0;
+	vertical-align: middle;
+	border-collapse: collapse;
+}
+
+table.simple thead tr {
+  background-color: #eee;
+}
+table.simple tr.even {
+  	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	background-color: #F7F9F0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+}
+
+table.simple {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+table.simple td,table.simple th{
+	border: 1px solid #ccc;
+}
+
+table.simple td.textRed {
+    color: #b11;
+}
+
+table.report {
+	border: 1px solid #666;
+	text-align: center;
+	margin: 20px 0 20px 0;
+	vertical-align: middle;
+}
+
+table.report td, table.report th{
+	font:         menu;
+}
+
+table.report th{
+	background:   buttonface;
+	border-width: 1px;
+	border-style: solid;
+	border-color: threedhighlight threedshadow threedshadow threedhighlight;
+}
+
+table.report idcol {
+	background: buttonface;
+}
+
+table.report tr.even{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+	background-color: #F7F9F0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	font-weight: normal;
+}
+
+table.mark {
+	border: 1px solid #666;
+	text-align: center;
+	margin: 20px 0 20px 0;
+	vertical-align: middle;
+}
+
+table.mark td.tableCellError {
+	background-color: #d00;
+	color: #fff;
+}
+
+table.sublist {
+	margin: 0 0 0 0;
+	width: 100%;
+}
+
+table.sublist td, table.sublist th {
+	width: 100%;
+}
+
+span.pagebanner {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin-top: 10px;
+	margin-left: 25px;
+	display:block;
+	border-bottom: none;
+}
+
+span.pagelinks {
+	background-color: white;
+	padding: 2px 4px 2px 4px;
+	display:block;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #529b28;
+	font-weight: bold;
+	width: 100%;
+	
+}
+.Titulo {
+	font-family: Tahoma;
+	font-size: 14px;
+	color: #424141;
+	font-weight: bold;
+}
+.bordeGris {
+
+	border: 1px solid #CCCCCC;
+}

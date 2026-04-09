@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.EvtOrdenieAnimal"
+        table="EV_Ordenie_animal"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_evt_ordenie_animal</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-EvtOrdenieAnimal.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <map
+            name="mediciones"
+            table="Ev_Mediciones"
+            lazy="true"
+            sort="unsorted"
+            cascade="all"
+        >
+
+            <key
+                column="produccion"
+                  foreign-key="FK_EvMedicion_EvProduc"
+            >
+            </key>
+
+            <index
+                column="objeto"
+                type="string"
+                length="30"
+            />
+
+            <element
+                column="valor"
+                type="float"
+                not-null="true"
+                unique="false"
+            />
+
+        </map>
+
+        <property
+            name="causaRechazo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="causa_rechazo"
+        />
+
+
+        <property
+            name="esRechazo"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="es_rechazo"
+        />
+
+        <property
+            name="horaIniOrdenie"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        /> 
+
+        <property
+            name="horaFinOrdenie"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        /> 
+
+        <many-to-one
+            name="controlAnimal"
+            class="ar.org.sicel.persistence.EvtControlAnimal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EV_ORDENIE_ANIMAL"
+            column="evt_control"
+            not-null="true"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-EvtOrdenieAnimal.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

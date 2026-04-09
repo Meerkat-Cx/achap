@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Transicion"
+        table="An_Transicion"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_an_animal</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Transicion.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="finalizaLactancia"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="finalizaLactancia" 
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="iniciaLactancia"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="iniciaLactancia" 
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="estadoDestino"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="estadoDestino" 
+                length="32"
+            />
+        </property>
+
+        <property
+            name="estadoOrigen"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="estadoOrigen" 
+                length="32"
+            />
+        </property>
+
+        <property
+            name="evento"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="evento" 
+                length="32"
+            />
+        </property>
+
+        <property
+            name="nivelError"
+            type="java.lang.Byte"
+            update="true"
+            insert="true"
+            column="nivelError"
+        />
+
+        <many-to-one
+            name="codigoMensaje"
+            class="ar.org.sicel.persistence.ProcCodMsg"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            column="codMsg"
+            foreign-key="FK_AN_TRAN_PR_CODMSG"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Transicion.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

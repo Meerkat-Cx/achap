@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Informacion sobre el XSD</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="lote,xsd, procesamiento"/>
+  </head>
+  <body>
+    <section name="Sobre el XSD">
+    <p>
+	En esta sección se presentara información relacionada a la especificación del formato de los archivos de lotes, 
+	el schema xsd.
+    </p>
+    <p>
+    Introduciremos como es el mecanismo de versionado del xsd, y presentaremos ejemplos de como
+    informar correctamente distintos tipos de evento utilizando este formato.
+    </p>
+    </section>
+  </body>
+</document>

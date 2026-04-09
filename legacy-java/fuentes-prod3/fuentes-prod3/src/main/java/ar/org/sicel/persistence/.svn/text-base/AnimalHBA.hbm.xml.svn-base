@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.AnimalHBA"
+        table="Machos_HBA"
+        lazy="true" mutable="false"
+    >
+    <id name="id" column="id" type="java.lang.Long" >
+			<generator class="assigned" />
+		</id>
+    
+	<property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+            />
+        </property>
+        <property
+            name="raza"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="razaDeclara" 
+                length="4"
+            />
+        </property>
+
+       <property
+            name="rp"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="rp" 
+                length="12"
+            />
+        </property>
+		
+        
+        <property
+            name="fechaNac"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fnac"
+        />
+       
+        <property
+            name="apodo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="apdo"
+        />
+        <property
+            name="numero"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="numero"
+        />
+        <property
+            name="propietario"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            column="propietario"
+        />
+        </class>
+
+</hibernate-mapping>

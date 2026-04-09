@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Animal"
+        table="An_Animal"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_an_animal</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Animal.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <discriminator
+            column="esHembra"
+            type="boolean"
+        />
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+            />
+        </property>
+
+        <property
+            name="categoria"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="categoria" 
+                length="4"
+            />
+        </property>
+
+
+        <property
+            name="RP"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="rP" 
+                length="12"
+            />
+        </property>
+		<property
+            name="rpSenasa"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="RP_SENASA" 
+                length="12"
+            />
+        </property>
+        <property
+            name="codigoVerificador"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+            	name="CODIGO_VERIF_SENASA"
+            	not-null="false"            	
+        	/>
+        </property>
+        <property
+            name="fechaNac"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fnac"
+        />
+        
+        <property
+            name="nroLactancia"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+            	name="nroLactancia"
+            	not-null="false"            	
+        	/>
+        </property> 
+
+<!--        <property
+            name="esActivo"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esActivo" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="esBaja"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esBaja" 
+                not-null="true"
+            />
+        </property>-->
+
+        <property
+            name="categoriaV3"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="categoriaV3" 
+                length="4"
+            />
+        </property>
+
+ <property
+            name="taraG"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="taraG" 
+                length="45"
+            />
+        </property>
+
+
+        <property
+            name="SRAFesb"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="SRAFesb"
+        />
+
+        <property
+            name="asoc"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="dadorSemen"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dado"
+        />
+
+        <property
+            name="numeroTransf"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="tran"
+        />
+
+        <property
+            name="numeroAnalADN"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="anls"
+        />
+
+        <property
+            name="donante"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dona"
+        />
+       
+        <property
+            name="mellizo"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="mell"
+        />
+        
+       <property
+            name="transferencia"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="trns"
+        />
+        
+        <property
+            name="tipoServicio"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="tserv"
+        />
+        
+       <property
+            name="asop"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        />
+        
+       <property
+            name="asom"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="fechaUltObs"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fobs"
+        />
+
+        <property
+            name="fechaTransf"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="ftrf"
+        />
+        
+        <property
+            name="fechaServicio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fser"
+        />
+        
+        <property
+            name="apodo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="apdo"
+        />
+        
+        <property
+            name="rpti"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="rpti"
+        />
+         
+
+       <property
+            name="esSinonimo"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="essinonimo"
+        />
+        
+
+        <many-to-one
+            name="foto"
+            class="ar.org.sicel.persistence.Foto"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_anim_foto"
+            column="foto"
+            not-null="false"
+        />
+
+        <component
+            name="composicionRacial"
+            class="ar.org.sicel.persistence.ComposicionRacial"
+        >
+
+        <parent
+            name="animal"
+        />
+
+        <many-to-one
+            name="razaDeclarada"
+            class="ar.org.sicel.persistence.Raza"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_RazaDecla"
+            column="razaDeclara"
+            not-null="false"
+        />
+
+        <map
+            name="razas"
+            table="An_Comp_Racial"
+            lazy="true"
+            sort="unsorted"
+            cascade="none"
+        >
+
+            <key
+                column="animal"
+                  foreign-key="FK_Cora_Anim"
+            >
+            </key>
+
+            <index-many-to-many
+                class="ar.org.sicel.persistence.Raza"
+                column="raza" foreign-key="FK_CORA_RAZA"
+            />
+
+            <element
+                column="valor"
+                type="float"
+                not-null="true"
+                unique="false"
+            />
+
+        </map>
+
+        </component>
+
+        <many-to-one
+            name="regOrigen"
+            class="ar.org.sicel.persistence.Registro"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_RegOri"
+        >
+            <column
+                name="regOri"
+                unique-key="UN_An_Anim_regOrigen"
+                not-null="false"
+            />
+        </many-to-one>
+
+        <many-to-one
+            name="regIdentificador"
+            class="ar.org.sicel.persistence.Registro"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_RegId" 
+        >
+            <column
+                name="regId"
+                unique-key="UN_An_Anim_regIdentificador"
+                not-null="false"
+            />
+        </many-to-one>
+
+        <set
+            name="registros"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="animal"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Registro"
+            />
+
+        </set>
+
+        <many-to-one
+            name="padre"
+            class="ar.org.sicel.persistence.Macho"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Padre"
+            column="padre"
+        />
+
+       
+         <many-to-one
+            name="madreGenetica"
+            class="ar.org.sicel.persistence.Hembra"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+			foreign-key="FK_Anim_MadreGen"
+          	column="madreGen"
+             
+        />
+        
+
+        <many-to-one
+            name="madreParto"
+            class="ar.org.sicel.persistence.Hembra"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_MadreParto"
+            column="madreParto"
+        />
+
+        <many-to-one
+            name="propietario"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Prop"
+            column="propietario"
+        />
+
+        <many-to-one
+            name="propietarioCriador"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Prop_Criador"
+            column="prop_Criador"
+        />
+
+        <many-to-one
+            name="establecimiento"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Estab"
+            column="estab"
+        />
+         <many-to-one
+            name="estancia"
+            class="ar.org.sicel.persistence.Estancia"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Estancia"
+            column="estancia"
+        />
+		<many-to-one
+            name="establecimientoCriador"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Estab_Criador"
+            column="estab_Criador"
+        />
+        <set
+            name="calificacions"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="animal"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Calificacion"
+            />
+
+        </set>
+
+        <set
+            name="evtAnimals"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="ar.org.sicel.persistence.EventosPorFechaYTipo"
+        >
+
+            <key
+                column="animal"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtAnimal"
+            />
+
+        </set>
+
+        <set
+            name="evtClons"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="donante"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtClon"
+            />
+
+        </set>
+
+	 	<set
+            name="fichasAnimal"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+        	<key
+                column="animal_id"
+            >            
+            </key>            
+            <one-to-many
+                  class="ar.org.sicel.persistence.FichaAnimalPendiente"
+            />
+
+        </set>
+        <set
+            name="procsAnimal"
+            lazy="false"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+        	<key
+                column="animal"
+            >            
+            </key>            
+            <one-to-many
+                  class="ar.org.sicel.persistence.ProcAnimal"
+            />
+
+        </set>
+
+
+		<set
+            name="comentarios"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            order-by="fecha desc"
+        >
+
+            <key
+                column="animal"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.AnimalComentario"
+            />
+
+        </set>
+		
+		
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Animal.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+        <subclass
+            name="ar.org.sicel.persistence.Macho"
+            lazy="true"
+            discriminator-value="false"
+        >
+
+        <set
+            name="hijosGeneticos"
+            lazy="true"
+            inverse="true"
+            cascade="save-update"
+            sort="unsorted"
+        >
+
+            <key
+                column="padre"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Animal"
+            />
+
+        </set>
+
+        <set
+       
+            
+            name="evtNuevoInds"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="ar.org.sicel.persistence.EventosPorFechaYTipo"
+        >
+
+            <key
+                column="padreGen"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtNuevoInd"
+            />
+
+        </set>
+
+        <set
+            name="evtSemens"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="donante"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtSemen"
+            />
+
+        </set>
+
+	    <!--
+            	To add non XDoclet property mappings, create a file named
+                hibernate-properties-Macho.xml
+		containing the additional properties and place it in your merge dir.
+	    -->
+
+        </subclass>
+        <subclass
+            name="ar.org.sicel.persistence.Hembra"
+            lazy="true"
+            discriminator-value="true"
+        >
+
+        <set
+            name="hijosGeneticos"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="madreGen"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Animal"
+            />
+
+        </set>
+
+        <set
+            name="hijosParto"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="madreParto"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Animal"
+            />
+
+        </set>
+
+        <set
+            name="evtTransEmbs"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="madreGen"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtTransEmb"
+            />
+
+        </set>
+
+	    <!--
+            	To add non XDoclet property mappings, create a file named
+                hibernate-properties-Hembra.xml
+		containing the additional properties and place it in your merge dir.
+	    -->
+
+        </subclass>
+
+    </class>
+
+</hibernate-mapping>

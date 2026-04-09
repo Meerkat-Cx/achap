@@ -1,0 +1,89 @@
+10
+
+dir
+5751
+http://svn.ar.most/ACHA/SICELV3/branches/sinmaven/fuentes-prod3/webapp
+http://svn.ar.most/ACHA/SICELV3
+
+
+
+2012-10-29T19:06:28.279493Z
+5744
+jivars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6b5e5f42-0b1a-0410-b71d-d2d83d42d337
+
+pages
+dir
+
+META-INF
+dir
+
+index.jsp
+file
+
+
+
+
+2012-11-01T18:00:04.184508Z
+34675f8683926558c4e12a593fcf9459
+2006-10-23T18:54:52.633431Z
+309
+kjacobsen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+292
+
+WEB-INF
+dir
+
+css
+dir
+
+calendar
+dir
+
+img
+dir
+
+cargamasiva
+dir
+
+reports
+dir
+
+xsd
+dir
+

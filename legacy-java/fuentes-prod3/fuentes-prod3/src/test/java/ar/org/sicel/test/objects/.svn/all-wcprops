@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects
+END
+TestAtributoVariable.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestAtributoVariable.java
+END
+TestLactancia.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestLactancia.java
+END
+TestmatrizTransicion.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestmatrizTransicion.java
+END
+TestLactanciaCerrada.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestLactanciaCerrada.java
+END
+TestLactancias.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestLactancias.java
+END
+TestUnicidadRP.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestUnicidadRP.java
+END
+TestLactanciasAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestLactanciasAnimal.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/AllTests.java
+END
+TestDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestDate.java
+END
+TestComposicionRacial.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestComposicionRacial.java
+END
+TestDateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/objects/TestDateUtils.java
+END

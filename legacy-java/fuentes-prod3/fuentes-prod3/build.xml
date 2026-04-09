@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="acha" default="compile">
+
+	<property file="build.properties" />
+	<path id="classpath">
+		<pathelement location="${compile.outdir}" />
+		<fileset dir="${devlib.dir}" includes="*.jar" />
+		<fileset dir="${web.dir}/WEB-INF/lib" includes="*.jar" />
+	</path>
+
+	<path id="srcpath">
+		<pathelement location="${src.dir}/java" />
+	</path>
+
+	<target name="init">
+		<tstamp>
+			<format property="touch.time" pattern="yyyy/MM/dd hh:mm aa" />
+		</tstamp>
+	</target>
+
+	<target name="compile" depends="init">
+			<mkdir dir="${compile.outdir}" />
+			<javac destdir="${compile.outdir}" debug="on" source="1.5" target="1.5" encoding="iso-8859-1">
+				<classpath refid="classpath" />
+				<src refid="srcpath" />
+			</javac>
+			<copy todir="${compile.outdir}">
+				<fileset dir="${src.dir}/java" includes="**/*.properties, **/*.xml" />
+				<fileset dir="${src.dir}/config" includes="**/*.properties, **/*.xml" />
+			</copy>
+		</target>
+
+	<target name="format" depends="compile" unless="disableJalopy">
+		<!--         <taskdef name="jalopy"
+                 classname="de.hunsicker.jalopy.plugin.ant.AntPlugin">
+            <classpath>
+                <fileset dir="${lib.dir}/ant/jalopy/">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+        </taskdef>
+        <jalopy loglevel="ERROR" threads="3" history="file"
+                historymethod="adler32" convention="jalopy.xml">
+            <fileset dir="${src.dir.utilidades}">
+                <include name="**/*.java"/>
+            </fileset>
+            <fileset dir="${src.dir.model}">
+                <include name="**/*.java"/>
+            </fileset>
+            <fileset dir="${src.dir.model}">
+                <include name="**/services/*.java"/>
+            </fileset>
+            <fileset dir="${src.dir.viewcontroller}">
+                <include name="**/*.java"/>
+            </fileset>
+        </jalopy>
+ -->
+	</target>
+
+	<target name="war" depends="rebuild">
+		<mkdir dir="${web.outdir}" />
+	<!--	<filter filtersfile="${conf.dir}/${deploy}" />
+		<copy todir="${compile.outdir}" filtering="true" overwrite="true">
+			<fileset dir="${conf.dir}/res" />
+		</copy>
+		-->
+		<!--      <copy file="changelog.txt" todir="${web.outdir}" overwrite="true"/> -->
+		<war warfile="${web.outdir}/sicel3.war" webxml="${web.dir}/WEB-INF/web.xml">
+			<fileset dir="${web.dir}" includes="**" excludes="WEB-INF/web.xml,
+                          WEB-INF/lib/*.jar,reports/excel/*.xls" />
+			<classes dir="${compile.outdir}" />
+			<lib dir="${web.dir}/WEB-INF/lib" />
+		</war>
+	</target>
+
+	<target name="javadoc" depends="init">
+		<mkdir dir="${javadoc.outdir}" />
+		<javadoc sourcepathref="srcpath" destdir="${javadoc.outdir}" classpathref="classpath" author="true" version="true" private="true" use="true" packagenames="ar.com.tsoluciones.*">
+		</javadoc>
+	</target>
+
+	<target name="clean">
+		<delete dir="${compile.outdir}" />
+		<delete dir="${javadoc.outdir}" />
+		<delete dir="${web.outdir}" />
+	</target>
+
+	<target name="make" depends="compile,format" />
+
+	<target name="rebuild" depends="clean,compile,format" />
+
+	<target name="all" depends="compile,format,javadoc" />
+
+</project>

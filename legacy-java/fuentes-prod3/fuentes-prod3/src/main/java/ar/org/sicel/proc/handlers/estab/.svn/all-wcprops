@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/5618/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/estab
+END
+HandlerEvtOrdenie.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/4388/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/estab/HandlerEvtOrdenie.java
+END
+HandlerEvtSemen.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/estab/HandlerEvtSemen.java
+END
+HandlerBajaEvento.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/4641/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/estab/HandlerBajaEvento.java
+END
+HandlerEvtAlta.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/5618/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/estab/HandlerEvtAlta.java
+END

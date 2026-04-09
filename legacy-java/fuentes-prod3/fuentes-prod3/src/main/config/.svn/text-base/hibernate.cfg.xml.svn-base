@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!-- Generated file - Do not edit! -->
+
+<hibernate-configuration>
+
+	<!-- a SessionFactory instance listed as /jndi/name -->
+	<session-factory>
+
+		<!-- properties -->
+		<property name="show_sql">false</property>
+ 	 	<property name="hbm2ddl.auto">validate</property> 
+		 <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="connection.datasource">java:/comp/env/jdbc/AchaSicel</property>
+		
+		<!-- mapping files -->
+		<mapping resource="ar/org/sicel/persistence/AnimalSinonimo.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/AnimalHBA.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Animal.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Registro.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/TipoRegistro.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/FichaAnimalPendiente.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Raza.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/AnimalComentario.hbm.xml"/> 
+		
+		<mapping resource="ar/org/sicel/persistence/Funcion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Rol.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Usuario.hbm.xml"/>
+		
+		<mapping resource="ar/org/sicel/persistence/CentroDeComputo.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Sistema.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Contacto.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/PropietarioExpd.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Ubicacion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/LogContacto.hbm.xml"/>
+		
+		
+		<mapping resource="ar/org/sicel/persistence/ProcEstablecimiento.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ProcProces.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ProcLote.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ProcCodMsg.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ProcEvt.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ProcAnimal.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ProcMsg.hbm.xml"/>
+		
+		<mapping resource="ar/org/sicel/persistence/Evento.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/EvtOrdenieAnimal.hbm.xml"/>
+		
+		<mapping resource="ar/org/sicel/persistence/Especie.hbm.xml"/>
+		 
+		
+		
+		<mapping resource="ar/org/sicel/persistence/Atributo.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Valor.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/AtrVariables.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/Configuracion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ValorAdmAtr.hbm.xml"/>
+		
+		
+		<mapping resource="ar/org/sicel/persistence/Calificacion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ModeloCalificacion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ParteCalificacion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/CaracteristicaCalificacion.hbm.xml"/>		
+		
+		<mapping resource="ar/org/sicel/persistence/Transicion.hbm.xml"/>
+		
+		<mapping resource="ar/org/sicel/persistence/DefectoCalificacion.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/ConjuntoAtributos.hbm.xml"/>
+		
+		
+		<mapping resource="ar/org/sicel/upload/model/Bajada.hbm.xml"/>	
+		<mapping resource="ar/org/sicel/persistence/Foto.hbm.xml"/>
+		
+		
+		<mapping resource="ar/org/sicel/persistence/MetodoControl.hbm.xml"/>
+		<mapping resource="ar/org/sicel/persistence/LactanciaGenetica.hbm.xml"/>
+		
+		
+
+	</session-factory>
+
+</hibernate-configuration> 

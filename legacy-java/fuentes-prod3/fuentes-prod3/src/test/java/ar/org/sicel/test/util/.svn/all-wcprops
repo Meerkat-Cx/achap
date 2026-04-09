@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/util
+END
+TestHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/util/TestHibernate.java
+END
+TestStringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/util/TestStringUtil.java
+END
+TestTipoRegistroUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/util/TestTipoRegistroUtil.java
+END

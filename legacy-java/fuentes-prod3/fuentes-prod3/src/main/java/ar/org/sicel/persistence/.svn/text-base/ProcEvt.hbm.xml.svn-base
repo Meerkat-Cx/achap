@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.ProcEvt"
+        table="Pr_Evt"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_pr_avt</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-ProcEvt.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="idEvtECLO"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="id_ev_infote" 
+                not-null="true"
+            />
+        </property>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-ProcEvt.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.ProcEvtAnimal"
+            table="Pr_Ev_Animal"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Pr_evan_prevt"
+            />
+
+        <many-to-one
+            name="procAnimal"
+            class="ar.org.sicel.persistence.ProcAnimal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_evan_pran"
+            column="pr_animal"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="evtAnimal"
+            class="ar.org.sicel.persistence.EvtAnimal"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_evan_EvAnim"
+        >
+            <column
+                name="ev_anim"
+                unique-key="UN_Pr_evan_EvAnim"
+                not-null="true"
+            />
+        </many-to-one>
+
+        <set
+            name="procMsgsses"
+            table="Pr_MsgEvAnim"
+            lazy="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="pr_evAnim"
+                  foreign-key="FK_Pr_meva_prea"
+            >
+            </key>
+
+            <many-to-many
+                class="ar.org.sicel.persistence.ProcMsg"
+                column="msg"
+                outer-join="auto"
+                foreign-key="FK_Pr_meva_msg"
+             />
+
+        </set>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.ProcEvtEst"
+            table="Pr_Ev_Estab"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Pr_eves_Prevt"
+            />
+
+        <many-to-one
+            name="procEstablecimiento"
+            class="ar.org.sicel.persistence.ProcEstablecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_eves_prEs"
+            column="pr_estab"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="evtEstablecimiento"
+            class="ar.org.sicel.persistence.EvtEstablecimiento"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_eves_EvEstab"
+        >
+            <column
+                name="ev_estab"
+                unique-key="UN_Pr_eves_EvEstab"
+                not-null="true"
+            /> 
+        </many-to-one>
+
+        <set
+            name="procMsgsses"
+            table="Pr_MsgEvEstab"
+            lazy="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="pr_evestab"
+                  foreign-key="FK_Pr_meve_pree"
+            >
+            </key>
+
+            <many-to-many
+                class="ar.org.sicel.persistence.ProcMsg"
+                column="msg"
+                outer-join="auto"
+                foreign-key="FK_Pr_meve_msg"
+             />
+
+        </set>
+
+        </joined-subclass>
+
+    </class>
+
+</hibernate-mapping>

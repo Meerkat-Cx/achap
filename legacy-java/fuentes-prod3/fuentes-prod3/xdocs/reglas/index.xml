@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Reglas</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="xsd, schema,xml,lotes"/>
+  </head>
+  <body>
+    <section name="Reglas">
+    	<p>	Denominaremos como <b>reglas</b> a cada conjunto
+    			de funcionalidad de sicel a aplicar ante la ocurrencia
+    			de un caso especifico.</p>
+    	<p> Estas reglas pueden estar destinadas a detectar
+    			informacion no consistente (por ejemplo partos demasiado
+    			cercanos, imposibles en la realidad) tanto como a 
+    			realizar calculos sobre la informacion brindada (por ejemplo
+    			para calcular la composicion racial de un animal dados
+    			sus padres)</p>  
+    </section>
+  </body>
+</document>

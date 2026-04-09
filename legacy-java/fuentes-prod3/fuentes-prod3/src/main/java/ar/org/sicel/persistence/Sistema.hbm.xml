@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Sistema"
+        table="En_Sistema"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_en_sistema</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Sistema.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+                not-null="true"
+                unique="true"
+            />
+        </property>
+
+        <property
+            name="version"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="version" 
+                length="20"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="comentario"
+            type="ar.org.sicel.persistence.util.HibernateStringClobType"
+            update="true"
+            insert="true"
+            column="comentario"
+        />
+
+        <many-to-one
+            name="responsable"
+            class="ar.org.sicel.persistence.ResponsableSistema"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Sist_resi"
+            unique-key="UN_En_Sist_responsable"
+            not-null="true"
+        >
+        </many-to-one>
+
+       <!--  <set
+            name="eclos"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="sistema"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Eclo"
+            />
+
+        </set> -->
+        <set name="eclos" lazy="true"  table="en_sisteclo" inverse="true">
+			<key column="sistema_id" foreign-key="FK_EN_SISTEMA"/>
+			<many-to-many class="ar.org.sicel.persistence.Eclo">
+				<column name="eclo_id" not-null="true"/>
+			</many-to-many>
+		</set> 
+        
+
+        <set
+            name="procLotes"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="sistema"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.ProcLote"
+            />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Sistema.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

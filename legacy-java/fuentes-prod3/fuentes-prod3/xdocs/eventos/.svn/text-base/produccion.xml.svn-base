@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Evento Producción</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,ordeñe,produccion,estado"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>	
+			Mediante eventos producción se informan las mediciones realizadas sobre un animal especifico
+			en un control de producción lechera.
+		</p>
+		<p>
+			Cada evento producción se relaciona con el <a href="ordenie.html">ordeñe</a> en el cual fueron
+			tomadas las mediciones. La forma de relacionarlos es mediante la fecha de cada evento. El ordeñe y 
+			todas las producciones informadas, se producen en el mismo establecimiento y en la misma fecha.
+		</p>
+		</section>
+		<section name="Datos informados">
+		<p>
+			Se informan los datos relacionados con las mediciones obtenidas del animal.
+			Esta consiste en pares (objeto_medición, valor_medición). 
+			Ejemplos de Objetos de Medición que se pueden informar son:
+			<ul>
+				<li>GR</li>
+				<li>PR</li>
+				<li>LA</li>
+				<li>LE</li>
+				<li>ST</li>
+				<li>UR</li>
+				<li>CE</li>
+			</ul>
+			Para la lista completa, referirce al xsd actual.
+		</p>
+		
+		</section>
+		<section name="Requisitos Previos">
+			<p>	El animal debe estar en alguno de los estados de producción para poder informar un evento
+			de esta clase.
+			</p>
+			<p>
+				Se debe haber informado de un <a href="ordenie.html">ordeñe</a> realizado en el establecimiento
+				en la misma fecha en que se quiere informar la producción. (Una producción siempre esta relacionada
+				con el ordeñe en el cual se realizó).
+			</p>
+		</section>
+		<section name="Informacion Relacionada">
+    	<ul>
+			<li>Evento <a href="ordenie.html">Ordeñe</a></li>
+			<li><a href="grl/estados_animal.html">Estados</a> de un animal </li>
+		 </ul>
+	 	</section>
+	</body>
+</document>

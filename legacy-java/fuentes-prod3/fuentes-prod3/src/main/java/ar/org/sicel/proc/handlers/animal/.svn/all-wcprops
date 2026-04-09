@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/ACHA/SICELV3/!svn/ver/5744/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal
+END
+HandlerEvtPrenez.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/5115/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtPrenez.java
+END
+HandlerEvtServicio.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ACHA/SICELV3/!svn/ver/5115/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtServicio.java
+END
+HandlerEvtTransferencia.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/ACHA/SICELV3/!svn/ver/5467/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtTransferencia.java
+END
+HandlerEvtProduccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtProduccion.java
+END
+HandlerEvtInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/5115/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtInfo.java
+END
+HandlerEvtCambioRp.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ACHA/SICELV3/!svn/ver/5115/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtCambioRp.java
+END
+HandlerEventoReproduccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/ACHA/SICELV3/!svn/ver/5744/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEventoReproduccion.java
+END
+HandlerEvtEstado.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/5115/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtEstado.java
+END
+HandlerBajaAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/4811/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerBajaAnimal.java
+END
+HandlerEvtSecada.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/5115/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/handlers/animal/HandlerEvtSecada.java
+END

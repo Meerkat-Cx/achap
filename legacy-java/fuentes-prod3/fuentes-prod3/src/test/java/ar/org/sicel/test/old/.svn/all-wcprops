@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old
+END
+LoteRepetido.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/LoteRepetido.java
+END
+EcloNoValida.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/EcloNoValida.java
+END
+AltaAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/AltaAnimal.java
+END
+Produccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/Produccion.java
+END
+TestConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/TestConfiguration.java
+END
+RPNoCoincide.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/RPNoCoincide.java
+END
+ProduccionParaLact.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/ProduccionParaLact.java
+END
+ReproduccionUsarRazaMadre.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/ReproduccionUsarRazaMadre.java
+END
+TestJbossMQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/TestJbossMQ.java
+END
+TestJBossLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/TestJBossLogger.java
+END
+TestJBoss.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/TestJBoss.java
+END
+AnimalNoExiste.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/AnimalNoExiste.java
+END
+Servicio.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/Servicio.java
+END
+FormatoArchivo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/FormatoArchivo.java
+END
+EstablecimientoNoExiste.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/EstablecimientoNoExiste.java
+END
+EstablecimientoNoEnEclo.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/EstablecimientoNoEnEclo.java
+END
+AltaEvtsProdsLactElimLote.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/old/AltaEvtsProdsLactElimLote.java
+END

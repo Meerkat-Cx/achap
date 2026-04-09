@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Transferencia</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,alta,composicion racial,establecimiento"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+
+		<p>
+		El evento Alta se utiliza para ingresar a Sicel3 animales que no sean producto
+		de un <a href="reproduccion.html">parto</a> informado de una hembra registrada por A.C.H.A.
+		</p>
+		<p>
+La situación más común (similar al EMPARC del Sicel1) es dar de alta un animal HO (holando) hembra damdo el RP y la fecha de nacimiento. En este caso no es válido informar genealogía o composición racial. La fecha de nacimiento es opcional sintácticamente, pero las reglas de proceso indican que debe incluirse. El sexo NO ES opcional. La raza por defecto es HOLANDO, por lo cual se puede omitir. Sigue un ejemplo.
+
+	<source>
+&lt;alta&gt;
+  &lt;IDEvt&gt;1&lt;/IDEvt&gt;
+  &lt;fecha&gt;1991-5-16T12:00:00&lt;/fecha&gt;
+  &lt;rp&gt;329&lt;/rp&gt;
+  &lt;sexo&gt;F&lt;/sexo&gt;
+  &lt;fechaNacimiento&gt;1989-1-15T12:00:00&lt;/fechaNacimiento&gt;
+&lt;/alta&gt;
+	</source>
+		</p>
+		<p>
+		El alta de animales incluye las compras de animales extranjeros y la compra de animales locales pero de un 
+		establecimiento no asociado a A.C.H.A. Notar que si lo que se produce es una
+		transferencia de un animal ya registrado en A.C.H.A., entonces el evento adecuado es una 
+		<a href="transferencia.html">transferencia</a>
+		</p>
+		<p>
+		Al dar de alta un animal, se puede hacerlo especificando o bien sus padres genéticos
+		(en el caso en que estos esten registrados en A.C.H.A.), o bien su composición racial. Estos casos son especiales y las reglas serán suministradas en cada caso.
+		</p>
+		</section>
+	<section name="Datos del Animal">
+		<subsection name="Registro">
+		<p>
+		Si el animal ya posee algun registro asignado (por ejemplo un registro internacional),
+		es posible especificarlo al darlo de alta. De esta manera este registro se usara
+		como Registro de Origen y Registro Identificador del animal. Este es un caso especial.
+		</p>
+		<p>
+		Si no se especifica ningun registro, o la regla <a href="../ref/configuracion.html">CREAR_REGISTRO_SIEMPRE</a>
+		esta activa, entonces se crea un Registro RC y se le asigna al animal. 
+		</p>
+		</subsection>
+		<subsection name="Composicion Racial">
+		<p>
+		Si se informa la composición racial, la suma de todos los porcentajes informados
+		debera dar 100%.  Este es un caso especial.
+		</p>
+		<p>
+		Por ejemplo, si se da de alta un animal informando que es 50% Holando y 25% JY, se
+		rechazara. Si se aceptaria que se informara 50% Holando, 25% JY y 25% Desconocido.
+		</p>
+		</subsection>
+		<subsection name="Padres geneticos">
+		<p>
+		Si se informan los padres geneticos, estos deben ser animales ya registrados en A.C.H.A.  Este es un caso especial.
+		</p>
+		<p>
+		No es necesario que se informen ambos padres. Si alguno de los dos progenitores no se informa
+		se tomará como desconocido. Sin embargo, es obligatorio informar de al menos uno de los dos,
+		caso contrario se deberá informar utilizando el método de la composición racial antes explicado.
+		</p>
+		</subsection>
+		<subsection name="Propietario">
+		<p>
+		El propietario de un animal dado de alta es siempre el propietario del establecimiento desde
+		el cual se informa del alta.
+		</p>
+		<p>
+		Si esto no es lo que se desea, se puede informar luego del alta un evento 
+		<a href="transferencia.html">transferencia</a> , indicando el propietario deseado
+		</p>
+		</subsection>
+	</section>
+	
+		
+	 <section name="Requisitos Previos">
+	 	<p>
+		Ninguno, el animal no existe previamente dentro de Sicel3.
+		</p>
+	 </section>
+	 
+	 <section name="Principales reglas a controlar">
+	 <p>
+	 <ul>
+	 <li>El RP debe ser único para animales del mismo establecimiento.</li>
+	 <li>Si se informa la composicion racial, el total de esta debe ser 100%</li>
+	 <li>Los dos padres deben ser de la misma especie</li>
+	 <li><a href="../ref/configuracion.html">regla: SE_ACEPTA_RAZA_DECLARADA_EN_ALTA</a></li>
+	 <li><a href="../ref/configuracion.html">regla: SE_ACEPTA_COMP_RACIAL_EN_ALTA</a></li>
+	 <li><a href="../ref/configuracion.html">regla: CREAR_REGISTRO_SIEMPRE</a></li>
+	 </ul>
+	 </p>
+	 </section>
+
+	 <section name="Informacion Relacionada">
+          <ul>
+              <li>Si se especifican los padres, entonces la composición racial del animal se 
+	      <a href="../reglas/comp_racial.html">calculará como se indico aquí</a></li>
+	      <li>Se puede especificar la <a href="../reglas/raza_declarada.html">raza declarada</a> del animal</li>
+	      <li>Se utiliza luego del alta un evento <a href="transferencia.html">transferencia</a>
+	      si se quiere dar de alta un animal de un propietario distinto al del establecimiento
+	      en el cual se lo da de alta.</li>
+	      <li>Se puede <a href="baja.html">dar de baja un animal</a> </li>
+	      
+         </ul>
+	 </section>
+ </body>
+</document>

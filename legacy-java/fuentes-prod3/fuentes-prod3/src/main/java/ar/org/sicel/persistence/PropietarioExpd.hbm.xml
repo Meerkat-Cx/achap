@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class name="ar.org.sicel.persistence.PropietarioExpd" table="en_Propietario_Expd" lazy="true">
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long">
+			
+			<generator class="native">
+                <param name="sequence">GEN_PROPIETARIO_EXPD</param>
+            </generator> 
+
+
+        </id>
+
+        <property
+            name="numero"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="cuig"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="fechaAlta"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="fechaBaja"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        />
+         
+		<property name="estab" type="java.lang.String" update="true" insert="true" length="500"/>
+	 
+		<many-to-one
+            name="usuario"
+            class="ar.org.sicel.persistence.Usuario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_USUARIO_PROP_EXPD"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="propietario"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_PROPIETARIO"
+           
+            column="propietario"
+             
+        />
+        <many-to-one
+            name="raza"
+            class="ar.org.sicel.persistence.Raza"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_expd_raza"
+            column="raza"
+            not-null="false"
+        />
+        
+    </class>
+
+</hibernate-mapping>

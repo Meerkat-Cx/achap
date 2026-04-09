@@ -1,0 +1,663 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+	<definition name=".Base" path="/pages/common/layout/layout.jsp">
+		<put name="header" value="/pages/common/header.jsp"/>
+		<put name="navigator" value="/pages/common/navigation.jsp"/>
+		<put name="body" value="${body}"/>
+		<put name="footer" value="/pages/common/footer.jsp"/>
+	</definition>
+	<definition name=".filtroCargaMasiva" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/filtroCargaMasiva.jsp"/>
+    </definition>
+    <definition name=".filtroCargaCambiosRP" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/filtroCargaCambiosRP.jsp"/>
+    </definition>
+	<definition name=".Login" path="/pages/common/layout/layout.jsp">
+		<put name="header" value="/pages/common/header.jsp"/>
+		<put name="body" value="${body}"/>
+		<put name="footer" value="/pages/common/footer.jsp"/>
+	</definition>
+	<definition name=".globalError" extends=".Base">
+		<put name="body" value="/pages/error.jsp"/>
+	</definition>
+	<definition name=".main" extends=".Base">
+		<put name="body" value="/pages/main.jsp"/>
+	</definition>
+	<definition name=".enterLogin" extends=".Login">
+		<put name="body" value="/pages/login.jsp"/>
+	</definition>
+	<definition name=".construction" extends=".Base">
+		<put name="body" value="/pages/construction.jsp"/>
+	</definition>
+	<definition name=".quienesSomos" extends=".Base">
+		<put name="body" value="/pages/quienesSomos.jsp"/>
+	</definition>
+    <definition name=".glosario" extends=".Base">
+        <put name="body" value="/pages/glosario.jsp"/>
+    </definition>
+    
+    <definition name=".tablaAnimalesLactancia" extends=".Base">
+        <put name="body" value="/pages/table/tablaAnimalesLactancia.jsp"/>
+    </definition>
+    <definition name=".animsTable" extends=".Base">
+        <put name="body" value="/pages/table/animsTable.jsp"/>
+    </definition>
+    <definition name=".razaTable" extends=".Base">
+        <put name="body" value="/pages/table/razaTable.jsp"/>
+    </definition>
+    <definition name=".conjuntoAtTable" extends=".Base">
+        <put name="body" value="/pages/table/conjuntoAtTable.jsp"/>
+    </definition>
+    <definition name=".atributoTable" extends=".Base">
+        <put name="body" value="/pages/table/atributosTable.jsp"/>
+    </definition>
+    <definition name=".valoresAdmitidosTable" extends=".Base">
+        <put name="body" value="/pages/table/valoresAdmitidosTable.jsp"/>
+    </definition>
+    <!--<definition name=".regionalTable" extends=".Base">
+        <put name="body" value="/pages/table/regionalTable.jsp"/>
+    </definition>-->
+    <definition name=".procProcesTable" extends=".Base">
+        <put name="body" value="/pages/table/procProcesTable.jsp"/>
+    </definition>
+    <definition name=".animalDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/animalDetalleSinEdicion.jsp"/>
+    </definition>
+    <definition name=".ecloTable" extends=".Base">
+        <put name="body" value="/pages/table/ecloTable.jsp"/>
+    </definition>
+	 <definition name=".calificacionTable" extends=".Base">
+        <put name="body" value="/pages/table/calificacionesTable.jsp"/>
+    </definition>
+	 <definition name=".seteoCalificacion" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/seteoCalificacion.jsp"/>
+    </definition>
+	 <definition name=".boleta" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/boletaFormPage.jsp"/>
+    </definition>
+    <definition name=".boletaM1" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/boletaFormPageModel1.jsp"/>
+    </definition>
+	 <definition name=".boletaM2" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/boletaFormPageModel2View.jsp"/>
+    </definition>
+	 <definition name=".boletaM3" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/boletaFormPageModel3.jsp"/>
+    </definition>
+	 <definition name=".boletaM3View" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/boletaFormPageModel3View.jsp"/>
+    </definition>
+    <definition name=".datosBuscarAnim" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/datosBuscarAnim.jsp"/>
+    </definition>
+     <definition name=".buscarAnimalPorTambo" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarAnimalPorTambo.jsp"/>
+    </definition>
+     <definition name=".buscarAnimalPorEclo" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarAnimalPorEclo.jsp"/>
+    </definition>
+     <definition name=".buscarAnimalPorPropietario" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarAnimalPorPropietario.jsp"/>
+    </definition>
+    <definition name=".datosBuscarPropietario" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarPropietario.jsp"/>
+    </definition>
+	 <definition name=".buscarPropietarioNombre" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarPropietarioNombre.jsp"/>
+    </definition>
+	 <definition name=".buscarEstablecimientoNombre" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarEstablecimientoNombre.jsp"/>
+    </definition>
+	<definition name=".datosBuscarCalif" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarCalificaciones.jsp"/>
+    </definition>
+	<definition name=".buscarAnimalCalificacion" extends=".Base">
+        <put name="body" value="/pages/datosBuscar/buscarAnimalCalificacion.jsp"/>
+    </definition>
+    <definition name=".datosModificarUbicacion" path="/pages/datosModificar/datosModificarUbicacion.jsp"/>
+
+    <definition name=".propietarioDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/propietarioDetalle.jsp"/>
+    </definition>
+    <definition name=".estabDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/estabDetalle.jsp"/>
+    </definition>
+    <definition name=".ECLODetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/ECLODetalle.jsp"/>
+    </definition>
+    <definition name=".regionalDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/regionalDetalle.jsp"/>
+    </definition>
+    <definition name=".procProcesDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/procProcesDetalle.jsp"/>
+    </definition>
+    <definition name=".procLoteDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/procLoteDetalle.jsp"/>
+    </definition>
+    <definition name=".listadoPadron" extends=".Base">
+        <put name="body" value="/pages/detalle/descargaMachosHBA.jsp"/>
+    </definition>
+    <definition name=".listadoDOC" extends=".Base">
+        <put name="body" value="/pages/detalle/descargaDOC.jsp"/>
+    </definition>
+    <definition name=".procEstablecimientoDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/procEstablecimientoDetalle.jsp"/>
+    </definition>
+    <definition name=".procAnimalDetalle" extends=".Base">
+        <put name="body" value="/pages/detalle/procAnimalDetalle.jsp"/>
+    </definition>
+    
+    <definition name=".mostrarIdPage" extends=".Base">
+        <put name="body" value="/pages/detalle/comunicacionAlta.jsp"/>
+    </definition>
+    
+    
+    
+    
+    
+    
+    
+    <definition name=".altaPropietarioPage" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/propietarioFormPage.jsp"/>
+    </definition>
+    <definition name=".edicionEcloPage" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/ecloFormPage.jsp"/>
+    </definition>
+    <definition name=".altaEntidadRegionalPage" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/entidadRegionalFormPage.jsp"/>
+    </definition>
+    <definition name=".altaEstablecimientoPage" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/establecimientoFormPage.jsp"/>
+    </definition>
+
+    <definition name=".informacionPropietarioPage" extends=".Base">
+        <put name="body" value="/pages/altaEdicion/infoPropietarioPage.jsp"/>
+    </definition>
+
+
+	<definition name=".edicionSistemaPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/sistemaFormPage.jsp"/>
+    </definition>
+    
+	<definition name=".altaPersonaPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/personaFormPage.jsp"/>
+    </definition>
+
+	<definition name=".personaDetalle" extends=".Base">
+	    <put name="body" value="/pages/detalle/personaDetalle.jsp"/>
+    </definition>
+
+	<definition name=".sistemaDetalle" extends=".Base">
+	    <put name="body" value="/pages/detalle/sistemaDetalle.jsp"/>
+    </definition>
+    
+	<definition name=".altaResponsableEcloPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/responsableEcloFormPage.jsp"/>
+    </definition>
+    
+    <definition name=".buscarEstablecimiento" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarEstablecimiento.jsp"/>
+    </definition>
+   
+    <definition name=".buscarEclo" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarEclo.jsp"/>
+    </definition>
+    
+    <definition name=".uploadProceso" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/SubidaArchivos.jsp"/>
+    </definition>
+    
+    <definition name=".standBy" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/ArchivosStandBy.jsp"/>
+    </definition>
+
+	<definition name=".cambiarClave" extends=".Base">
+        <put name="body" value="/pages/cambiarClave.jsp"/>
+    </definition>   
+
+	<definition name=".buscarAnimalOrdenie" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/buscarAnimal.jsp"/>
+    </definition>
+    <definition name=".listarControles" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/listarControles.jsp"/>
+    </definition>
+    <definition name=".confirmarBaja" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/confirmarBaja.jsp"/>
+    </definition>
+     <definition name=".confirmarBusqueda" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/confirmarBusqueda.jsp"/>
+    </definition>
+    <definition name=".confirmarBusquedaLote" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/confirmarBusquedaLote.jsp"/>
+    </definition>
+    
+    <definition name=".downloadProceso" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/ArchivosCargados.jsp"/>
+    </definition>
+    
+    <definition name=".lotesProcesadosPage" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/ArchivosCargadosProcesados.jsp"/>
+    </definition>
+    
+     <definition name=".downloadProcesoFecha" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/ArchivosCargadosFecha.jsp"/>
+    </definition>
+    
+    <definition name=".downloadProcesoEclo" extends=".Base">	
+	    <put name="body" value="/pages/uploadFiles/ArchivosCargadosEclo.jsp"/>
+    </definition>
+    
+    
+    <definition name=".viewMessage" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/Comunica.jsp"/>
+    </definition>
+    
+    <definition name=".viewMessageProcess" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/ConfirmarProceso.jsp"/>
+    </definition>
+     
+    <definition name=".processList" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/procesarArchivos.jsp"/>
+    </definition>
+    <definition name=".buscarAnimal" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/buscarReporteAnimal.jsp"/>
+    </definition>
+    <definition name=".verFicha" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/verDatosAnimal.jsp"/>
+    </definition>
+    <definition name=".verAnimalesLote" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/verAnimalesFichasPendientes.jsp"/>
+    </definition>
+    <definition name=".verInfoLotes" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/verDatosFichasPendientes.jsp"/>
+    </definition>
+    <definition name=".intercambioEntreProp" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/intercambioEntreProp.jsp"/>
+    </definition>
+    
+    <definition name=".uploadProcesoError" extends=".Base">
+	    <put name="body" value="/pages/proc/uploadProcesoError.jsp"/>
+    </definition>
+    
+    <definition name=".uploadProcesoOk" extends=".Base">
+	    <put name="body" value="/pages/proc/uploadProcesoOk.jsp"/>
+    </definition>
+	 <definition name=".unirSinonimos" extends=".Base">
+	    <put name="body" value="/pages/proc/unirSinonimos.jsp"/>
+    </definition>
+    
+    
+    <definition name=".InformeTambosCrias" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/listadoTambosCrias.jsp"/>
+    </definition>
+    
+    <definition name=".ReporteIcar" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/reporteIcar.jsp"/>
+    </definition>
+    
+    <definition name=".ReporteInscriptos" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/reporteInscriptos.jsp"/>
+    </definition>
+    
+    <definition name=".EstadisticoLactancia" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/estadisticoLactancia.jsp"/>
+    </definition>
+    
+     <definition name=".ReporteNombreHBA" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/reporteNombreHBA.jsp"/>
+    </definition>
+        
+        
+    <definition name=".formulariosTable" extends=".Base">
+    	 <put name="body" value="/pages/datosModificar/formulariosTable.jsp"/>
+    </definition>
+    
+        
+    <definition name=".refreshParentAndClosePopup" extends=".Base">
+	    <put name="body" value="/pages/datosModificar/refreshParentAndClosePopup.jsp"/>
+    </definition>
+    
+    <definition name=".closePopup" extends=".Base">
+	    <put name="body" value="/pages/datosModificar/closePopup.jsp"/>
+    </definition>
+    
+    <definition name=".refreshPopup" extends=".Base">
+	    <put name="body" value="/pages/datosModificar/refreshPopup.jsp"/>
+    </definition>
+    
+    <definition name=".edicionEntidadRegional" path="/pages/datosModificar/edicionEntidadRegional.jsp"/>
+
+    <definition name=".edicionPropietario" path="/pages/datosModificar/edicionPropietario.jsp"/>
+
+	<definition name=".edicionEclo" path="/pages/datosModificar/edicionEclo.jsp"/>
+	
+	<definition name=".edicionEstablecimiento" path="/pages/datosModificar/edicionEstablecimiento.jsp"/>
+	
+	<definition name=".propietariosTable" extends=".Base">
+        <put name="body" value="/pages/table/propietariosTable.jsp"/>
+    </definition>
+    <definition name=".listaTiposPage" extends=".Base">
+        <put name="body" value="/pages/table/tiposRegistroTable.jsp"/>
+    </definition>
+	
+<!--	<definition name=".edicionSistema" path="/pages/datosModificar/edicionSistema.jsp"/>	-->
+    
+   	<definition name=".edicionResponsableSistema" path="/pages/datosModificar/responsableSistemaFormPage.jsp"/>	
+
+   	<definition name=".edicionResponsableEclo" path="/pages/datosModificar/responsableEcloFormPage.jsp"/>	
+   	
+   	<definition name=".edicionConjuntoAtributos" extends=".Base"> 
+   		<put name="body" value="/pages/datosModificar/edicionConjuntoAtributos.jsp"/>	
+   	</definition>
+   	
+   	<definition name=".conjuntoAtributosDetalle" extends=".Base">
+	    <put name="body" value="/pages/detalle/conjuntoAtributosDetalle.jsp"/>
+    </definition>
+   	<definition name=".redefinicionAtributoDetalle" extends=".Base">
+	    <put name="body" value="/pages/detalle/redefinicionAtributoDetalle.jsp"/>
+    </definition>
+    
+   	<definition name=".atributoFormPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/atributoFormPage.jsp"/>
+    </definition>
+
+   	<definition name=".busquedaAtributo" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarEntidad.jsp"/>
+    </definition>
+
+   	<definition name=".atributoDetalle" extends=".Base">
+	    <put name="body" value="/pages/detalle/atributoDetalle.jsp"/>
+    </definition>
+    
+    <definition name=".edicionAnimal" path="/pages/datosModificar/edicionAnimal.jsp"/>
+   	
+   <!--	<definition name=".altaRazaPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/razaFormPage.jsp"/>
+    </definition>-->
+	<definition name=".edicionRazaPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/razaFormPage.jsp"/>
+    </definition>
+    
+    <definition name=".razaDetalle" extends=".Base">
+	    <put name="body" value="/pages/detalle/razaDetalle.jsp"/>
+    </definition>
+   	
+    <definition name=".edicionRaza" path="/pages/datosModificar/edicionRaza.jsp"/>
+    
+    <definition name=".atributosVariables" path="/pages/altaEdicion/atributosVariables.jsp"/>
+   	
+<!-- de aca para abajo estan ok -->
+	<definition name=".edicionUsuarioPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/usuarioFormPage.jsp"/>
+    </definition>
+    <definition name=".tipoRegistroFormPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/tipoRegistroFormPage.jsp"/>
+    </definition>
+    
+	<definition name=".filtroSeleccionContactoPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/filtroSeleccionContactoPage.jsp"/>
+    </definition>
+	<definition name=".errorUsuarioPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/errorUsuarioFormPage.jsp"/>
+    </definition>
+
+
+    <definition name=".listaRazaPage" extends=".Base">
+        <put name="body" value="/pages/table/razaTable.jsp"/>
+    </definition>
+
+
+    <definition name=".listaSistemaPage" extends=".Base">
+        <put name="body" value="/pages/table/sistemaTable.jsp"/>
+    </definition>
+    
+    <definition name=".listaUsuarioPage" extends=".Base">
+        <put name="body" value="/pages/table/usuarioTable.jsp"/>
+    </definition>
+
+	<definition name=".edicionEstanciaPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/estanciaFormPage.jsp"/>
+    </definition>
+    <definition name=".edicionEstablecimientoPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/establecimientoFormPage.jsp"/>
+    </definition>
+	<definition name=".errorEstablecimientoPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/errorEstablecimientoFormPage.jsp"/>
+    </definition>
+    <definition name=".errorCargaMasivaPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/errorCargaMasivaPage.jsp"/>
+    </definition>
+    
+<definition name=".errorPropietarioPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/errorPropietarioFormPage.jsp"/>
+    </definition>
+	 <definition name=".edicionPropietarioPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/propietarioFormPage.jsp"/>
+    </definition>
+    
+    <definition name=".agregarNroSRA" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/nroSRAFormPage.jsp"/>
+    </definition>
+    <definition name=".eliminarSra" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/eliminarSra.jsp"/>
+    </definition>
+	<definition name=".cambiarEstadoSra" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/cambiarEstadoSRA.jsp"/>
+    </definition>
+
+    <definition name=".listaEstanciaPage" extends=".Base">
+        <put name="body" value="/pages/table/estanciaTable.jsp"/>
+    </definition>
+    <definition name=".listaEstablecimientoPage" extends=".Base">
+        <put name="body" value="/pages/table/establecimientoTable.jsp"/>
+    </definition>
+	 <definition name=".listaPropietarioPage" extends=".Base">
+        <put name="body" value="/pages/table/propietariosTable.jsp"/>
+    </definition>
+
+  <definition name=".listaEntidadRegionalPage" extends=".Base">
+        <put name="body" value="/pages/table/regionalTable.jsp"/>
+    </definition>
+
+	<definition name=".edicionEntidadRegionalPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/entidadRegionalFormPage.jsp"/>
+    </definition>
+
+	<definition name=".edicionUbicacionPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/ubicacionFormPage.jsp"/>
+    </definition>
+    
+    <definition name=".listaUbicacionPage" extends=".Base">
+    	<put name="body" value="/pages/table/ubicacionTable.jsp"/>
+    </definition>
+
+
+    <definition name=".buscarAnimalEclo" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarAnimalEclo.jsp"/>
+    </definition>
+
+    <definition name=".buscarEstablecimientoEclo" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarEstablecimientoEclo.jsp"/>
+    </definition>
+    
+    <definition name=".buscarAnimalesRC" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarAnimalRC.jsp"/>
+    </definition>
+     <definition name=".reporteEventos" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/reporteEventos.jsp"/>
+    </definition>
+     <definition name=".buscarEstablecimientoAcha" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarEstablecimientoAcha.jsp"/>
+    </definition>
+   <definition name=".buscarEcloAcha" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarEcloAcha.jsp"/>
+    </definition>
+    <definition name=".buscarLactancia.do" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarAnimalEclo.jsp"/>
+    </definition>
+    
+    
+    <definition name=".verControl" extends=".Base">
+    	
+	    <put name="body" value="/pages/detalle/verDatosControlAnimal.jsp"/>
+    </definition>
+     <definition name=".mostrarObs" extends=".Base">
+    	
+	    <put name="body" value="/pages/uploadFiles/popupObs.jsp"/>
+    </definition>
+     <definition name=".listaEstancias" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarEstancia.jsp"/>
+    </definition>
+     <definition name=".listaEstanciasPorNombre" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarEstanciaPorNombre.jsp"/>
+    </definition>
+    <definition name=".listaEclos" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/buscarEcloTambo.jsp"/>
+    </definition>
+	<definition name=".remove" extends=".Base">
+	    <put name="body" value="/pages/detalle/boletaRemove.jsp"/>
+    </definition>
+	
+    <definition name=".filtroLotes" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/filtroLotes.jsp"/>
+    </definition>
+    
+    <definition name=".reporteMasivo" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/reporteMasivoAnimal.jsp"/>
+    </definition> 
+    
+	<definition name=".pedigreeFormPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/pedigreeFormPage.jsp"/>
+    </definition>
+	<definition name=".buscarPadresPedigree" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarPadresPedigree.jsp"/>
+    </definition>
+	<definition name=".buscarTamboPedigree" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarTamboPedigree.jsp"/>
+    </definition>
+	<definition name=".buscarPropietarioPedigree" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarPropietarioPedigree.jsp"/>
+    </definition>
+	<definition name=".registroTable" extends=".Base">
+	    <put name="body" value="/pages/table/registroTable.jsp"/>
+    </definition>
+	<definition name=".registroPedFormPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/registroPedFormPage.jsp"/>
+    </definition>
+	<definition name=".buscarAnimalPedigree" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarAnimalPedigree.jsp"/>
+    </definition>
+	<definition name=".comunicacion" extends=".Base">
+	    <put name="body" value="/pages/detalle/comunicacionPedigree.jsp"/>
+    </definition>
+    <definition name=".comentarioTable" extends=".Base">
+	    <put name="body" value="/pages/table/comentarioAnimalPedTable.jsp"/>
+    </definition>
+	<definition name=".comentarioPedFormPage" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/comentarioPedFormPage.jsp"/>
+    </definition>
+
+<definition name=".buscarPropietarioEclo" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarPropietarioRCNUME.jsp"/>
+    </definition> 
+    
+    <definition name=".buscarEcloRC" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarEcloRC.jsp"/>
+    </definition>
+    
+    <definition name=".rchbanumepagination" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/paginationRCHBANume.jsp"/>
+    </definition>
+    
+	<definition name=".filtrosFacturacion" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/filtroReporteFacturacion.jsp"/>
+    </definition>
+<definition name=".buscarPropietarioFacturacion" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarPropietarioFacturacion.jsp"/>
+    </definition>
+    
+     <definition name=".padronPedigree" extends=".Base">
+    	
+	    <put name="body" value="/pages/datosBuscar/padronPedigree.jsp"/>
+    </definition>
+    <definition name=".cambioRegistro" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/cambioRegistro.jsp"/>
+    </definition>
+    
+    <definition name=".mostrarCentroDeComputo" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/mostrarCentrosComputos.jsp"/>
+    </definition>
+    
+    <definition name=".edicionCentroDeComputo" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/centroDeComputoFormPage.jsp"/>
+    </definition>
+    
+    <definition name=".listarEstancias" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/listarEstancias.jsp"/>
+    </definition>
+    
+    <definition name=".listarCentrosDeComputo" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/listarCentrosDeComputo.jsp"/>
+    </definition>
+	 <definition name=".reporteTambos" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/listarTambosPropietario.jsp"/>
+    </definition>
+  
+    
+    <definition name=".findPropByEclo" extends=".Base">
+	    <put name="body" value="/pages/datosBuscar/buscarPropietariosPorEcloORegional.jsp"/>
+    </definition>
+    
+    <definition name=".initActualizacionSicelUno" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/initActualizacionSicelUno.jsp"/>
+    </definition>
+    
+    <definition name=".datosAnimalActualizacionSicelUno" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/datosAnimalActualizacionSicelUno.jsp"/>
+    </definition>
+    
+    <definition name=".cambioMadreAnimalActualizacionSicelUno" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/cambioMadreActualizacionSicelUno.jsp"/>
+    </definition>
+    
+    <definition name=".cambioPadreAnimalActualizacionSicelUno" extends=".Base">
+	    <put name="body" value="/pages/altaEdicion/cambioPadreActualizacionSicelUno.jsp"/>
+    </definition>
+    
+    <definition name=".evaluacionesGeneticas" extends=".Base"> 
+	    <put name="body" value="/pages/proc/evaluacionesGeneticas.jsp"/> 
+    </definition> 
+    <definition name=".informeProceso" extends=".Base">
+    	
+	    <put name="body" value="/pages/proc/informeProceso.jsp"/>
+    </definition>
+	
+</tiles-definitions> 

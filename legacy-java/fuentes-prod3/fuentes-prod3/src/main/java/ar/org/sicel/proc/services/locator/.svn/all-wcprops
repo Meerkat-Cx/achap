@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/locator
+END
+JBossLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/locator/JBossLocator.java
+END
+ServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/locator/ServiceLocator.java
+END
+LocatorStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/locator/LocatorStrategy.java
+END
+StandaloneLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/locator/StandaloneLocator.java
+END
+ServiceNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/locator/ServiceNotFound.java
+END

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Eventos en el  XSD</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="xsd, schema,xml,lotes,eventos"/>
+  </head>
+  <body>
+    <section name="Eventos">
+    <p>	La informacion de los lotes consistira en lo que llamamos eventos.
+			Cada evento informado por una ECLO tiene un numero único para esta ECLO (es decir
+			dos eventos informados por una misma ECLO no pueden tener el mismo numero). La
+			numeración, además,  debe ser estrictamente creciente.
+	</p>
+	<p>	Por lo dicho, si Sicel 3 recive un evento con un numero igual al de algun evento
+			anterior enviado por la misma ECLO, o si el numero no es mayor que el último evento
+			enviado por la ECLO, entonces lo rechazará. 
+	</p>		
+	<p>	Luego de procesado un evento, en el xml resultado se informará el identificador que
+			Sicel 3 le otorgo internamete, el cual podra ser utilizado luego por los PSCL para una
+			rápida individualización de un evento particular. Es decir, una ves procesado, el evento
+			podra ser individualizado de dos maneras: por el par [Eclo,NumeroEvento] asignado
+			por cada PSCL, o por el idEvento , asignado por Sicel 3 a todos los eventos procesados
+			satisfactoriamente. 
+	</p>
+	<p>
+		Notar que si un evento es rechazado por algún motivo, entonces no se le asignara 
+		identificador alguno.
+	</p>
+			
+   <subsection name ="Eventos de Animal">
+	   <p>	Los eventos de Animal tienen una restricción adicional: se debemn informar en orden
+			   cronológico. Es decir, del evento mas antiguo al mas reciente. Si se informa a Sicel 3
+			   con un evento con fecha anterior al último informado para ese animal, este se rechazará.
+       </p>
+   </subsection>
+    </section>
+    
+    <section name="Formato">
+		<p>Aca irian xml de ejemplo</p>
+    </section>
+    
+     <section name="Informacion Relacionada">
+          <ul>
+              <li><a href="/eventos/index.html">Eventos en Sicel 3</a></li>
+              <li><a href="lotes.html"> Lotes en Sicel 3 </a></li>
+         </ul>
+	 </section>
+  </body>
+</document>  

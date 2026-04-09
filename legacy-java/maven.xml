@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<project xmlns:ant="jelly:ant" xmlns:maven="jelly:maven" >
+<!--	<goal name="all">
+		<m:reactor basedir="${basedir}" includes="*/project.xml" goals="ear:install" banner="Building" ignoreFailures="false"/>
+	</goal>
+-->	
+	<goal name="reportes-sicel">
+		<echo> ${maven.dependency.classpath}</echo>
+		<ant:taskdef name="sicel-reports" classname="ar.org.sicel.webdocs.MessageReportTask">
+			<ant:classpath>
+				<ant:path refid="maven.dependency.classpath"/>
+				<ant:path path="./common/resources/log4j"/>
+			</ant:classpath>
+		</ant:taskdef>
+		<sicel-reports output_dir="xdocs/sicel-reports" output_file="mensajes.xml">
+			<!--  	 	<classpath refid="maven.dependency.classpath"/>
+
+  	 	<classpath path="${basedir}/../../common/resources/sicel/sicel3.conf.xml"/>
+  	-->
+			<ant:classpath>
+				<ant:path refid="maven.dependency.classpath"/>
+				<ant:path path="./common/resources/log4j"/>
+			</ant:classpath>
+		</sicel-reports>
+	</goal>
+	<!--
+<preGoal name="site:run-reports">    
+    	<attainGoal name="reportes-sicel"/>    
+</preGoal>
+
+-->
+	<goal name="undeploy">
+		<delete file="${maven.jboss.deploy.dir}/${maven.final.name}.ear"/>
+	</goal>
+	
+<!--
+	<goal name="todo">
+		<maven:reactor basedir="${basedir}" 
+		 includes="*/project.xml" 
+		 goals="crear" 
+		 banner="Building"
+		 ignoreFailures="false"/>
+		<attainGoal name="ear:install"/>
+		<copy file="${maven.build.dir}/${maven.final.name}.ear" todir="${maven.jboss.deploy.dir}"/>
+
+	</goal>
+-->	
+	<goal name="crear">
+		<attainGoal name="ear:install"/>
+		<copy file="${maven.build.dir}/${maven.final.name}.ear" todir="${maven.jboss.deploy.dir}"/>
+		<attainGoal name="jbosslibs"/>
+	</goal>	
+	
+	<goal name="jbosslibs">
+		<copy file="${maven.repo.local}/hibernate/jars/hibernate-metadata-3.0.2.jar" todir="${maven.jboss.lib.dir}"/>
+		<copy file="${maven.repo.local}/hibernate/jars/hibernate-3.0.2.jar" todir="${maven.jboss.lib.dir}"/>
+		<copy file="${maven.repo.local}/firebird/jars/firebirdsql-1.5.5.jar" todir="${maven.jboss.lib.dir}"/>
+		<copy file="${maven.repo.local}/ehcache/jars/ehcache-1.1.jar" todir="${maven.jboss.lib.dir}"/>
+		<copy file="${maven.repo.local}/c3p0/jars/c3p0-0.8.4.5.jar" todir="${maven.jboss.lib.dir}"/>
+		<copy file="${maven.repo.local}/antlr/jars/antlr-2.7.5H3.jar" todir="${maven.jboss.lib.dir}"/>
+		<copy file="${basedir}/common/resources/jboss/firebird-ds.xml" todir="${maven.jboss.deploy.dir}"/>
+	</goal>
+		
+	<goal name="redeploy">
+		<attainGoal name="undeploy"/>
+		<attainGoal name="deploy"/>
+	</goal>
+	
+	<goal name="p">
+		<echo>${maven.repo.local}</echo>
+	</goal>
+</project>

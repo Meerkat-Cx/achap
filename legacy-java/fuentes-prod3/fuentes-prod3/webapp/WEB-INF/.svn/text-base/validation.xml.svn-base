@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+
+<form-validation>
+
+<!--
+     This is a minimal Validator form file with a couple of examples.
+-->
+
+    <global>
+
+        <!-- An example global constant
+        <constant>
+            <constant-name>postalCode</constant-name>
+            <constant-value>^\d{5}\d*$</constant-value>
+        </constant>
+        
+        
+        
+        end example-->
+
+    </global>
+
+    <formset>
+
+        <!-- An example form -->
+        <form name="logonForm">
+            <field
+                property="username"
+                depends="required">
+                    <arg key="logonForm.username"/>
+            </field>
+            <field
+                property="password"
+                depends="required,mask">
+                    <arg key="logonForm.password"/>
+                    <var>
+                        <var-name>mask</var-name>
+                        <var-value>^[0-9a-zA-Z]*$</var-value>
+                    </var>
+            </field>
+        </form>
+
+        <form name="usuarioForm">
+            <field property="nombre" depends="required">
+            	<arg key="usuarioForm.nombre"/>
+            </field>
+            <field property="apellido" depends="required">
+            	<arg key="usuarioForm.apellido"/>
+            </field>
+            <field property="username" depends="required,maxlength">
+            	<arg key="usuarioForm.username"/>
+            	<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+            	<var>
+            		<var-name>maxlength</var-name>
+            		<var-value>10</var-value>
+            	</var>
+            </field>
+            <field property="email" depends="required,email">
+            	<arg key="usuarioForm.email" resource="true"/>
+            </field>
+            
+        </form>
+        <form name="tiposRegistroForm">
+            <field property="id" depends="required">
+            	<arg key="tiposRegistroForm.id"/>
+            </field>
+            <field property="descrip" depends="required">
+            	<arg key="tiposRegistroForm.descrip"/>
+            </field>
+       </form>
+
+
+		<form name="cambiarClaveForm">            
+			 <field
+                property="passwdNew1"
+                depends="maxlength">
+                    <arg key="cambiarClaveForm.passwdNew1"/>
+                    <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+	            	<var>
+	            		<var-name>maxlength</var-name>
+	            		<var-value>10</var-value>
+	            	</var>
+            </field>
+			 <field
+                property="passwdNew2"
+                depends="maxlength">
+                    <arg key="cambiarClaveForm.passwdNew2"/>
+                    <arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+	            	<var>
+	            		<var-name>maxlength</var-name>
+	            		<var-value>10</var-value>
+	            	</var>
+            </field>
+            <field property="email" depends="email">
+            	<arg key="cambiarClaveForm.email" resource="true"/>
+            </field>
+            <field property="emailConfirmacion" depends="email">
+            	<arg key="cambiarClaveForm.emailConfirmacion" resource="true"/>
+            </field>
+        </form>
+        
+         <form name="estanciaForm">
+     
+            <field property="nombre" depends="required,maxlength">
+            	<arg key="estanciaForm.nombre" resource="true"/>
+            	<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+            	<var>
+            		<var-name>maxlength</var-name>
+            		<var-value>60</var-value>
+            	</var>
+            </field> 
+                      
+        </form>
+        <form name="establecimientoForm">
+            <field property="nombre" depends="required,maxlength">
+            	<arg key="establecimientoForm.nombre" resource="true"/>
+            	<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+            	<var>
+            		<var-name>maxlength</var-name>
+            		<var-value>150</var-value>
+            	</var>
+            </field> 
+            <field property="estancia" depends="required">
+            	<arg key="establecimientoForm.estancia" resource="true"/>
+            </field>
+            <field property="nombreContactoEclo" depends="required">
+            	<arg key="establecimientoForm.nombreContactoEclo" resource="true"/>
+            </field> 
+         
+         
+         
+         
+        </form>
+        
+        
+         <form name="reportesEcloForm">
+            <field property="rp" depends="required">
+            	<arg key="reportesEcloForm.rp"/>
+            </field>
+            <field property="idEstablecimiento" depends="required,integer">
+            	<arg key="reportesEcloForm.idEstablecimiento"/>
+            </field>
+            <field property="anio" depends="required,integer">
+            	<arg key="reportesEcloForm.anio"/>
+            </field>
+        </form>
+         <form name="propietarioForm">
+           <field property="nombre" depends="required,maxlength">
+            	<arg key="propietarioForm.nombre" resource="true"/>
+            	<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+            	<var>
+            		<var-name>maxlength</var-name>
+            		<var-value>60</var-value>
+            	</var>
+            </field> 
+            
+            
+                  
+<!--             <field property="socRural" depends="required,integer">
+            	<arg key="propietarioForm.socRural"/>
+            </field>  -->
+            <field property="har" depends="integer">
+            	<arg key="propietarioForm.har"/>
+            </field>
+             <field property="socio" depends="integer">
+            	<arg key="propietarioForm.socio"/>
+            </field>
+            <field property="mail" depends="email">
+           		<arg key="propietarioForm.mail" resource="true"/>
+            </field>
+            <field property="fechaLog" depends="required,date">
+            	<arg key="propietarioForm.fechaLog"/>
+            </field>
+            
+        </form>
+        <form name="reporteEventosForm">
+           
+            <field property="idEst" depends="required,integer">
+            	<arg key="reporteEventosForm.idEst"/>
+            </field>
+            
+             <field property="fechaInic" depends="required,date">
+            	<arg key="reporteEventosForm.fechaInic"/>
+            </field>
+             <field property="fechaFin" depends="required,date">
+            	<arg key="reporteEventosForm.fechaFin"/>
+            </field>
+           
+        </form>
+        
+        <form name="calificacionForm">
+           
+            <field property="idEstab" depends="required,integer">
+            	<arg key="calificacionForm.idEstab"/>
+            </field>
+            
+             <field property="fecha" depends="required,date">
+            	<arg key="calificacionForm.fecha"/>
+            </field>
+           
+           
+        </form>
+
+		 <form name="entidadRegionalForm">
+            <field property="nombre" depends="required">
+            	<arg key="entidadRegionalForm.nombre"/>
+            </field>
+             <field property="email" depends="email">
+            	<arg key="entidadRegionalForm.email" resource="true"/>
+            </field>     
+		</form>
+		
+		<form name="ecloForm">
+            
+             <field property="nombre" depends="required,maxlength">
+            	<arg key="ecloForm.nombre" resource="true"/>
+            	<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+            	<var>
+            		<var-name>maxlength</var-name>
+            		<var-value>60</var-value>
+            	</var>
+            </field> 
+             <field property="numeroDocumentoResponsable" depends="integer">
+            	<arg key="ecloForm.numeroDocumentoResponsable"/>
+            </field>
+            <field property="email" depends="email">
+            	<arg key="ecloForm.email" resource="true"/>
+            </field>     
+		</form>
+		
+		<form name="ubicacionForm">
+            <field property="nombre" depends="required">
+            	<arg key="ubicacionForm.nombre"/>
+            </field>
+            <field property="provinciaRegion" depends="required">
+            	<arg key="ubicacionForm.provinciaRegion"/>
+            </field>
+            <field property="pais" depends="mask">
+				<arg0 key="País" resource="false" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[a-zA-Z]*$</var-value>
+				</var>		
+			</field> 
+            
+            <field property="mail" depends="email">
+            	<arg key="ubicacionForm.mail" resource="true"/>
+            </field>                    
+			 <field property="telefono" depends="mask">
+				<arg0 key="Teléfono" resource="false" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9]*$</var-value>
+				</var>		
+			</field> 
+		 
+			
+                  
+		</form>
+		
+		<form name="sistemaForm">
+            <field property="nombre" depends="required">
+            	<arg key="sistemaForm.nombre"/>
+            </field>
+             <field property="numeroDocumento" depends="integer">
+            	<arg key="sistemaForm.numeroDocumento"/>
+            </field>
+            <field property="nombreEmpresa" depends="required">
+            	<arg key="sistemaForm.nombreEmpresa"/>
+            </field>
+            <field property="apellido" depends="required">
+            	<arg key="sistemaForm.apellido"/>
+            </field>
+            <field property="nombreResponsable" depends="required">
+            	<arg key="sistemaForm.nombreResponsable"/>
+            </field>
+		</form>
+		
+		<form name="razaForm">
+            <field property="nombre" depends="required">
+            	<arg key="razaForm.nombre"/>
+            </field>    
+		</form>
+		
+		<form name="ecloBuscarForm">
+			<field property="identificador" depends="integer">
+				<arg key="ecloBuscarForm.identificador"/>
+			</field>
+		</form>
+
+		<form name="atributoForm">
+            <field property="nombre" depends="required">
+            	<arg key="atributoForm.valorAdmitido"/>
+            </field>    
+		</form>
+
+		<form name="valorForm">
+            <field property="valorAdmitido" depends="required">
+            	<arg key="valorForm.valorAdmitido"/>
+            </field>  
+             <field property="inicio" depends="date">
+				<arg0 key="Fecha Inicio" resource="false" />
+				<var>
+					<var-name>datePattern</var-name>
+					<var-value>dd/MM/yyyy</var-value>
+				</var>
+
+            </field>
+		</form>
+		
+		<form name="centroDeComputoForm">
+           <field property="nombre" depends="required,maxlength">
+            	<arg key="centroDeComputoForm.nombre" resource="true"/>
+            	<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+            	<var>
+            		<var-name>maxlength</var-name>
+            		<var-value>60</var-value>
+            	</var>
+            </field> 
+            
+            
+            <field property="mail" depends="email">
+            	<arg key="centroDeComputoForm.email" resource="true"/>
+            </field>
+            
+        </form>
+        
+       	<form name="buscarProcesosForm">
+           <field property="nroLote" depends="required">
+            	<arg key="buscarProcesosForm.nroLote" />
+           </field> 
+           <field property="nroEclo1" depends="required">
+            	<arg key="buscarProcesosForm.nroEclo1" />
+           </field>
+           <field property="nroEclo2" depends="required">
+            	<arg key="buscarProcesosForm.nroEclo2" />
+           </field>
+           <field property="idEventoResultado" depends="required">
+            	<arg key="buscarProcesosForm.idEventoResultado" />
+           </field>
+           <field property="idEventoInformado" depends="required">
+            	<arg key="buscarProcesosForm.idEventoInformado" />
+           </field>
+        </form>
+        <form name="actualizacionSicelUnoForm">
+           <field property="nroRegistro" >
+            	<arg key="actualizacionSicelUnoForm.nroRegistro" />
+           </field> 
+           <field property="raza">
+            	<arg key="actualizacionSicelUnoForm.raza" />
+           </field>
+           <field property="sexo">
+            	<arg key="actualizacionSicelUnoForm.sexo" />
+           </field>
+           <field property="rp">
+            	<arg key="actualizacionSicelUnoForm.rp" />
+           </field>
+           <field property="nombre">
+            	<arg key="actualizacionSicelUnoForm.nombre" />
+           </field>
+           <field property="regOri" >
+            	<arg key="actualizacionSicelUnoForm.regOri" />
+           </field> 
+           <field property="categoriaAnimal">
+            	<arg key="actualizacionSicelUnoForm.categoriaAnimal" />
+           </field>
+           <field property="rpMadre">
+            	<arg key="actualizacionSicelUnoForm.rpMadre" />
+           </field>
+           <field property="regOriMadre">
+            	<arg key="regOriMadre" />
+           </field>
+           <field property="tipoRegOriMadre">
+            	<arg key="actualizacionSicelUnoForm.tipoRegOriMadre" />
+           </field>
+           <field property="rpPadre" >
+            	<arg key="actualizacionSicelUnoForm.rpPadre" />
+           </field> 
+           <field property="regOriPadre">
+            	<arg key="actualizacionSicelUnoForm.regOriPadre" />
+           </field>
+           <field property="tipoRegOriPadre">
+            	<arg key="actualizacionSicelUnoForm.tipoRegOriPadre" />
+           </field>
+           <field property="razaMadre">
+            	<arg key="actualizacionSicelUnoForm.razaMadre" />
+           </field>
+           <field property="razaPadre">
+            	<arg key="actualizacionSicelUnoForm.razaPadre" />
+           </field>
+        </form>
+    </formset>
+
+    <!-- An example formset for another locale -->
+    <formset language="fr">
+
+        <constant>
+            <constant-name>postalCode</constant-name>
+            <constant-value>^[0-9a-zA-Z]*$</constant-value>
+        </constant>
+
+        <!-- An example form -->
+        <form name="logonForm">
+            <field
+                property="username"
+                depends="required">
+                    <arg key="logonForm.username"/>
+            </field>
+            <field
+                property="password"
+                depends="required,mask">
+                    <arg key="logonForm.password"/>
+                    <var>
+                        <var-name>mask</var-name>
+                        <var-value>^[0-9a-zA-Z]*$</var-value>
+                    </var>
+            </field>
+        </form>		
+
+
+   </formset>
+
+</form-validation>

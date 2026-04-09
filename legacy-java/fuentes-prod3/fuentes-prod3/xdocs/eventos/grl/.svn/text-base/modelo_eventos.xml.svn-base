@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <author email="adrianallende@yahoo.com.ar">Adrián Allende</author>
+    <title>Eventos</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,estado,transicion"/>
+  </head>
+  <body>
+    <section name="Modelo de Eventos">
+    <p>
+    El modelo de análisis del Sicel 3 (reutilizando el del Sicel 2 que no fue puesto en marcha) se opone al modelo anterior al Sicel, en el cual se enviaba información con una perspectiva del dato final que se elaboraba. por ejemplo, se enviaban los animales a inscribir informando el padre y la madre. El modelo del Sicel intenta acercar el mecanismo de intercambio de información al utilizado por los productores que está basado en las novedades que le ocurren a cada animal.
+    </p>
+    <p>
+     El modelo de funcionamiento de Sicel 3 es, por lo tanto, basicamente un esquema de evento/estado. Con esto
+     queremos decir lo siguiente:
+     <ul>
+		 <li>En todo momento, cada animal se encuentra en un, y solo un, estado identificable</li>
+		 <li>El modo de ingresar información al sistema es mediante la notificación de eventos, que
+		 ocurren sobre los animales, o sobre los establecimientos.  </li>
+		 <li>Como resultado de la ocurrencia de un evento, el animal sobre el cual se produce puede
+		 o no cambiar de estado. Por ejemplo, si el animal esta en un estado de producción, y se 
+		 produce un evento de secada, entonces pasa a estar en un estado seco, de no-producción.</li>
+     </ul>
+	</p>
+	<p>
+	Los estados posibles en que puede estar un animal, junto con una explicación sencilla de
+	cada uno se puede ver <a href="estados_animal.html">aqui </a>. 
+	</p>
+	<p>
+	Para saber que hacer ante la ocurrencia de un evento <b>ev</b> sobre un animal en estado <b>es</b>,
+	Sicel3 mantiene una matriz para computar la función  	
+	<source>
+	Estado x Evento -> Estado
+	</source>	
+	A esta matriz la llamaremos <a href="matriz_transicion.html">Matriz de Transición de Estados</a>,
+	y en ella esta resumida la información referida a que eventos son aceptados/rechazados en cada
+	estado, y que computo realizar en cada caso.	
+	Básicamente se indexa esta matriz por el estado <b>es</b> y el evento recivido <b>ev</b>, y se obtiene una
+	descripción de que hacer en esa situación. Esta "descripción" es configurable en Sicel 3, 
+	por lo que  A.C.H.A. puede modificar la aceptación o rechazo de eventos según el estado
+	del animal, que eventos determinan el inicio o finalización de lactancias, etc.
+	</p>
+	</section>
+</body>
+</document>

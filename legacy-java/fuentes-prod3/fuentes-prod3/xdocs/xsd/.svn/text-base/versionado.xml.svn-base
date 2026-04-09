@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Versionado del XSD</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="xsd, schema,xml,lotes,versionado"/>
+  </head>
+  <body>
+    <section name="Versiones en el XSD">
+    <p>	La versión del XSD estara especificada en el encabezado del XML, cómo 
+			 	es estándar en esa tecnología. Cuando se cambie la versión del XSD, se 
+				dará una fecha límite para enviar datos en el nuevo formato, pero pueden 
+				circular documentos XML que validen en, respectivamente, más de una 
+				versión del XSD.</p>
+   
+    </section>
+  </body>
+</document>  

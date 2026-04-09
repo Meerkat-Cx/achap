@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ACHA/SICELV3/!svn/ver/4671/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl
+END
+ProcesadorXML.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/ProcesadorXML.java
+END
+ProcesadorAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/ProcesadorAnimal.java
+END
+ProcesadorEventoAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/ProcesadorEventoAnimal.java
+END
+ProcesadorLote.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/ProcesadorLote.java
+END
+TipoRegistroUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/TipoRegistroUtil.java
+END
+ProcesadorEstablecimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/ProcesadorEstablecimiento.java
+END
+ProcesadorEventoEstablecimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/ProcesadorEventoEstablecimiento.java
+END
+AnimalesLactanciasOficiales.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/AnimalesLactanciasOficiales.java
+END
+AnimalesModificados.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/AnimalesModificados.java
+END
+RazaUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/4671/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/RazaUtil.java
+END
+EventoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/impl/EventoUtil.java
+END

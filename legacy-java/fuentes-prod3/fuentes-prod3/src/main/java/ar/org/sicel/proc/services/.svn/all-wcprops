@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ACHA/SICELV3/!svn/ver/4671/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services
+END
+IProcesadorEstablecimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/IProcesadorEstablecimiento.java
+END
+IProcesadorEventoEstablecimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/IProcesadorEventoEstablecimiento.java
+END
+IProcesadorXML.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/IProcesadorXML.java
+END
+IProcesadorAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/IProcesadorAnimal.java
+END
+IProcesadorEventoAnimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/IProcesadorEventoAnimal.java
+END
+IProcesadorLote.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/services/IProcesadorLote.java
+END

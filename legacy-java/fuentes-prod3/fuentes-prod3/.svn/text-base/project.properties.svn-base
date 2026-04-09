@@ -1,0 +1,13 @@
+# Project property file for SICEL3Project
+
+maven.repo.remote=http://intranet.ar.most/maven/,http://www.ibiblio.org/maven/
+
+maven.multiproject.type=ear
+maven.multiproject.includes=**/project.xml
+maven.multiproject.excludes=common/project.xml
+maven.final.name=${pom.groupId}-${pom.artifactId}-${pom.currentVersion}
+
+#maven.ear.resources
+maven.ear.src=${basedir}/common/resources/application
+
+maven.test.skip=true

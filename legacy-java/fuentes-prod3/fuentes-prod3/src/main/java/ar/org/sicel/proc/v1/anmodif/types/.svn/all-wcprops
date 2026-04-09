@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types
+END
+STPaisDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STPaisDescriptor.java
+END
+STPais.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STPais.java
+END
+STRazaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STRazaDescriptor.java
+END
+STRaza.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STRaza.java
+END
+STSexoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STSexoDescriptor.java
+END
+STSexo.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STSexo.java
+END
+STTRegDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STTRegDescriptor.java
+END
+STTReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/anmodif/types/STTReg.java
+END

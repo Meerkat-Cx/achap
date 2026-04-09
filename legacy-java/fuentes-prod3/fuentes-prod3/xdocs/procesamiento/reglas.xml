@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author >P</author>
+    <title>Composición Racial</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="composicion racial,raza declarada, raza calculada, regla,raza"/>
+  </head>
+  <body>
+    <section name="Reglas Procesamiento">
+    <p>
+    Los eventos se informan en lotes, entonces, hay reglas q se aplican en el contexto de 
+    informar en un lote y reglas que son válidas a aplicarse en los eventos en cualquier contexto.
+    en este apartado se explican reglas relacionadas con los lotes informados en archivos.
+    Para las reglas de cada evento particular, véase la documentación referida a este.
+    </p>
+    <subsection name="IDs de Lote">
+    <p>
+    Cada lote infomado por una ECLO debe tener un numero de lote único para esta ECLO (es
+    decir, dos lotes informados por una misma ECLO no pueden tener el mismo número). La 
+    numeración es, además, estrictamente creciente.
+    </p>
+    <p>
+    Luego de procesado el lote, e independiente de si este fuera aceptado o rechazado (por
+    ejemplo por ser un duplicado),  se incluye en el resultado el id asignado por Sicel3 al
+    procesamiento (en el nodo IDLoteSicel). De esta manera, el enviante tiene una manera
+    de individualizar cada procesamiento en  particular.
+    </p>
+    <p>
+    Por ejemplo, si se envia dos veces el mismo lote, la primera copia sera aceptada
+    y la segunda rechazada (por tener un id de lote repetido), pero a ambos procesamientos
+    se les darán id de procesamiento distintos. Luego, sera posible informar cuando
+    Sicel3 proceso cada lote, quien estaba encargado, etc.    
+    </p>
+    </subsection>
+    
+    <subsection name="IDs de Evento">
+      <p>
+			Cada evento informado por una ECLO tiene un numero único para esta ECLO (es decir
+			dos eventos informados por una misma ECLO no pueden tener el mismo numero). La
+			numeración, además,  debe ser estrictamente creciente.
+	</p>
+	<p>	Por lo dicho, si Sicel 3 recive un evento con un numero igual al de algun evento
+			anterior enviado por la misma ECLO, o si el numero no es mayor que el último evento
+			enviado por la ECLO, entonces lo rechazará. 
+	</p>		
+	<p>	Luego de procesado un evento, en el xml resultado se informará el identificador que
+			Sicel 3 le otorgo internamete, el cual podra ser utilizado luego por los PSCL para una
+			rápida individualización de un evento particular. Es decir, una ves procesado, el evento
+			podra ser individualizado de dos maneras: por el par [Eclo,NumeroEvento] asignado
+			por cada PSCL, o por el idEvento , asignado por Sicel 3 a todos los eventos procesados
+			satisfactoriamente. 
+	</p>
+	<p>
+		Notar que si un evento es rechazado por algún motivo, entonces no se le asignara 
+		identificador alguno.
+	</p>
+    </subsection>
+    
+    
+    <subsection name="Fechas">
+     <p>	Los eventos de Animal tienen una restricción adicional: se deben informar en orden
+			cronológico. Es decir, del evento mas antiguo al mas reciente. Si se informa a Sicel 3
+			 con un evento con fecha anterior al último informado para ese animal, este se rechazará.
+      </p>
+      <p>
+		  Tampoco se pueden informar en un lote eventos con fecha posterior a la fecha de <b>envio</b> de este.
+		  Cualquier evento con fecha posterior a la fecha de envio del lote en el cual se informa, 
+		  sera rechazado.
+      </p>
+    </subsection>
+	</section>
+  </body>
+</document>
+	

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ACHA/SICELV3/!svn/ver/4797/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util
+END
+Email.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/Email.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/4404/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/StringUtils.java
+END
+EmailSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ACHA/SICELV3/!svn/ver/3734/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/EmailSender.java
+END
+Sicel3Conf.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/Sicel3Conf.java
+END
+ByteArrayDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/ByteArrayDataSource.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/4797/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/DateUtils.java
+END
+RCHBANumePagination.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/ACHA/SICELV3/!svn/ver/4187/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/util/RCHBANumePagination.java
+END

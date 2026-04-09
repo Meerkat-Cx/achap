@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Evento Estado</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,estado,transicion"/>
+  </head>
+  <body>
+    <section name="Glosario">
+    <dl>
+		<dt>A.C.H.A.</dt>
+			<dd>Asociación de Criadores de Holando Argentino</dd>
+
+		<dt>ECLO</dt>
+			<dd>Entidad de Control Lechero Oficial</dd>
+
+
+		<dt>PSCL</dt>
+			<dd>Proveedor de SCL. Empresa de software que distrubuye un SCL.</dd>
+		
+		<dt>RC</dt>
+			<dd>Registro de crías. Denominación actual del número de registro otorgado por ACHA.</dd>
+		
+		<dt>RP</dt>
+			<dd>Registro del productor. Número de registro que cada productor 
+			coloca en sus productos (animales).</dd>
+			
+	     <dt>SCL</dt>
+			 <dd>Sistema de Control Lechero. Sistema informático que utilizan las ECLOs para dar 
+			  servicio a sus clientes, y en particular informar a ACHA los eventos de esos animales.</dd>
+
+		<dt>SICEL3</dt>
+			<dd>Nueva versión del  Sistema Integrado de Control de Especies Lecheras, sistema informático de ACHA.</dd>
+    </dl>
+    </section>
+  </body>
+</document>
+

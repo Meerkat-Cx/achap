@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Parametros de Configuracion</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="sicel3, configuracion, parametros"/>
+  </head>
+  <body>
+  <section name="Parametros de Configuracion">
+  <subsection name="Parametros generales">
+  <table>
+  	<thead>
+  	<tr>
+  		<th>Regla</th>
+  		<th>Descripcion</th>
+  		<th>Valor Por Defecto</th>
+	</tr>
+  	</thead>
+  	<tbody>
+  	  		<tr>
+  			<td>ACEPTA_FECHA_SERVICIO_PARTO</td>
+  			<td>Aceptar que se especifique la fecha del servicio en el evento reproducción</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ACEPTAR_RAZA_MADRE_EN_PARTO</td>
+  			<td>Aceptar que se especifique usar la raza de la madre para las crias</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>EVT_ECLO_UNICO</td>
+  			<td>Controlar que los ID de evento sean únicos para cada ECLO</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>PROP_DISTINTOS</td>
+  			<td>Rechazar si se informen eventos para un animal desde un establecimiento de distinto dueño que el animal</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ESTAB_DISTINTOS</td>
+  			<td>Rechazar si se informen eventos para un animal desde otro establecimiento</td>
+  			<td>0</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>OBLIGA_FECHA_SERVICIO_EN_PARTO</td>
+  			<td>Obligar a que se especifique la fecha de servicio en el evento reproducción</td>
+  			<td>0</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ACEPTA_SERVICIO_ESPECIFICADO_NO_MAS_APROPIADO</td>
+  			<td>Aceptar que se encuentre otro servicio con fecha mas cercana al promedio de gestacion que el del servicio especificado en un parto</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ACEPTA_SERVICIO_AMBIGUO_EN_PARTO</td>
+  			<td>Aceptar se encuentre mas de un servicio posible para un parto</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>REGLA_MISMO_EST_PROP_SERVICIO</td>
+  			<td>Controlar que los animales que intervienen en un servicio de tipo Corral o Campo pertenezcan al mismo propietario o esten en el mismo establecimiento</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>UsarFechaEventoReglas</td>
+  			<td>Utilizar la configuracion existente al momento de la fecha de evento</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>RAZA_DCL_EN_ALTA</td>
+  			<td>Aceptar que se de una raza declarada al realizar un alta</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>InscribirMachoAcepta</td>
+  			<td>Aceptar que se inscriban crias de sexo masculino</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>REGLA_EDAD_SERV_ART</td>
+  			<td>Controlar edad minima para recivir servicios artificiales</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ACEPTA_LARGO_EXISTE_CORTO</td>
+  			<td>$at.descripcion</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>REGLA_EDAD_SERV_NAT</td>
+  			<td>Controlar edad minima para recivir servicios naturales</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>TrFLDPropMEstab</td>
+  			<td>$at.descripcion</td>
+  			<td>0</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ACEPTA_PARTO_SIN_SERVICIO</td>
+  			<td>Aceptar que se informen partos sin un servicio válido</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>REGLA_EDAD_MINIMA_PROD_EMBRIONES</td>
+  			<td>Controlar la edad minima de una hembra para poder haber dado un embrion en una transferencia hembrionaria</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ID_LOTE_UNICO</td>
+  			<td>Controlar que los ID de lote sean únicos para cada ECLO</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>CREA_VALORES_ATR</td>
+  			<td>Crear valores permitidos si no existen para el atributo al setearlo</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>COMP_RAC_EN_ALTA</td>
+  			<td>Aceptar que se especifique la composicion racial al realizar un alta</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>TRANSF_IMPLICITA</td>
+  			<td>Realizar Transferencias Implicitas</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>TrFLEstabDProp</td>
+  			<td>$at.descripcion</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>RP_UNICO</td>
+  			<td>Controlar que los RP sean únicos por establecimiento</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>ACEPTA_SERVICIO_SOLAPADO</td>
+  			<td>Aceptrar que se informen servicios solapados</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>CREAR_REG_SIEMP</td>
+  			<td>Crear y asignar siempre un RC al dar de alta un animal aunque este ya posea otro Registro</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>REGLA_EDAD_SERVICIO_TORO</td>
+  			<td>Controlar la edad minima de un toro para participar en un Servicio</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>MED_MAX_MIN_ACTIVA</td>
+  			<td>Controlar que las mediciones de produccion esten dentro del rango valido</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>InscribirHembraObliga</td>
+  			<td>Obligar a inscribir las crias de sexo femenino</td>
+  			<td>1</td>
+  		</tr>
+
+  	  		<tr>
+  			<td>TrFLDPropDEstabMPrEst</td>
+  			<td>$at.descripcion</td>
+  			<td>0</td>
+  		</tr>
+
+  	  	</tbody>
+  	</table>
+  	</subsection>
+			<subsection name="Defecto">
+		<p>Defecto</p>
+	
+		<table>
+  		<thead>
+	  		<tr>
+  				<th>Regla</th>
+  				<th>Descripcion</th>
+  				<th>Inicio</th>
+  				<th>Valor</th>
+			</tr>
+  		</thead>
+  		<tbody>
+  		  		</tbody>
+  		</table>
+	</subsection>
+	  	
+  	<subsection name="fin"> 
+  	<p>
+  	Generado el 8/10/05
+  	</p>
+  	</subsection>
+  	</section>
+  </body>
+ </document>
+ 

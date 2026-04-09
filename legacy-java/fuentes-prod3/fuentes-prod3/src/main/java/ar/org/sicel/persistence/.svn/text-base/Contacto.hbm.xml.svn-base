@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Contacto"
+        table="En_Contacto"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_en_contacto</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Contacto.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="nombreContacto"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+                not-null="true"
+            />
+        </property>
+
+         <property
+            name="comentario"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="comentario"
+        />
+        <property
+		        name="cuig"
+			    type="java.lang.String"
+				update="true"
+	            insert="true"
+				length="50"
+			    
+			/>
+			<property
+		        name="cuit"
+			    type="java.lang.String"
+				update="true"
+	            insert="true"
+				length="50"
+			    
+			/>
+			<property
+		        name="renspa"
+			    type="java.lang.String"
+				update="true"
+	            insert="true"
+				length="50"
+			    
+			/>
+        <property name="email" type="java.lang.String" update="true" insert="true"/>
+
+		 <set
+            name="usuarios"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+            
+        >
+
+            <key
+                column="contacto"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Usuario"
+            />
+
+        </set>
+        <set
+            name="ubicacions"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            order-by="nombre asc"
+        >
+
+            <key
+                column="contacto"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Ubicacion"
+            />
+
+        </set>
+
+        <many-to-one
+            name="atrVariables"
+            class="ar.org.sicel.persistence.AtrVariables"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Cont_atrVariables" 
+            unique-key="UN_En_Cont_atrVariables"
+            not-null="false"
+        >
+        </many-to-one>
+
+        <many-to-one
+            name="foto"
+            class="ar.org.sicel.persistence.Foto"
+            cascade="save-update"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_en_cont_foto"
+            column="foto"
+            not-null="false"
+        />
+        <set
+            name="bitacora"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+            order-by="fecha"
+        >
+
+            <key
+                column="contacto"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.LogContacto"
+            />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Contacto.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.Establecimiento"
+            table="En_Establecimiento"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Esta_Cont"
+            />
+        <property
+            name="s1Tbo"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="S1_Tbo"
+        />
+
+        <property
+            name="s1Eclo"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="S1_ECLO"
+        />
+
+        <property
+            name="s1Prop"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="S1_Prop"
+        />
+
+        <many-to-one
+            name="propietario"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Esta_Prop"
+            column="propietario"
+            not-null="true"
+        />
+
+         <many-to-one
+            name="eclo"
+            class="ar.org.sicel.persistence.Eclo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Esta_Eclo"
+            column="ECLO"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="estancia"
+            class="ar.org.sicel.persistence.Estancia"
+            cascade="none"
+            foreign-key="FK_En_Estancia"
+            column="ESTANCIA"
+           
+        />
+
+        <many-to-one
+            name="atrVariablesEstab"
+            class="ar.org.sicel.persistence.AtrVariables"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Esta_atrVariables"
+        >
+            <column
+                name="atrVariables"
+                unique-key="UN_En_Esta_atrVariables"
+                not-null="false"
+            />
+        </many-to-one>
+		 <property
+		   name="activoEstablecimiento"
+		    column="activoEstablecimiento"
+		     update="true" 
+		     insert="true" 
+		     type="boolean" />
+		      <property
+		   name="activoPropietario"
+		    column="activoPropietario"
+		     update="true" 
+		     insert="true" 
+		     type="boolean" />
+		       <property
+		   name="activoEclo"
+		    column="activoEclo"
+		     update="true" 
+		     insert="true" 
+		     type="boolean" />
+		      <property
+		   name="activoEstancia"
+		    column="activoEstancia"
+		     update="true" 
+		     insert="true" 
+		     type="boolean" />
+		     
+		    <many-to-one
+            name="metodoControl"
+            class="ar.org.sicel.persistence.MetodoControl"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Esta_MetodoControl"
+            column="METODOCONTROL"
+            not-null="false"
+        />
+		 <many-to-one
+            name="centroComputo"
+            class="ar.org.sicel.persistence.CentroDeComputo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Centro"
+            column="centro"
+            not-null="false"
+        />    
+		     
+		     
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EntidadRegional"
+            table="En_Regional"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Regi_Cont"
+            />
+
+        <set
+            name="eclos"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="regional"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Eclo"
+            />
+
+        </set>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.ProveeSmn"
+            table="En_ProveeSmn"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_ProvSmn_Cont"
+            />
+
+        <set
+            name="evtSemens"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="proveedor"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtSemen"
+            />
+
+        </set>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.Eclo"
+            table="En_ECLO"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Eclo_Cont"
+            />
+        <property
+            name="ultimoNumeroEvento"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="ultimo_evento" 
+            />
+        </property>
+		 <property
+		   name="activo"
+		    column="activo"
+		     update="true" 
+		     insert="true" 
+		     type="boolean" />
+        <many-to-one
+            name="regional"
+            class="ar.org.sicel.persistence.EntidadRegional"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Eclo_Regi"
+            column="regional"
+        />
+		<set
+            name="establecimientos" cascade="none"
+            sort="unsorted" 
+        >
+		 <key
+                column="ECLO">
+            </key>
+			<one-to-many
+                  class="ar.org.sicel.persistence.Establecimiento"
+            />
+
+        </set>
+        <set
+            name="estancias"
+            lazy="true" inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+		 	<key
+                column="eclo">
+            </key>
+			<one-to-many
+                  class="ar.org.sicel.persistence.Estancia"
+            />
+
+        </set>
+
+        <many-to-one
+            name="responsable"
+            class="ar.org.sicel.persistence.ResponsableEclo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Eclo_reec"
+     	    unique-key="UN_En_ECLO_responsable"
+        >
+        </many-to-one>
+
+		<set name="sistemas" order-by="sistema_id asc"
+			lazy="true" table="en_sisteclo">
+			<key column="eclo_id" foreign-key="FK_EN_ECLO" />
+			<many-to-many class="ar.org.sicel.persistence.Sistema">
+				<column name="sistema_id" not-null="true" />
+			</many-to-many>
+		</set>
+		
+       <!--   <many-to-one
+            name="sistema"
+            class="ar.org.sicel.persistence.Sistema"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Eclo_Sist"
+            column="sistema"
+        /> -->
+
+        <set
+            name="procLotes"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="eclo"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.ProcLote"
+            />
+
+        </set>
+       
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.Propietario"
+            table="En_Propietario"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Prop_Cont"
+            />
+
+        <property
+            name="prefijo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            length="20"
+        />
+
+        <property
+            name="socio"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="socio"
+        />
+		
+		
+		  <property
+		   name="activo"
+		    column="activo"
+		     update="true" 
+		     insert="true" 
+		     type="boolean" />
+		     
+        <property
+            name="har"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="HAR"
+        />
+
+		<!-- <many-to-one
+            name="sraExpd"
+            class="ar.org.sicel.persistence.PropietarioExpd"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_PROPIETARIO_EXPD"
+        />-->
+        
+        <set
+            name="expds"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+            order-by="fechaAlta desc"
+        >
+
+            <key
+                column="propietario"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.PropietarioExpd"
+            />
+		</set>
+
+
+        <property
+            name="s1Eclo"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="S1_ECLO"
+        />
+
+        <property
+            name="s1Prop"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="S1_PROP"
+        />
+
+        <property
+            name="esPersonaFisica"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="esPersonaFisica"
+        />
+		 
+		
+        <set
+            name="establecimientos"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="propietario"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Establecimiento"
+            />
+		</set>
+        
+        <set
+            name="estancias"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+		 <key
+                column="propietario">
+            </key>
+			<one-to-many
+                  class="ar.org.sicel.persistence.Estancia"
+            />
+
+        </set>
+
+        
+
+        <set
+            name="evtTransferencias"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="nuevoProp"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtTransferencia"
+            />
+
+        </set>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.Persona"
+            table="En_Persona"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_Pers_Cont"
+            />
+        <property
+            name="documento"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="documento"
+        />
+
+        <property
+            name="tipoDocumento"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tipoDocumento" 
+                length="15"
+            />
+        </property>
+
+        <property
+            name="nombrePersona"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="apellido"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="apellido" 
+                length="60"
+            />
+        </property>
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.ResponsableSistema"
+            table="En_PerRespSis"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_ReSi_Pers"
+            />
+
+        <one-to-one
+            name="sistema"
+            class="ar.org.sicel.persistence.Sistema"
+            cascade="none"
+            outer-join="auto"
+            constrained="false"
+            property-ref="responsable"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.Calificador"
+            table="En_PerCalif"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_PeCa_Pers"
+            />
+
+        <set
+            name="calificacions"
+            lazy="true"
+            inverse="true"
+            cascade="none"
+            sort="unsorted"
+        >
+
+            <key
+                column="calificador"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Calificacion"
+            />
+
+        </set>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.ResponsableEclo"
+            table="En_PerRespEclo"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_ReEc_Pers"
+            />
+
+        <one-to-one
+            name="eclo"
+            class="ar.org.sicel.persistence.Eclo"
+            cascade="none"
+            outer-join="auto"
+            constrained="false"
+            property-ref="responsable"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.PersonaOtro"
+            table="En_PerOtr"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_PeOt_Pers"
+            />
+
+        </joined-subclass>
+
+
+	
+        </joined-subclass>
+
+
+
+		<joined-subclass
+            name="ar.org.sicel.persistence.Estancia"
+            table="En_Estancia"
+            lazy="true">
+            <key
+                column="id"
+                foreign-key="FK_Estacia"/>	        
+	         
+			<property
+		   			name="activo"
+		     		update="true" 
+		     		insert="true" 
+		     		type="boolean" />
+		  <!--   <property
+		   			name="activoEclo"
+		     		update="true" 
+		     		insert="true" 
+		     		type="boolean" />-->
+		    <property
+		   			name="activoPropietario"
+		     		update="true" 
+		     		insert="true" 
+		     		type="boolean" />
+			<many-to-one
+					name="propietario"
+					class="ar.org.sicel.persistence.Propietario"
+					cascade="none"
+					outer-join="auto"
+					update="true"
+					insert="true"
+					foreign-key="FK_Estancia_propietario"
+					not-null="true"					
+			 />
+			<!--  <many-to-one
+					name="eclo"
+					class="ar.org.sicel.persistence.Eclo"
+					cascade="none"
+					outer-join="auto"
+					update="true"
+					insert="true"
+					foreign-key="FK_Estancia_eclo"
+					not-null="true"
+			 />-->
+			 
+			<set
+            	name="establecimientos"
+            	lazy="true" inverse="true"
+            	cascade="all"
+            	sort="unsorted"
+        	>
+            	<key
+                	column="ESTANCIA" 
+            	>
+            	</key>
+            	<one-to-many
+                 	 class="ar.org.sicel.persistence.Establecimiento" 
+            	/>
+	        </set>
+
+        </joined-subclass>
+
+
+
+		
+
+    </class>
+
+</hibernate-mapping>

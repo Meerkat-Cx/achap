@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="reporteDatosTambosPropietario"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="NOMBRE_Y_APELLIDO" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="CUIT_CUIL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="CUIG" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="RENSPA" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="PREFIJO" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SOCIO" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="HAR" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="PERSONA_FISICA" isForPrompting="false" class="java.lang.Boolean"/>
+	<parameter name="ESTADO" isForPrompting="false" class="java.lang.Boolean"/>
+	<parameter name="PROPIETARIO_ID" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="DIR_REPORTES" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["C:/Proyectos/Acha/webapp/reports/reports/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="FECHA" isForPrompting="false" class="java.util.Date"/>
+	<parameter name="ID" isForPrompting="false" class="java.lang.Long"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="802"  isSplitAllowed="true" >
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="802"
+						key="subreport-1"
+						positionType="Float"
+						isPrintRepeatedValues="false"/>
+					<subreportParameter  name="DIR_REPORTES">
+						<subreportParameterExpression><![CDATA[$P{DIR_REPORTES}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="PROPIETARIO_ID">
+						<subreportParameterExpression><![CDATA[$P{PROPIETARIO_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="NOMBRE_Y_APELLIDO">
+						<subreportParameterExpression><![CDATA[$P{NOMBRE_Y_APELLIDO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="CUIT_CUIL">
+						<subreportParameterExpression><![CDATA[$P{CUIT_CUIL}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="CUIG">
+						<subreportParameterExpression><![CDATA[$P{CUIG}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="RENSPA">
+						<subreportParameterExpression><![CDATA[$P{RENSPA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="PREFIJO">
+						<subreportParameterExpression><![CDATA[$P{PREFIJO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="SOCIO">
+						<subreportParameterExpression><![CDATA[$P{SOCIO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="HAR">
+						<subreportParameterExpression><![CDATA[$P{HAR}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="PERSONA_FISICA">
+						<subreportParameterExpression><![CDATA[$P{PERSONA_FISICA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="ESTADO">
+						<subreportParameterExpression><![CDATA[$P{ESTADO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="FECHA">
+						<subreportParameterExpression><![CDATA[$P{FECHA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="ID">
+						<subreportParameterExpression><![CDATA[$P{ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{DIR_REPORTES}+"/subreporteDatosEclosPropietarios.jasper"]]></subreportExpression>
+				</subreport>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="801"
+						width="535"
+						height="0"
+						key="line-4"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="0"
+						key="line-5"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="534"
+						y="0"
+						width="0"
+						height="802"
+						key="line-7"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="0"
+						height="802"
+						key="line-8"
+						isPrintWhenDetailOverflows="true"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

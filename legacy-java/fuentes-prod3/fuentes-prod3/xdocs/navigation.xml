@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Sicel3">
+
+  <!-- Page Title -->
+  <title>Sicel3 - Sistema Integrado de Control de Especies Lecheras</title>
+
+  <body>
+
+    <!-- Links defined across the top right of the site -->
+    <links>
+      <item name="ACHA"  href="http://www.acha.org.ar/"/>
+    </links>
+
+    <!-- Menu in the Left Navigation -->
+    <menu name="Documentación">
+      <!-- Standalone item -->
+      <!--
+      <item name="Informacion General" href="/item.html">
+           <item name="Introduccion" href="/general/intro.html" />
+           <item name="Eclos y Eventos" href="/general/eclos_eventos.html" />
+           <item name="Resultados del Procesamiento" href="/general/resultados.html" />
+      </item>
+-->
+			<item name="Acerca del SICEL" href="index.html"/>
+			<item name="Acerca de la Documentación" href="doc/index.html"/>
+			<item name="Eventos" href="eventos/index.html">
+				<item name="General" href="eventos/grl/index.html">
+					<item name="Modelo de Eventos" href="eventos/grl/modelo_eventos.html"/>
+					<item name="Estados" href="eventos/grl/estados_animal.html"/>
+					<item name="Matriz de Transición" href="eventos/grl/matriz_transicion.html"/>
+				</item>
+				<item name="Alta" href="eventos/alta.html" />
+				<item name="Compra de Semen" href="eventos/semen.html" />
+				<item name="Partos y Abortos" href="eventos/reproduccion.html" />
+				<item name="Servicio" href="eventos/servicio.html" />
+				<item name="Baja" href="eventos/baja.html" />
+				<item name="Ordeñe" href="eventos/ordenie.html"/>
+				<item name="Produccion" href="eventos/produccion.html" />
+				<item name="Secada" href="eventos/secada.html" />
+				<item name="Preñez" href="eventos/preniez.html" />
+				<item name="Transferencia" href="eventos/transferencia.html" />
+				<item name="Estado" href="eventos/estado.html" />
+			</item>
+			<item name="Calificaciones" href="calificaciones/index.html"/>
+			<item name="Otras Reglas" href="reglas/index.html">
+				<item name="Composicion Racial" href="reglas/comp_racial.html"/>
+				<item name="Raza Declarada" href="reglas/raza_declarada.html"/>
+				<item name="Calculo de Lactancias" href="ext-doc/DefinicionesLactanciasParaSicel3_v2.0.pdf" />
+			</item>
+			<item name="Procesamiento" href="procesamiento/index.html">
+				<item name="General"  href="procesamiento/general.html"/>
+				<item name="XSD" href="procesamiento/xsd/index.html">
+					<item name="Versionado" href="procesamiento/xsd/versionado.html"/>
+					<item name="Ejemplos" href="procesamiento/xsd/ejemplos.html"/>
+				</item>
+				<item name="Resultados" href="procesamiento/resultado.html"/>
+				<item name="Mensajes y Errores" href="procesamiento/mensajes_niveles.html"/>
+				<item name="Reglas Procesamiento"  href="procesamiento/reglas.html"/>
+			</item>
+			<item name="Material de Referencia" href="ref/index.html">
+				<item name="Glosario" href="ref/glosario.html"/>
+				<item name="Codigos de Mensaje" href="ref/mensajes.html"/>
+				<item name="Matriz de Transición Actual" href="ref/matriz.html"/>
+				<item name="Variables de Configuracion" href="ref/configuracion.html"/>
+				<item name="Atributos Raza" href="ref/parametros_raza.html"/>
+				<item name="Atributos Especie" href="ref/parametros_especie.html"/>
+			</item>
+    </menu>
+  </body>
+</project>

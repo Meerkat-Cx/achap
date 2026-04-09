@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="ReporteInscriptosReprod"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="595"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoDataSection"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false"
+		 whenResourceMissingType="Empty">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="IMG_ACHA" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="FECHA_DESDE" isForPrompting="true" class="java.lang.String"/>
+	<parameter name="FECHA_HASTA" isForPrompting="true" class="java.lang.String"/>
+	<queryString><![CDATA[select RAZA, EVENTO, CANTIDAD from (select ra.NOMBRE RAZA, 'ALTA' EVENTO, count(*) CANTIDAD from an_animal a, EV_ALTA ea,pr_ev_estab pee,pr_establecimiento pe,pr_lote pl,pr_proces pp, AN_RAZA ra--21940 final--------hasta 31/06 21498
+                                            where a.id > 5946202  and a.categoria !='PED' and ea.ANIMAL=a.id and pee.EV_ESTAB = ea.id 
+                                            and razadeclara = ra.id and pee.pr_estab = pe.id  and pe.LOTE = pl.id  and pp.PR_LOTE = pl.ID
+                                                                     and pp.FECHAENTRADA >= to_date($P{FECHA_DESDE},'yyyy/mm/dd')
+                                                                     and pp.FECHAENTRADA <= to_date($P{FECHA_HASTA},'yyyy/mm/dd')
+                                                                    GROUP BY(ra.NOMBRE)
+                                            UNION
+                                            select ra.NOMBRE RAZA, 'REPRODUCCION' EVENTO, count(*) CANTIDAD from an_animal a, EV_cria ec, ev_reproduccion er, pr_ev_animal pea, pr_animal pa, pr_establecimiento pe, pr_lote pl, pr_proces pp, AN_RAZA ra--22011 --hasta el 30/06 21105
+                                            where a.id > 5946202 and a.categoria !='PED' and ec.cria=a.id  and not exists (select * from ev_alta where animal = a.id)
+                                            and razadeclara = ra.id and ec.EVT_REPRODUCCION = er.id and er.id = pea.EV_ANIM  and pea.PR_ANIMAL= pa.ID  and pa.PR_ESTAB=pe.ID
+                                                  and pe.LOTE = pl.id and pp.PR_LOTE = pl.ID  
+                                                  and pp.FECHAENTRADA >= to_date($P{FECHA_DESDE},'yyyy/mm/dd')
+                                                  and pp.FECHAENTRADA <= to_date($P{FECHA_HASTA},'yyyy/mm/dd')
+                                                  GROUP BY(ra.NOMBRE))
+
+order by RAZA]]></queryString>
+
+	<field name="RAZA" class="java.lang.String"/>
+	<field name="CATEGORIA" class="java.lang.String"/>
+	<field name="CANTIDAD" class="java.lang.Long"/>
+	<field name="EVENTO" class="java.lang.String"/>
+
+		<background>
+			<band height="1"  isSplitAllowed="false" >
+			</band>
+		</background>
+		<title>
+			<band height="21"  isSplitAllowed="false" >
+				<staticText>
+					<reportElement
+						mode="Transparent"
+						x="363"
+						y="1"
+						width="115"
+						height="20"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-1"
+						positionType="Float"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" lineSpacing="Single">
+						<font fontName="Helvetica" pdfFontName="Helvetica-Bold" size="12" isBold="true" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[TOTALES]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="32"  isSplitAllowed="false" >
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Transparent"
+						x="364"
+						y="0"
+						width="120"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-1"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isPrintRepeatedValues="false"
+						isRemoveLineWhenBlank="true"/>
+					<box>					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#CCCCCC"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" lineSpacing="Single">
+						<font fontName="Helvetica" pdfFontName="Helvetica-Bold" size="10" isBold="true" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RAZA}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Transparent"
+						x="400"
+						y="16"
+						width="150"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-3"
+						isRemoveLineWhenBlank="true"/>
+					<box>					<pen lineWidth="0.0" lineStyle="Double"/>
+					<topPen lineWidth="0.0" lineStyle="Double" lineColor="#CCCCCC"/>
+					<leftPen lineWidth="0.0" lineStyle="Double" lineColor="#CCCCCC"/>
+					<bottomPen lineWidth="0.0" lineStyle="Double" lineColor="#CCCCCC"/>
+					<rightPen lineWidth="0.0" lineStyle="Double" lineColor="#CCCCCC"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" lineSpacing="Single">
+						<font fontName="Helvetica" pdfFontName="Helvetica" size="8" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{EVENTO}+" = "+$F{CANTIDAD}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</summary>
+</jasperReport>

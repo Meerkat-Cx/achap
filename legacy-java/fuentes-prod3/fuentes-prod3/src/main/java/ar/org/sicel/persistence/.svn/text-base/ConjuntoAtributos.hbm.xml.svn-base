@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.ConjuntoAtributos"
+        table="At_Conjunto_At"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_at_conjunto_at</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-ConjuntoAtributos.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="esIntervalo"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esIntervalo" 
+                not-null="true"
+            />
+        </property>
+
+        <set
+            name="atributos"
+            lazy="false"
+            cascade="all"
+            sort="unsorted"
+            inverse="true"
+        >
+
+            <key
+                  foreign-key="FK_Atri_Coat"
+            >
+                <column
+                    name="conjunto_at" 
+                    not-null="true"
+                />
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.Atributo"
+            />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-ConjuntoAtributos.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

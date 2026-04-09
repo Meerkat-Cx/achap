@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Raza"
+        table="An_Raza"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            type="java.lang.String"
+        >
+                <column
+                    name="id" 
+                    length="4"
+                    not-null="true"
+                />
+            <generator class="assigned">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Raza.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="40"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="esCruza"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="esCruza"
+        />
+
+        <property
+            name="esDesconocido"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="esDesconocido"
+        />
+
+        <many-to-one
+            name="especie"
+            class="ar.org.sicel.persistence.Especie"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Raza_Especie"
+            column="especie"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="atrVariables"
+            class="ar.org.sicel.persistence.AtrVariables"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Raza_AtrVar"
+            unique-key="UN_An_Raza_atr_Variables"
+            not-null="false"
+        >
+        </many-to-one>
+
+        <many-to-one
+            name="foto"
+            class="ar.org.sicel.persistence.Foto"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_an_raza_foto"
+            column="foto"
+            not-null="false"
+        />
+        <property
+            name="categoriaPura"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="categoriaPura" 
+                length="40"
+                not-null="false"
+            />
+        </property>
+        
+        <property
+            name="idFicticio"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="id_raza_fic"
+        />
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Raza.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

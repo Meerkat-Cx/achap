@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Estados del animal</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="regla,animal,estado"/>
+  </head>
+  <body>
+  	<section name="Estados del animal">
+  	<p>	Para generalizar ciertas reglas se ha construído un modelo de 
+				transición de estados del animal. El modelo posee 6 estados, que surgen de la 
+				combinación de los estados reproductivos {vacía, servida, preñada} y los 
+				productivos {seca, en producción}. </p>
+		<p>	La transición entre estados está determinada por los 
+				eventos informados. Por ejemplo, se pasa de (seca,vacía) a 
+				(seca,servida) por un evento de servicio, y de (seca,preñada) a (en producción,vacía) 
+				por un parto.</p>
+		<p>	Asimismo, cada transición puede terminar o iniciar (o ambos) una 
+				lactancia.</p>
+		<p>	De esta forma, la tabla de transición de estados, con la adición de los 
+				mensajes que dispara cada transición, conforma un parámetro de la 
+				presente documentación.</p>
+		
+		</section>
+		<section name="Seca Vacia">
+			<p>	Abreviatura utilizada: SV</p>
+			<p>	La hembra se encuentra seca (no esta en condiciones
+				 	de producir leche)y no esta servida ni preñada.</p>
+			<p>	<b>Importante:</b>Este es el estado inicial de todos los animales, ya 
+					sea de las crias o de los animales dados de alta.</p>	 	   
+		</section>
+		<section name="Seca Servida">
+			<p>	Abreviatura utilizada: SS</p>		
+			<p> La hembra no se encuentra en condiciones de producir leche,
+					pero ha sido servida. </p>
+			<p> Normalmente se espera que luego de este evento, en un tiempo adecuado se informe
+					o de un tacto positivo/negativo, o de un parto o de un aborto </p>		
+		</section>
+		<section name="Seca Preñada">
+			<p>	Abreviatura utilizada: SP</p>		
+			<p> La hembra no se encuentra en condiciones de producir leche, pero se encuentra preñada. </p>
+			<p> Normalmente es porque antes se encontraba en un estado SS, y normalmente luego
+					de este estado se espera o un parto o un aborto. </p>
+		</section>
+		<section name="En Producción Vacia">
+			<p>Abreviatura utilizada: PV</p>		
+			<p>	La hembra se encuentra en produccióm (está en condiciones
+				 	de producir leche)y no esta servida ni preñada.</p>
+		</section>
+		<section name="En Producción Servida">
+			<p>Abreviatura utilizada: PS</p>		
+			<p> La hembra se encuentra en condiciones de producir leche, y
+					ha sido servida. </p>
+			<p> Normalmente se espera que luego de este evento, en un tiempo adecuado se informe
+					o de un tacto positivo/negativo, o de un parto o de un aborto </p>		
+		</section>
+		<section name="En Producción Preñada">
+			<p>Abreviatura utilizada: PP</p>		
+			<p> La hembra se encuentra en condiciones de producir leche y se encuentra preñada. </p>
+			<p> Normalmente es porque antes se encontraba en un estado PS, y normalmente luego
+					de este estado se espera o un parto o un aborto. </p>
+		</section>
+	</body>
+</document>

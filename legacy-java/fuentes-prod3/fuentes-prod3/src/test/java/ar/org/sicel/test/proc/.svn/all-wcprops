@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc
+END
+DeleteAllProc.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/DeleteAllProc.java
+END
+LevantarXMLs.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/LevantarXMLs.java
+END
+Lactancias.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/Lactancias.java
+END
+Transferencia.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/Transferencia.java
+END
+Produccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/Produccion.java
+END
+GenerarAltas.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/GenerarAltas.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/AllTests.java
+END
+Info.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/Info.java
+END
+Reproduccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/Reproduccion.java
+END
+TransferenciaAutomatica.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/TransferenciaAutomatica.java
+END
+BaseProcTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/proc/BaseProcTest.java
+END

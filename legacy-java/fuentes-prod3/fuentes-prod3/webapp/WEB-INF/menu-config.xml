@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MenuConfig>
+
+  <Displayers>
+    <Displayer   name="DropDown"
+                 type="net.sf.navigator.displayer.DropDownMenuDisplayer"/>
+    <Displayer   name="Simple"
+                 type="net.sf.navigator.displayer.SimpleMenuDisplayer"/>
+    <Displayer   name="CoolMenu"
+                 type="net.sf.navigator.displayer.CoolMenuDisplayer"/>
+    <Displayer   name="CoolMenu4"
+                 type="net.sf.navigator.displayer.CoolMenuDisplayer4"/>
+    <Displayer   name="MenuForm"
+                 type="net.sf.navigator.example.PermissionsFormMenuDisplayer"/>
+    <Displayer   name="ListMenu"
+                 type="net.sf.navigator.displayer.ListMenuDisplayer"/>
+    <Displayer   name="TabbedMenu"
+                 type="net.sf.navigator.displayer.TabbedMenuDisplayer"/>
+    <Displayer   name="Velocity"
+                 type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+  </Displayers>
+
+  <Menus>
+  
+  
+  
+  
+  
+  
+  
+
+    <Menu  name="indexMenu"  title="Examples">
+        <!-- page attribute indicating a context relative resource.
+             The context path will be prepended to the value. -->
+        <Item  name="indexMenu1"  title="Basic Example"
+               toolTip="Shows usage of the menu displayers using defaults."
+               page="/menutest1.jsp"/>
+        <Item  name="indexMenu2"  title="Advanced Example"
+               toolTip="Shows customized menu displays."
+               page="/menutest2.jsp"/>
+        <Item  name="indexMenu3"  title="CoolMenu Example"
+               toolTip="Shows menu using CoolMenu3"
+               page="/coolmenu1.jsp"/>
+        <Item  name="indexMenu4"  title="CoolMenu Example - With Form"
+		       toolTip="Shows menu using CoolMenu3 with forms."
+               page="/coolmenu2.jsp"/>
+        <Item  name="indexMenu5"  title="Permissions Example"
+		       toolTip="Example use of menu disable and permission checking with CoolMenus."
+               page="/permissionsForm.jsp"/>
+        <Item  name="indexMenu6"  title="CoolMenu4 Example"
+               toolTip="Shows menu using CoolMenu4"
+               page="/coolmenu4.jsp"/>
+        <Item  name="indexMenu7"  title="Expandable DHTML List Example"
+               toolTip="Shows Expandable DHTML list"
+               page="/dhtmlExpandable.jsp"/>
+        <Item  name="indexMenu7"  title="Dropdown DHTML List Example"
+               toolTip="Shows Dropdown DHTML list"
+               page="/dhtmlDropdown.jsp"/>
+        <Item  name="indexMenu8"  title="Roles Menu Example"
+               toolTip="Shows Menus based on user's role"
+               page="/rolesMenu.jsp"/>
+        <Item  name="indexMenu9"  title="Tabbed Menu Example"
+               toolTip="Shows Tabbed-based Menu"
+               forward="tabbedMenu"/>
+        <Item  title="Velocity Template Menu"
+               toolTip="Shows very simple Velocity generated Menu"
+               page="/velocity.jsp"/>
+        <Item  title="Velocity CoolMenus Menu"
+               toolTip="Shows Velocity generated CoolMenu"
+               page="/velocity-coolmenu4.jsp"/>
+        <Item  title="Velocity XTree Menu"
+               toolTip="Shows Velocity generated XTree"
+               page="/velocity-xtree.jsp"/>
+        <Item  title="Velocity Tabbed Menu"
+               toolTip="Shows Velocity generated Tabbed Menu"
+               page="/velocity-tabs.jsp?Home"/>
+        <Item  title="Nice Looking Tabbed Menu"
+               toolTip="Shows Velocity generated Tabbed Menu"
+               page="/velocity-nicetabs.jsp?Home"/>
+        <Item  title="EL (Expression Language) enabled Menu [New!]"
+               toolTip="Shows very simple Velocity EL Menu"
+               page="/velocity-el.jsp"/>
+        <Item  title="Dynamic, Databased-driven Menu [New!]"
+               toolTip="Shows very simple menu built from a database table"
+               page="/dynamicMenu.jsp"/>
+    </Menu>
+
+    <Menu name="projectMenu" title="Project Menu">
+        <Item title="Home" toolTip="Return to List of Menus" page="/index.jsp"/>
+        <Item title="Documentation" toolTip="View Project Documentation"
+            location="http://struts-menu.sf.net"/>
+        <Item title="FAQs" toolTip="View Frequenty Asked Questions"
+            location="http://struts-menu.sf.net/faq.html"/>
+        <Item title="Mailing Lists" toolTip="Subscribe to Mailing Lists"
+            location="http://sourceforge.net/mail/?group_id=48726"/>
+        <Item title="Mailing List Archives"
+            toolTip="Search the Mailing List Archives"
+            location="http://www.mail-archive.com/index.php?hunt=struts-menu"/>
+    </Menu>
+
+  <!-- ====================   To Do List Menus   =========================== -->
+
+<!-- MENU INICIO LO ACCEDE CUALQUIER USUARIO -->
+	<Menu  name="MenuInicio"  title="Inicio"  description="test" width="50">
+       	<Item   name="ItemQue"   title="¿Qué es Sicel?"    image="images/case-new.png"
+       		action="quienesSomos.do"/>
+
+<!-- 		<Item   name="ItemFAQs"    title="FAQ's"   image="images/item-new.png"
+        	action="construction.do"/> -->
+
+		<Item   name="ItemGlosario"   title="Glosario"  image="images/party-new.png"
+        	action="glosario.do"/>
+        <Item   name="ItemRegional"   title="Documentación"    image="images/case-new.png"
+       		action="descargaDocumentacionAction.do?method=listarDocumentos" roles="ADMINISTRADOR,GENERAL,TECNICA,PROPIETARIO,PROVEEDOR,REGIONAL,DATAENTRY,EXTERNO"/>
+
+	<!-- 	<Item   name="ItemContactos"   title="Contactos"  image="images/party-new.png"
+        	action="construction.do"/>   -->     	
+	</Menu>
+	
+	
+	<!-- MENU: ABMs DE LAS DISTINTAS ENTIDADES DEL SISTEMA SICEL 3, SOLO EL ADMINISTRADOR -->
+	<Menu  name="MenuListados"  title="Listados"  description="test" width="50" roles="ADMINISTRADOR">
+       	<Item   name="ItemRegional"   title="Regionales"    image="images/case-new.png"
+       		action="listarEntidadRegional.do?method=listar" roles="ADMINISTRADOR"/>
+		<Item   name="ItemEclo"    title="Eclo's"   image="images/item-new.png"
+        	action="listarEclos.do?method=listar" roles="ADMINISTRADOR"/>	
+		<Item   name="ItemRazas"   title="Razas"  image="images/party-new.png"
+        	action="listarRazas.do?method=listar" roles="ADMINISTRADOR"/>        	
+	 	<Item   name="ItemAtributos"   title="Conjunto de Atributos"  image="images/party-new.png"
+        	action="listarConjuntoAtributos.do?method=init" roles="ADMINISTRADOR"/>      	
+		 <Item   name="ItemTiposRegistro"   title="Tipos de Registro"  image="images/party-new.png"
+        	action="listarTiposRegistroAction.do?method=init" roles="ADMINISTRADOR"/>      
+		<Item   name="ItemSistemas"   title="Sistemas Informáticos"  image="images/party-new.png"
+        	action="listarSistemas.do?method=listar" roles="ADMINISTRADOR"/>         	
+        <Item   name="ItemProcesos"   title="Procesos"  image="images/party-new.png"
+        	action="buscarProcesos.do?method=init" roles="ADMINISTRADOR"/>   
+        <Item   name="ItemUsuarios"   title="Usuarios"  image="images/party-new.png"
+        	action="listarUsuario.do?method=listar" roles="ADMINISTRADOR"/>   
+        <Item   name="ItemPropietarios"   title="Propietarios"  image="images/party-new.png"
+        	action="editarPropietarioValidate.do?method=init" roles="ADMINISTRADOR"/>   
+        <Item   name="ItemEstancias"   title="Establecimientos"  image="images/party-new.png"
+        	action="listarEstancias.do?method=init" roles="ADMINISTRADOR"/>   
+        <Item   name="ItemEstablecimientos"   title="Tambos"  image="images/party-new.png"
+        	action="editarEstablecimientoValidate.do?method=init" roles="ADMINISTRADOR"/>
+        <Item   name="ItemCentroDeComputo"   title="Centros de Computo"  image="images/party-new.png"
+        	action="/editarCentroDeComputoAction.do?method=init" roles="ADMINISTRADOR"/>   
+
+	</Menu>
+	
+	<Menu  name="MenuBusquedas"  title="Busquedas"  description="test" width="50" roles="ADMINISTRADOR,GENERAL,TECNICA,PROPIETARIO,PROVEEDOR,REGIONAL,EXTERNO">       	
+		<Item   name="ItemEclo"    title="Eclo"   image="images/item-new.png" roles="ADMINISTRADOR,GENERAL,TECNICA"
+        	action="buscaEclo.do?method=init" />
+		<Item   name="ItemPropietario"   title="Propietario" image="images/case-new.png" roles="ADMINISTRADOR,GENERAL,TECNICA,EXTERNO,PROVEEDOR,REGIONAL"
+       		action="buscarPropietario.do?method=iniciar" />
+       	<Item   name="ItemEstancia"    title="Establecimiento" image="images/item-new.png" roles="ADMINISTRADOR,PROVEEDOR,REGIONAL"
+        	action="buscarEstancia.do?method=init"/>
+       	<Item   name="ItemEstablecimiento"   title="Tambos" image="images/party-new.png" roles="ADMINISTRADOR,GENERAL,TECNICA,PROVEEDOR,PROPIETARIO,REGIONAL"
+			action="buscarEstablecimiento.do?method=iniciar" />
+		<Item   name="ItemAnimal"    title="Animal" image="images/item-new.png" roles="ADMINISTRADOR,GENERAL,TECNICA,PROPIETARIO,PROVEEDOR,REGIONAL"
+        	action="buscarAnim.do?method=initBusqueda"/>
+		<Item   name="ItemCentroDeComputo"    title="Centro de Computo" image="images/item-new.png" roles="ADMINISTRADOR,PROVEEDOR"
+        	action="buscarCentroDeComputo.do?method=init"/>
+	</Menu>      
+	
+	<!-- PROCESAMIENTO DE EVENTOS -->
+  <Menu  name="MenuProcesar"  title="Procesar"  description="test" width="50" roles="ADMINISTRADOR,PROVEEDOR,GENERAL,REGIONAL">       	
+	  <Item  name="ItemCargas"  title="Cargar Lote" action="uploadProcesoPage.do" roles="PROVEEDOR"/>  
+	<Item name="ItemDescargas"  title="Lotes Cargados" action="downloadFileAction.do?method=initCargados" roles="PROVEEDOR"/>  		
+	<Item  name="ItemProcesar"  title="Procesar Lote" action="processFileAction.do?method=init" roles="ADMINISTRADOR,GENERAL,REGIONAL"/>  
+	<Item name="ItemDescargas"  title="Lotes En Proceso" action="downloadFileAction.do?method=initEnProceso" roles="ADMINISTRADOR,PROVEEDOR,GENERAL,REGIONAL"/>
+	<Item name="ItemDescargas"  title="Lotes Procesados" action="downloadFileAction.do?method=init" roles="ADMINISTRADOR,PROVEEDOR,GENERAL,REGIONAL"/>
+	<Item name="ItemDescargas"  title="Buscar Lotes Procesados" action="downloadFileAction.do?method=initFechas" roles="ADMINISTRADOR,PROVEEDOR,GENERAL,REGIONAL"/>
+	
+	<Item name="ItemDescargas"  title="Lotes con errores" action="downloadFileAction.do?method=initEnStandBy" roles="ADMINISTRADOR,GENERAL"/>
+	<!-- solo lo ve el administrador -->
+	<Item name="ItemReportes"  title="Descargar Fichas por Lote" action="visualizarReportesAchaAction.do?method=initLotes" roles="ADMINISTRADOR"/>  
+	<!-- <Item name="ItemOrdeñes"  title="Baja de Control" action="listarControlAnimalAction.do?method=init" roles="PROVEEDOR"/>  -->
+  </Menu>
+
+	<!-- menu para que las ECLOS puedan obtener sus reportes-->
+	<Menu  name="Reportes"  title="Reportes"  description="test" width="50" roles="ADMINISTRADOR,PROVEEDOR,GENERAL,PROPIETARIO,TECNICA,REGIONAL"> 
+		<!-- ESTE ITEM SOLO LO VE LAS ECLOS EL ADMINISTRADOR TIENE ESTO EN ItemReportes -->
+		<Item name="ItemDescargasEclo" title="Lactancias" action="generarReportesEclo.do?method=initBuscar" roles="PROVEEDOR,GENERAL,ADMINISTRADOR" />  
+		<Item name="ItemDescargasEclo" title="RC-HBANUME" action="generarReportesEclo.do?method=initRCNUM" roles="PROVEEDOR,ADMINISTRADOR,PROPIETARIO" />  
+		<Item name="ItemReportes"  title="Reportes sobre Animales" action="visualizarReportesAchaAction.do?method=init" roles="ADMINISTRADOR"/>  
+		<Item name="ItemReportes" title="Reportes masivos Animales" action="visualizarReportesAchaAction.do?method=initMasivos" roles="ADMINISTRADOR"/>
+		<Item name="ItemReportes"  title="Reporte sobre Eventos" action="generarReporteEventosAction.do?method=initEspecial" roles="ADMINISTRADOR,GENERAL,TECNICA,REGIONAL"/>  
+		<Item name="ItemReportes"  title="Reporte por Lote" action="visualizarReportesAchaAction.do?method=initFiltroLotes" roles="ADMINISTRADOR"/>
+		<Item name="ItemReportes"  title="Listado de Propietarios" action="visualizarReportesAchaAction.do?method=buscarPropietarios" roles="ADMINISTRADOR,REGIONAL"/>
+		<Item name="ItemReportes"  title="Reporte sobre Tambos de Propietario" action="reportesPropietariosAchaAction.do?method=initBusquedaTambosPropietario" roles="PROPIETARIO"/>
+		<Item name="ItemReportes" title="Infome Procesos" action="informeProcesosAction.do?method=init" roles="ADMINISTRADOR,TECNICA,GENERAL" />
+		<Item name="ItemReportes" title="Infome Tambos-Crias" action="InformeTambosCriasAction.do?method=init" roles="ADMINISTRADOR" />
+		<!-- <Item name="ItemReportes" title="Reporte ICAR" action="ReporteIcarAction.do?method=init" roles="ADMINISTRADOR" />-->
+		<Item name="ItemReportes" title="Estadísticas Lactancias" action="EstadisticoLactanciaAction.do?method=init" roles="ADMINISTRADOR" />
+		<Item name="ItemReportes" title="Reporte Animales Inscriptos" action="ReporteInscriptosAction.do?method=init" roles="ADMINISTRADOR" />
+		<Item name="ItemReportes" title="Listados Nombres HBA" action="ReporteNombreHBAAction.do?method=init" roles="TECNICA" />
+	<!-- 	 <Item name="ItemReportes"  title="Reporte de Facturacion" action="reportesAchaAction.do?method=initFacturacion" roles="ADMINISTRADOR"/>  -->
+	</Menu>
+  	 <Menu  name="Acciones"  title="Acciones"  description="test" width="50" roles="ADMINISTRADOR,TECNICA"> 
+		<Item name="Propietarios" title="Propietarios" action="intercambiarEntrePropietariosAction.do?method=init" roles="ADMINISTRADOR" />  
+		<Item name="Sinonimos" title="Sinonimos" action="realizarUnionSinonimosAction.do?method=init" roles="ADMINISTRADOR,TECNICA" />  
+		<Item name="ItemCargaMasiva" title="Cambios de RP y Tambo" action="cargaMasivaAction.do?method=initCambiosRp" roles="TECNICA" />  
+		<Item name="ActualizacionSicelUno" title="Actualización Sicel 1" action="actualizacionSicelUno.do?method=init" roles="TECNICA" />
+		<Item name="EvaluacionesGeneticas" title="Actualizar tabla Lactancias" action="actualizarLactancias.do?method=init" roles="TECNICA" /> 
+	</Menu>
+	<Menu  name="Calificaciones"  title="Calificaciones"  description="test" width="50" roles="DATAENTRY,TECNICA,GENERAL,ADMINISTRADOR,PROPIETARIO,SRA"> 
+		<!-- ESTE ITEM SOLO LO VE LAS ECLOS EL ADMINISTRADOR TIENE ESTO EN ItemReportes -->
+
+		<Item name="ItemBuscar" title="Buscar Calificacion" action="filtrarCalificacionAction.do?method=initBuscar" roles="DATAENTRY,TECNICA,GENERAL,ADMINISTRADOR,PROPIETARIO,SRA" />  
+		<Item name="ItemNueva" title="Nueva Calificacion" action="altaCalificacionAction.do?method=initSetValores" roles="DATAENTRY" />  
+
+		
+
+		 
+	</Menu>
+	<Menu  name="Animales de Pedigree"  title="Animales de Pedigree"  description="test" width="50" roles="TECNICA,PROVEEDOR,ADMINISTRADOR"> 
+		<!-- ESTE ITEM SOLO LO VE LAS ECLOS EL ADMINISTRADOR TIENE ESTO EN ItemReportes -->
+		 <Item name="ItemBuscar" title="Actualizar Padron Machos" action="edicionAnimalPedigreeAction.do?method=initPadron" roles="TECNICA" /> 
+		 <Item name="ItemBuscar" title="Descargar Padron Machos" action="edicionAnimalPedigreeAction.do?method=descargarPadron" roles="TECNICA,PROVEEDOR" /> 
+		<Item name="ItemBuscar" title="Buscar Animal" action="edicionAnimalPedigreeAction.do?method=initBuscar" roles="TECNICA,ADMINISTRADOR" /> 
+		<Item name="ItemNueva" title="Cargar Animal" action="edicionAnimalPedigreeAction.do?method=initAdd" roles="TECNICA" />  
+		<Item name="ItemCargaMasiva" title="Carga Masiva de Animales" action="cargaMasivaAction.do?method=init" roles="TECNICA" />  
+	</Menu>
+
+	<!-- TODOS TIENEN LA POSIBILIDAD DE CAMBIAR SU CLAVE -->
+	<Menu  name="MenuCambiarClave"  title="Datos Personales" description="test" width="50" action="cambiarClaveAction.do?method=init"/>
+	
+	<!-- TODOS TIENEN LA POSIBILIDAD DE SALIR DEL SISTEMA -->
+	<Menu  name="MenuSalir"  title="Salir" action="logout.do" />
+  
+
+  
+  
+  
+	  
+    <Menu  name="ToDoListMenuFile"  title="FILE"  description="test" width="50">
+       <Item   name="TDLnew"   title="NEW">
+           <Item   name="TDLnewcase"   title="CASE"    image="images/case-new.png"
+                   location="NewCase.jsp"/>
+           <Item   name="TDLnewitem"    title="ITEM"   image="images/item-new.png"
+                   location="index.jsp"/>
+           <Item   name="TDLnewparty"   title="PARTY"  image="images/party-new.png"
+                   location="index.jsp"/>
+       </Item>
+       <Item   name="TDLopen"   title="OPEN">
+           <Item   name="TDLopencase"    title="CASE"   image="images/case-open.png"
+                    location="index.jsp"/>
+           <Item   name="TDLopenitem"   title="ITEM"    image="images/item-open.png"
+                    location="index.jsp"/>
+           <Item   name="TDLopenparty"  title="PARTY"   image="images/party-open.png"
+                    location="index.jsp"/>
+       </Item>
+       <Item    name="TDLexit"  title="EXIT"
+                image="images/exit.png"   location="index.jsp"/>
+    </Menu>
+
+    <Menu  name="ToDoListMenuEdit"  title="EDIT">
+         <Item  name="TDLselect" title="SELECT_ALL"       image="images/select-all.png"
+                    location="index.jsp" width="100" />
+         <Item  name="TDLprefs"  title="USER_PREFERENCES" image="images/prefs.png"
+                    location="index.jsp" width="150" />
+    </Menu>
+
+    <Menu  name="ToDoListMenuTools"  title="TOOLS">
+         <Item  name="TDLreports"  title="REPORTS"   image="images/reports.png"/>
+         <Item  name="TDLfind"     title="FIND"      image="images/find.png"/>
+         <Item  name="TDLsubscr"   title="SUBSCRIBE" image="images/assign.png"/>
+    </Menu>
+
+    <Menu  name="ToDoListMenuWindows" title="WINDOW">
+         <Item  name="TDLlibr"  title="LIBRARY" image="images/library.png"/>
+    </Menu>
+
+    <Menu  name="ToDoListMenuHelp"   title="HELP">
+         <Item  name="TDLhelp"   title="ONLINE_HELP"    image="images/help.png"/>
+         <Item  name="TDLabout"  title="ABOUT_TRACKER"  image="images/trackernet.png"/>
+    </Menu>
+
+    <!-- New Menu for Tabbed Displayer -->
+    <Menu name="TabbedHome" title="Home" location="?Home" target="_blank"/>
+    <Menu name="TabbedAbout" title="About"> <!-- No location, uses first item's location (People) -->
+        <Item name="People" title="People" location="?People"/>
+        <Item name="Careers" title="Careers" location="?Careers" target="_blank"/>
+        <Item name="Press" title="Press" location="?Press" 
+            onclick="alert('This item has an onclick handler in menu-config.xml.')"/>
+        <Item name="Locations" title="Locations" location="?Locations"/>
+    </Menu>
+
+    <Menu name="TabbedContact" title="Contact" location="?Contact">
+        <Item name="EMail" title="E-Mail" location="?EMail"/>
+        <Item name="Phone" title="Phone" location="?Phone"/>
+        <Item name="CarrierPigeon" title="Carrier Pigeon" location="?Pigeon"/>
+    </Menu>
+    <Menu name="TabbedExit" title="Exit" page="/index.jsp"/>
+
+  <!-- ====================   Case View  Menus   =========================== -->
+    <!-- FILE -->
+    <Menu  name="CaseDetailMenuFile"  title="FILE"  description="test">
+         <Item   name="CDnew"   title="NEW">
+              <Item   name="CDnewcase"   title="CASE"     image="images/case-new.png"
+                      location="index.jsp"/>
+              <Item   name="CDLnewitem"    title="ITEM"    image="images/item-new.png"
+                      location="index.jsp"/>
+              <Item   name="CDnewparty"   title="PARTY"   image="images/party-new.png"
+                      location="index.jsp"/>
+         </Item>
+         <Item   name="CDopen"   title="OPEN">
+              <Item   name="CDopencase"    title="CASE"   image="images/case-open.png"
+                      location="index.jsp"/>
+              <Item   name="CDopenitem"   title="ITEM"    image="images/item-open.png"
+                      location="index.jsp"/>
+              <Item   name="CDopenparty"  title="PARTY"   image="images/party-open.png"
+                      location="index.jsp"/>
+         </Item>
+         <Item   name="CDclose"  title="CLOSE"    location="index.jsp"/>
+         <Item   name="CDexit"   title="EXIT"
+                 image="images/exit.png"   location="index.jsp"/>
+    </Menu>
+
+    <!-- EDIT -->
+    <Menu  name="CaseDetailMenuEdit"   title="EDIT">
+         <Item  name="CDundo"   title="UNDO"  image="images/undo.png"/>
+         <Item  name="CDcut"    title="CUT"   image="images/cut.png"/>
+         <Item  name="CDcopy"   title="COPY"  image="images/copy.png"/>
+         <Item  name="CDpaste"  title="PASTE" image="images/paste.png"/>x`
+         <Item  name="CDclear"  title="CLEAR" image="images/clear.png"/>
+         <Item  name="CDselect" title="CLEAR" image="images/select-all.png"/>
+         <Item  name="CDprefs"  title="USER_PREFERENCES" image="images/prefs.png"/>
+    </Menu>
+
+    <!-- CASE -->
+    <Menu  name="CaseDetailMenuCase"   title="CASE">
+         <Item  name="CDadd"    title="ADD">
+              <Item   name="CDaddparty"    title="PARTY"      image="images/party-add.png"/>
+              <Item   name="CDadditem"     title="ITEM"       image="images/item-add.png"/>
+              <Item   name="CDaddcomments" title="COMMENTS"   image="images/comments.png"/>
+              <Item   name="CDadddoc"      title="DOCUMENTS"  image="images/documents.png"/>
+              <Item   name="CDaddposition" title="POSITION"   image="images/positions.png"/>
+         </Item>
+         <Item  name="CDopen"   title="OPEN">
+              <Item   name="CDopenparty"    title="PARTY"      image="images/party-open.png"/>
+              <Item   name="CDopenitem"     title="ITEM"       image="images/item-open.png"/>
+              <Item   name="CDopencomments" title="COMMENTS"   image="images/comments.png"/>
+              <Item   name="CDopendoc"      title="DOCUMENTS"  image="images/documents.png"/>
+              <Item   name="CDopenposition" title="POSITION"   image="images/positions.png"/>
+              <Item   name="CDopenhistory"  title="HISTORY"    image="images/history.png"/>
+         </Item>
+         <Item  name="CDassign"    title="ASSIGN"           image="images/assign.png"/>
+         <Item  name="CDactivate"  title="ACTIVATE"         image="images/activate.png"/>
+         <Item  name="CDpublish"   title="PUBLISH"          image="images/case-pub.png"/>
+         <Item  name="CDescalate"  title="ESCALATE"         image="images/escalate.png"/>
+         <Item  name="CDdecide"    title="DECIDE"           image="images/decide.png"/>
+         <Item  name="CDgenlicen"  title="GENERATE_LICENSE" image="images/genlicense.png"/>
+    </Menu>
+
+    <Menu  name="Countries" title="Countries">
+        <Item title="COUNTRY_AU" image="images/australia2.gif"/>
+        <Item title="COUNTRY_CZ" image="images/czech2.gif"/>
+        <Item title="COUNTRY_CN" image="images/china2.gif"/>
+        <Item title="COUNTRY_DK" image="images/denmark2.gif"/>
+        <Item title="COUNTRY_FI" image="images/finland2.gif"/>
+        <Item title="COUNTRY_FR" image="images/france2.gif"/>
+        <Item title="COUNTRY_JP" image="images/japan2.gif"/>
+        <Item title="COUNTRY_RU" image="images/russia2.gif"/>
+        <Item title="COUNTRY_US" image="images/usa2.gif"/>
+        <Item title="COUNTRY_CH" image="images/switzlnd2.gif"/>
+    </Menu>
+
+    <Menu  name="Permissions" title="Permissions" roles="tomcat,role1">
+        <Item title="Change" location="permissionsForm.jsp"/>
+    </Menu>
+
+    <Menu name="Standalone" title="Standalone Test" location="?Self"/>
+
+  </Menus>
+
+</MenuConfig>

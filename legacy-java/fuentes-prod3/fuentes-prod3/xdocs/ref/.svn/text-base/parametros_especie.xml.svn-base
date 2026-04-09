@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Parametros de Especies</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="sicel3, codigos, atributos,configuracion"/>
+  </head>
+  <body>
+  <section name="Valor por Defecto">
+  <table>
+  	<thead>
+  		<tr>
+  			<th>Parametro</th>
+  			<th>Descripcion</th>  		
+  			<th>Valor por Defecto</th>  	
+  		</tr>
+  	</thead>
+  	<tbody>
+  		  		<tr>
+  			<td>Edad Maxima Fertil, en dias</td>
+  			<td>Edad Maxima Fertil, en dias</td>  			
+  			<td>12775</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>Peridodo de gestacion maximo, en dias</td>
+  			<td>Peridodo de gestacion maximo, en dias</td>  			
+  			<td>300</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>Periodo de gestacion minimo, en dias</td>
+  			<td>Periodo de gestacion minimo, en dias</td>  			
+  			<td>240</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>Periodo minimo de descanzo, en dias</td>
+  			<td>Periodo minimo de descanzo, en dias</td>  			
+  			<td>30</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>Cantidad Dias Minima para considerar Aborto Largo</td>
+  			<td>Cantidad Dias Minima para considerar Aborto Largo</td>  			
+  			<td>212</td>  			
+  		</tr>
+  		  	</tbody>
+  </table>
+  </section>
+  
+    	<section name="Bovinos">
+  	<p>
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Parametro</th>
+  				<th>Descripcion</th>
+  				<th>Valor</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			  		</tbody>
+  	</table>
+  	</p>
+  	</section>
+     
+  </body>
+</document>

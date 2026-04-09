@@ -1,0 +1,335 @@
+# errors.header=errores obtenidos
+
+messageGlobalError=Error de Aplicación
+exceptionMessage=La excepción es: {0}
+si=Si
+no=No
+
+# EntidadRegionalForm
+#entidadRegionalForm.contacto.nombreContacto = Nombre de Entidad Regional
+#entidadRegionalForm.contacto.foto = Foto con tamaño incorrecto 
+entidadRegionalForm.nombre = Nombre de Entidad Regional
+entidadRegionalForm.email = E-mail
+
+# EcloForm
+ecloForm.nombre = Nombre de ECLO
+ecloForm.numeroDocumentoResponsable = Numero de Documento de Responsable
+ecloForm.email = E-mail
+
+# EstablecimientoForm
+
+
+# PropietarioForm
+propietarioForm.nombre = nombre
+propietarioForm.socio = socio
+propietarioForm.har = har
+propietarioForm.socRural = sra
+propietarioForm.mail = email
+propietarioForm.fechaLog = fecha
+# calificacionForm
+calificacionForm.idEstab = tambo
+calificacionForm.fecha = fecha
+
+# CentroDeComputo
+centroDeComputoForm.nombre = Nombre
+centroDeComputoForm.email = Email
+
+# UsuarioForm
+usuarioForm.nombre = Nombre
+usuarioForm.apellido = Apellido
+usuarioForm.email = Email
+usuarioForm.username = Usuario
+usuarioForm.password = Clave
+
+# -- errors --
+errors.suffix=<br>
+error.general=The process did not complete. Details should follow.
+
+# -- validator --
+errors.required=El campo {0} es obligatorio.
+errors.minlength={0} no puede ser menor que {1} caracteres.
+errors.maxlength={0} no puede ser mayor que {1} caracteres.
+errors.invalid={0} es inv\u00E1lido.
+errors.integer={0} debe ser un entero.
+errors.date={0} no es una fecha correcta.
+errors.eclo=La eclo {0} no pertenece a la regional logueada.
+errors.email=El campo {0} es una dirección de email inválida
+
+errors.rp.required=El RP del animal debe ser ingresado.
+errors.estabId.required=El ID del animal debe ser ingresado.
+
+errors.tipoReg.required=El Tipo de Registro del animal debe ser ingresado.
+errors.numReg.required=El Número de Registro del animal debe ser ingresado.
+
+errors.ecloNoExiste=La ECLO solicitada no existe.
+errors.entidadRegionalNoExiste=La Entidad Regional solicitada no existe.
+errors.ubicacionNoExiste=El Contacto a buscar no existe.
+errors.procProcesNoExiste=El Proceso a buscar no existe.
+errors.procLoteNoExiste=El Lote a buscar no existe.
+errors.procEstablecimientoNoExiste=El Proceso de Establecimiento a buscar no existe.
+errors.procAnimalNoExiste=El Proceso de Animal a buscar no existe.
+errors.elementoNoModificado=Se produjeron errores. El elemento no fue modificado.
+
+
+
+message.elementoModificado=El item fue modificado.
+message.ningunAnimalParaMostrar=No existe ningún animal con los datos ingresados.
+
+procProces.ID=ID del proceso
+procLote.ID=ID del lote
+procEstablecimiento.ID=ID del Proceso de Establecimiento
+procAnimal.ID=ID del Proceso de Animal
+
+idEstab_not_long=El ID del establecimiento no fue un número.
+
+# -- displayTag --
+displayTag.basic.msg.empty_list=Nada para mostrar
+
+# -- messages --
+authentication_failed=Falló la autentificación.
+user_inactive=El usuario no se encuentra activo
+out_system=Salio exitosamente del sistema
+in_system=Entro exitosamente al sistema
+
+# -- button's label --
+submit=Aceptar
+submitAltKey=Aceptar
+submitTitleKey=Aceptar los datos ingresados
+cancel=Cancelar
+cancelAltKey=Cancelar
+cancelTitleKey=Retorna a la página inicial
+reset=Reset
+resetAltKey=Reestablecer
+resetTitleKey=Inicializa todos los campos
+createUser=Nuevo Usuario
+createEstancia=Nuevo Establecimiento
+createEstablecimiento=Nuevo Tambo
+createPropietario=Nuevo Propietario
+createEntidadRegional=Nueva Entidad Regional
+createEclo=Nueva Eclo
+crearTipo= Crear Tipo de Registro
+# -- layout's label --
+sicel.title=Sistema SICEL
+
+# -- link's label --
+achaTitleKey=Asociación de Criadores de Holando Argentino
+achaAltKey=Página Inicio ACHA
+sicelTitleKey=Sistema Integrado de Control de Especies Lecheras (version anterior)
+sicelAltKey=Página Inicio SICEL (versión anterior)
+
+# -- footer's label --
+rightReserved=SICEL V3 - Derechos Reservados ©2010 A.C.H.A.
+
+# -- header's label --
+sicel=S I C E L
+sicel.subtitle=Sistema Integrado de Control de Especies Lecheras
+
+# -- main's label --
+sicel.welcome=Bienvenido al <br>SICEL
+
+# -- menu's label --
+menu.home=Inicio
+menu.homeTitleKey=Página Inicio
+menu.enter=Entrar
+menu.enterTitleKey=Entrar a SICEL
+menu.somos=Qué es el SICEL
+menu.somosTitleKey=Detalles sobre nosotros
+menu.glosario=Glosario
+menu.glosarioTitleKey=Glosario
+menu.contact=Contactos
+menu.contactTitleKey=Nuestros e-mail's
+menu.logout=Salir
+menu.logoutTitleKey=Salir de SICEL
+menu.view=Ver
+menu.explorer=Explorar
+menu.verAnims=Animales
+menu.verAnimsTitleKey=Ver todos los animales del sistema
+menu.verECLOs=ECLO
+menu.verECLOsTitleKey=Ver todas los ECLOs del sistema
+menu.verProps=Propietario
+menu.verPropsTitleKey=Ver todos los propiestarios del sistema
+menu.verEstabs=Establecimiento
+menu.verEstabsTitleKey=Ver todos los establecimientos del sistema
+menu.verRazas=Razas
+menu.verRazasTitleKey=Ver todas las razas del sistema
+menu.verConjuntoAt=Conjunto At.
+menu.verConjuntoAtTitleKey=Ver todos los conjuntos del sistema
+menu.verAtributos=Atributos
+menu.verValoresAdmitidos= Valores Admitidos
+menu.verRegional=Regional
+menu.verRegionalTitleKey=Ver todas las regionales del sistema
+
+menu.find=Buscar
+menu.buscarAnimsTitleKey=Buscar algún animal en el sistema
+menu.buscarPropietarioTitleKey=Buscar algún Propietario en el sistema
+menu.buscarEstabTitleKey=Buscar algún establecimiento en el sistema
+
+menu.altas=Altas
+menu.altaECLO=ECLO
+menu.altaECLOTitleKey=Alta de nuevo ECLO
+menu.altaEntidadRegional=Entidad Regional
+menu.altaEntidadRegionalTitleKey=Alta de nueva Entidad Regional
+menu.altaEstablecimiento=Establecimiento
+menu.altaEstablecimientoTitleKey=Alta de nuevo Establecimiento
+menu.altaPropietario=Propietario
+menu.altaPropietarioTitleKey=Alta de nuevo Propietario
+
+# -- construction's label --
+construction.message=
+
+# -- login's label --
+login.message=Datos del usuario
+userId=Usuario
+userIdAltKey=Usuario
+userIdTitleKey=Identificador que tiene para  ingresar  al sistema
+password=Clave
+passwordAltKey=Clave
+passwordTitleKey=Clave que tiene para  ingresar  al sistema
+
+# -- main's label --
+main.message=Bienvenido al SICEL
+
+# -- quienesSomos's label --
+quienesSomos.message=Que es SICEL
+
+# -- contacto label --
+contactoDetalle.genarlData=Datos Generales
+
+
+# -- animalDetalle.jsp's label --
+animalDetalle.registro=Registros
+animalDetalle.genarlData=Datos Generales
+animalDetalle.animal=Animal
+animalDetalle.RP=RP
+animalDetalle.ID=Identificador
+animalDetalle.tipoReg=Tipo de Registro
+animalDetalle.numReg=Número de Registro
+animalDetalle.estabId=Establecmiento ID
+animal_no_existe=El animal a buscar no existe
+animal_no_sicel_uno=El animal a buscar debe ser de Sicel 1
+tambo_no_existe=El Tambo ingresado no existe
+establecimiento_no_existe=El Establecimiento ingresado no existe
+estancia_no_existe=El Establecimiento ingresado no existe
+eclo_no_existe=La Eclo ingresado no existe
+tambo_no_pertenece_a_eclo=El tambo no pertenece a la eclo
+fecha_madre_hijo=La fecha de nacimiento de la madre debe ser anterior a la de la cría
+fecha_padre_hijo=La fecha de nacimiento del padre debe ser anterior a la de la cría
+eventos_animal_sicel1=El animal solo puede tener asociados eventos  del tipo Lactancia Migrada
+
+animal_no_existe_boleta= La boleta no Existe
+fecha_erronea_buscar_calificacion= La Fecha tiene formato erróneo
+al_menos_un_parametro=Debe cargar al menos un parámetro de la búsqueda
+fecha_desde_mayor_fecha_hasta=La fecha "desde" debe ser anterior o igual que la fecha "hasta"
+fecha_desde_ausente=La fecha "desde" es obligatoria
+fecha_hasta_ausente=La fecha "hasta" es obligatoria
+modelo_ausente=El modelo es obligatorio
+
+# -- propertyDetalle.jsp's label --
+propietaryDetalle.propietario=Propietario
+propietaryDetalle.genarlData=Datos Generales
+propietaryDetalle.ID=ID del Propietario
+propietario_no_existe=El Propietario solicitado no existe
+
+# -- util's label --
+dataNotFound=El Dato no existe
+
+# -- estabDetalle.jsp's label --
+estabDetalle.estab=Establecimiento
+estabDetalle.genarlData=General Data
+estabDetalle.ID=Establecimiento ID
+estabDetalle.animals=Animales
+
+# -- ubicacion labels --
+ubicacion.nombre=El nombre
+ubicacion.ciudad=La ciudad
+ubicacion.provinciaRegion=La provincia o región
+ubicacion.pais=El país
+ubicacion.direccion=La dirección
+ubicacion.codigoPostal=El Codigo Postal
+ubicacion.mail=El e-Mail
+ubicacion.telefono=El teléfono
+mail_wrong=El campo E-Mail debe ser una dirección de mail correcta.
+
+
+
+# -- Alta de Propietario altaPropietario.jsp--
+propietario.nombre=Nombre Completo
+propietario.socio=# de Socio
+propietario.esPersonaFisica=Es Persona Fisica?
+propietario.har=# de HAR
+propietario.comentario=Comentarios
+
+entidad.fechaPosterior = La fecha de alta/modificación no puede ser posterior a la fecha actual
+entidad.fechaErronea = La fecha de alta/modificación debe ser del formato tipo dd/mm/aaaa
+
+# validaciones de edicion
+
+entidad.existe= La entidad {0} con nombre {1} ya existe en la base de datos.
+establecimiento.existe= La entidad {0} con cuig "{1}" ya existe en la base de datos.
+tipoRegistro.existe = El tipo de registro {0} ya existe en la base de datos.
+propietario.existe.prefijo = Ya existe un propietario con prefijo "{1}"
+propietario.prefijo.blanco = No se puede cambiar el prefijo por un lugar en blanco
+# validaciones sobre el cambio de la contraseña
+cambiarClaveForm.passwdOld=Password Actual
+cambiarClaveForm.passwdNew1=Password Nuevo
+cambiarClaveForm.passwdNew2=Confirmacion del Password Nuevo
+# validaciones sobre el cambio de mail
+cambiarClaveForm.email=Email Nuevo
+cambiarClaveForm.emailConfirmacion=Email Confirmacion
+clave_actual_distinta=La clave actual es distinta a la que esta en el sistema
+claves_nuevas_no_iguales=La clave nueva y la confirmacion no son iguales
+usuario_no_logeado=Usted no es el usuario logueado en el sistema ACHA
+
+# EstanciaForm
+estanciaForm.nombre = Nombre
+estanciaForm.cuig = Cuig
+
+# EstablecimientoForm
+establecimientoForm.nombre= Nombre
+establecimientoForm.cuig= Cuig
+establecimientoForm.estancia = nombre Establecimiento
+establecimientoForm.nombreContactoEclo = nombre Eclo
+
+# UbicacionForm
+ubicacionForm.nombre=Lugar de Referencia
+ubicacionForm.provinciaRegion=Provincia o Región
+ubicacionForm.mail=E-Mail
+ubicacionForm.telefono=Teléfono
+
+# PeportesEcloForm 
+reportesEcloForm.rp = RP
+reportesEcloForm.idEstablecimiento = Identificador Establecimiento
+reportesEcloForm.anio = Año
+
+sistemaForm.nombre = Nombre del Sistema
+sistemaForm.numeroDocumento = Numero de Documento de Responsable
+sistemaForm.nombreEmpresa = Nombre de la Empresa de Software
+sistemaForm.apellido = Apellido del Responsable del Sistema
+sistemaForm.nombreResponsable = Nombre del responsable del sistema
+
+razaForm.nombre = Raza
+
+createUbicacion = Nuevo Lugar de Contacto
+createSistema = Nuevo Sistema
+
+ecloBuscarForm.identificador = Identificador de Eclo
+
+expd.existente = El Número de S.R.A. ya ha sido asignado a este u otro propietario.
+
+email.noenviado = El email con la clave no pudo ser enviado. La clave generada para el usuario {0} es {1}, por favor realice el envío del email manualmente.
+email.noenviadoTambo = El email con los datos del tambo {0} no pudo ser enviado. Por favor, realice el envío del email manualmente.
+email.noenviadoPropietario = El email con los datos del propietario {0} no pudo ser enviado. Por favor, realice el envío del email manualmente.
+email.noenviadoCargaMasiva = El email con los resultados de la carga masiva no puso ser enviado.
+# valorForm
+valorForm.valorAdmitido=Valor Admitido
+valorForm.inicio=Fecha Inicio
+
+tiposRegistroForm.id = Identificador
+tiposRegistroForm.descrip = descripcion
+
+error={0}
+chart.controles.lactancia.tipoEvento= Tipo
+chart.controles.lactancia.fechaEvento = Fecha 
+chart.controles.lactancia.valorLeche = Leche
+
+

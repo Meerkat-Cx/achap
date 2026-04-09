@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app >
+
+	 <!-- Filter Configuration -->
+  	<filter>
+    	<filter-name>securityFilter</filter-name>
+    	<filter-class>ar.org.sicel.web.filter.SecurityFilter</filter-class>
+
+      	<!-- application context root -->
+    	<init-param>
+        	<param-name>context-root</param-name>
+                           <!--     <param-value>acha</param-value>-->
+                           <param-value>sicel3</param-value>
+		</init-param>
+  	</filter>
+	 <resource-ref>
+        <description>Oracle Datasource</description>
+        <res-ref-name>jdbc/AchaSicel</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Unshareable</res-sharing-scope>
+  </resource-ref> 
+  	<filter>
+    	<filter-name>ResponseOverrideFilter</filter-name> 
+    	<filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class> 
+	</filter>
+
+   	<filter>
+    	<filter-name>hibernateFilter</filter-name>
+      	<display-name>Filtro dependiente de la funcionalidad de Hibernate</display-name>
+      	<filter-class>ar.org.sicel.web.filter.HibernateFilter</filter-class>
+   	</filter>
+
+	<!--  <filter-mapping>
+    	<filter-name>hibernateFilter</filter-name>
+    	<url-pattern>/*</url-pattern>
+  	</filter-mapping>       -->
+
+	<filter-mapping>
+    	<filter-name>securityFilter</filter-name>
+    	<url-pattern>*.jsp</url-pattern>
+  	</filter-mapping>
+
+  	<filter-mapping>
+    	<filter-name>securityFilter</filter-name>
+    	<url-pattern>*.do</url-pattern>
+  	</filter-mapping>
+
+   	<filter-mapping>
+    	<filter-name>ResponseOverrideFilter</filter-name> 
+    	<url-pattern>*.do</url-pattern>
+  	</filter-mapping>
+
+	<filter-mapping> 
+	    <filter-name>ResponseOverrideFilter</filter-name> 
+	    <url-pattern>*.jsp</url-pattern>
+	</filter-mapping>  
+
+   <filter-mapping>
+      <filter-name>hibernateFilter</filter-name>
+      <servlet-name>StrutsActionServlet</servlet-name>
+   </filter-mapping>
+
+    <!--
+    To use non XDoclet listeners, create a listeners.xml file that
+    contains the additional listeners and place it in your
+    project's merge dir.
+    -->
+
+	<servlet>
+		<servlet-name>StrutsActionServlet</servlet-name>
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    	<init-param>
+      		<param-name>config</param-name>
+      		<param-value>/WEB-INF/struts-config.xml</param-value>
+    	</init-param>
+		<init-param>
+			<param-name>application</param-name>
+			<param-value>ApplicationResources</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	 <servlet>
+		<servlet-name>ProcessThreadServlet</servlet-name>
+		<servlet-class>ar.org.sicel.proc.servlet.ProcessThreadServlet</servlet-class>
+ 		
+ 		<load-on-startup>30</load-on-startup>	 		
+	</servlet>
+	<!--    <servlet>
+	 <servlet-name>RecalcularLatanciasThreadServlet</servlet-name>
+		<servlet-class>ar.org.sicel.proc.servlet.RecalcularLatanciasThreadServlet</servlet-class>
+ 		 
+ 		<load-on-startup>40</load-on-startup>	 		
+	</servlet>   -->  
+	
+  	<servlet-mapping>
+  		<servlet-name>StrutsActionServlet</servlet-name>
+  		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+   <!--
+   To specify mime mappings, create a file named mime-mappings.xml, put it in your project's mergedir.
+   Organize mime-mappings.xml following this DTD slice:
+
+   <!ELEMENT mime-mapping (extension, mime-type)>
+   -->
+
+   <!-- Welcome files -->
+<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+   <!--
+   To specify error pages, create a file named error-pages.xml, put it in your project's mergedir.
+   Organize error-pages.xml following this DTD slice:
+
+   <!ELEMENT error-page ((error-code | exception-type), location)>
+   -->
+
+  <!-- Tags Libs -->
+<taglib>
+	<taglib-uri>/tags/struts-bean</taglib-uri>
+	<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/struts-html</taglib-uri>
+	<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/struts-logic</taglib-uri>
+	<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/struts-nested</taglib-uri>
+	<taglib-location>/WEB-INF/struts-nested.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/struts-template</taglib-uri>
+	<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/struts-tiles</taglib-uri>
+	<taglib-location>/WEB-INF/struts-tiles.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/displaytag</taglib-uri>
+	<taglib-location>/WEB-INF/displaytag-11.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/davis-tags</taglib-uri>
+	<taglib-location>/WEB-INF/davis-tags.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/struts-menu</taglib-uri>
+	<taglib-location>/WEB-INF/struts-menu.tld</taglib-location>
+</taglib>
+<taglib>
+	<taglib-uri>/tags/jstl-c</taglib-uri>
+	<taglib-location>/WEB-INF/c.tld</taglib-location>
+</taglib>
+<taglib>
+	   <taglib-uri>/tld/extremecomponents</taglib-uri>
+	   <taglib-location>/WEB-INF/extremecomponents.tld</taglib-location>
+</taglib>
+   <!--
+   To set up security settings for your web app, create a file named web-security.xml, put it in your project's mergedir.
+   Organize web-security.xml following this DTD slice:
+
+   <!ELEMENT security-constraint (display-name?, web-resource-collection+, auth-constraint?, user-data-constraint?)>
+   <!ELEMENT web-resource-collection (web-resource-name, description?, url-pattern*, http-method*)>
+   <!ELEMENT web-resource-name (#PCDATA)>
+   <!ELEMENT url-pattern (#PCDATA)>
+   <!ELEMENT http-method (#PCDATA)>
+   <!ELEMENT user-data-constraint (description?, transport-guarantee)>
+   <!ELEMENT transport-guarantee (#PCDATA)>
+
+   <!ELEMENT login-config (auth-method?, realm-name?, form-login-config?)>
+   <!ELEMENT auth-method (#PCDATA)>
+   <!ELEMENT realm-name (#PCDATA)>
+   <!ELEMENT form-login-config (form-login-page, form-error-page)>
+   <!ELEMENT form-login-page (#PCDATA)>
+   <!ELEMENT form-error-page (#PCDATA)>
+   -->
+
+</web-app>

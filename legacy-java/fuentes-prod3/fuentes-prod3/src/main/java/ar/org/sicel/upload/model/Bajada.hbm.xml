@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ar.org.sicel.upload.model.Bajada" table="pr_bajada" lazy="false">
+		<id name="id" column= "id" type = "long">
+			<generator class="native">
+			<param name="sequence">gen_pr_bajada</param>
+			</generator>
+		</id>
+		<many-to-one name="proceso" column="id_proc"  lazy="false"  foreign-key="FK_PR_BAJADA"/>
+		<property name="fecha" column="fecha"/>
+	</class>
+</hibernate-mapping>

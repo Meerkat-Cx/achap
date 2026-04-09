@@ -1,0 +1,1 @@
+C:\Progra~2\Java\jdk1.5.0_07\bin\java -cp castor-0.9.6.jar;commons-logging-1.0.4.jar;xercesImpl-2.6.2.jar; org.exolab.castor.builder.SourceGenerator -i acha-anims_proc-v1.0.xsd -package ar.org.sicel.proc.v1.anmodif -type j2

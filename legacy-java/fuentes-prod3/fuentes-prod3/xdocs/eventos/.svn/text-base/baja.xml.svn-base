@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Baja de animales</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento, baja"/>
+  </head>
+  <body>
+    <section name="Introducción">
+    <p>
+		Mediante este evento se da de baja un animal del sistema.  Luego de esto ya no se podran informar
+		mas eventos o datos relacionados con el animal dado de baja.
+    </p>
+    <p>Sin embargo, los datos ya informados del animal no se eliminan, sino que quedan en el sistema
+    y pueden ser consultados individualmente, intervenir en cálculos estadísticos, etc. </p>
+    <p>
+		En este evento, ademas del echo de que se da de baja al animal, se informa el motivo por el
+		cual se lo hace, y el destino del animal. Ejemplos de motivos
+		<ul>
+		<li>Sanitarios</li>
+		<li>Productivos</li>
+		</ul>
+		Ejemplos de Destinos
+		<ul>
+		<li>Muerte</li>
+		<li>Exposicion</li>
+		</ul>
+		Para la lista completa de motivos y destinos posibles , referirce al xsd actual.
+    </p>
+    
+    </section>
+		<section name="Requisitos Previos">
+			<p> Se puede dar de baja a cualquier animal.
+			</p>
+		</section>
+		<section name="Informacion Relacionada">
+    	<ul>
+    		<li><a href="grl/estados_animal.html">Estados</a> de un animal </li>
+      </ul>
+	 	</section>
+  </body>
+</document>

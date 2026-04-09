@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ACHA/SICELV3/!svn/ver/5744/branches/sinmaven/fuentes-prod3/src/main/config
+END
+Config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/4198/branches/sinmaven/fuentes-prod3/src/main/config/Config.properties
+END
+log4j_persistence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/config/log4j_persistence.xml
+END
+sicel3.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ACHA/SICELV3/!svn/ver/5691/branches/sinmaven/fuentes-prod3/src/main/config/sicel3.conf.xml
+END
+ApplicationResources_es_ES.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ACHA/SICELV3/!svn/ver/5744/branches/sinmaven/fuentes-prod3/src/main/config/ApplicationResources_es_ES.properties
+END
+displaytag.properties
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ACHA/SICELV3/!svn/ver/3863/branches/sinmaven/fuentes-prod3/src/main/config/displaytag.properties
+END
+hibernate.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ACHA/SICELV3/!svn/ver/5468/branches/sinmaven/fuentes-prod3/src/main/config/hibernate.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ACHA/SICELV3/!svn/ver/5468/branches/sinmaven/fuentes-prod3/src/main/config/hibernate.cfg.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/config/log4j.xml
+END

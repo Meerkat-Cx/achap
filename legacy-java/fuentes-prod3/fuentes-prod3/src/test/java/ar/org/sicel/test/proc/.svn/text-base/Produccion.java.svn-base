@@ -1,0 +1,47 @@
+package ar.org.sicel.test.proc;
+
+import org.hibernate.Session;
+
+import ar.org.sicel.persistence.Animal;
+import ar.org.sicel.persistence.AnimalDAO;
+
+
+public class Produccion extends BaseProcTest {
+	  String file1 = "resources/sicel/test/ProduccionYLact";
+
+	 /**
+	  * Ejecutando el main se elimina el anterior procesamiento.
+	  * Es necesario definirlo en cada test porque es un metodo estatico.
+	  */
+	  public static void main(String[] args) throws Exception {
+	        BaseProcTest t = new Produccion();
+			t.deshacerTodos();
+            //t.MostrarAnimal("RC", "-10",true);
+		}  
+
+	/**
+	   * Unicamente muestro los eventos del animal.
+	   */
+	  protected void finProceso(Session session) throws Exception {
+		//con sexo
+		  Animal an1 = AnimalDAO.findByRegistry("RC", "-10","HOLA","F");
+		MostrarAnimal(an1);
+	}
+
+	/**
+	 * En este caso 1 solo, si fueran mas archivos irian en ese arreglo en orden.
+	 */
+	protected String[] getPathArhivosAProcesar() {
+		return new String[]{file1};
+	}
+
+	
+	/**
+	 * Necesario definirlo asi para que lo vea Eclipse y lo
+	 * ponga en el menu de run as... JUnit Test
+	 */
+	public void testProcesamiento() throws Exception {
+		super.testProcesamiento();
+	}
+	  
+}

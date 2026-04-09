@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Rol"
+        table="Sg_Rol"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+        <generator class="native"/>
+        </id>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="50"
+            />
+        </property>
+
+        <property
+            name="descripcion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="descripcion" 
+                length="100"
+            />
+        </property>
+		 <set name="funciones" lazy="false"  table="sg_rolfuncion" inverse="true">
+			<key column="rol_id" foreign-key="FK_SG_ROL_FUNCION"/>
+			<many-to-many class="ar.org.sicel.persistence.Funcion">
+				<column name="funcion_id" not-null="true"/>
+			</many-to-many>
+		</set> 
+
+		<set name="usuarios" order-by="nombre asc" cascade="save-update">
+			<key column="rol"/>
+			<one-to-many class="ar.org.sicel.persistence.Usuario"/>
+		</set>		
+    </class>
+
+</hibernate-mapping>

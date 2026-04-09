@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ACHA/SICELV3/!svn/ver/5726/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types
+END
+STMetodoControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STMetodoControl.java
+END
+STRechazoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STRechazoDescriptor.java
+END
+STRechazo.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STRechazo.java
+END
+STPaisDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STPaisDescriptor.java
+END
+STRazaDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STRazaDescriptor.java
+END
+STPais.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STPais.java
+END
+STRaza.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/5726/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STRaza.java
+END
+STTipoMuestreoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STTipoMuestreoDescriptor.java
+END
+STTipoMuestreo.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STTipoMuestreo.java
+END
+STTRegDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STTRegDescriptor.java
+END
+STTReg.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STTReg.java
+END
+STDestinoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STDestinoDescriptor.java
+END
+STDestino.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STDestino.java
+END
+STEstadosAnimDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STEstadosAnimDescriptor.java
+END
+STEstadosAnim.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STEstadosAnim.java
+END
+STMotivoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STMotivoDescriptor.java
+END
+STMotivo.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STMotivo.java
+END
+STSexoDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STSexoDescriptor.java
+END
+STSexo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STSexo.java
+END
+STTipoServicioDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STTipoServicioDescriptor.java
+END
+STTipoServicio.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STTipoServicio.java
+END
+STSexoDDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STSexoDDescriptor.java
+END
+STSexoD.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STSexoD.java
+END
+STProdMedObjDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STProdMedObjDescriptor.java
+END
+STProdMedObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STProdMedObj.java
+END
+STMetodoControlDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/main/java/ar/org/sicel/proc/v1/lote/types/STMetodoControlDescriptor.java
+END

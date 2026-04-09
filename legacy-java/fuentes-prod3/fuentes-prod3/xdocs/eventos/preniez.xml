@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Evento Preñez</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,estado,preñez,reproduccion,servicio"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>	El evento <b>Preñez</b> fue creado para informar si una hembra  quedo
+				o no preñada despues de realizado un servicio.
+		</p>	
+		<p>
+			Despues de realizado un servicio, la hembra quedo servida. Posteriormente
+			se puede informar si este servicio a tenido exito o no, indicando si la hembra	a quedado preñada
+			(por ejemplo porque se realizo un tacto positivo o negativo).
+		</p>
+		</section>
+		<section name="Requisitos Previos">
+			<p>	En forma anterior a este evento, se debe haber informado un evento <a href="servicio.html">servicio
+					</a>, es decir que al momento de informar de una preñez, positiva o no, el animal debe estar serivdo.
+			</p>
+		</section>
+		<section name="Informacion Relacionada">
+    	<ul>
+    		<li><a href="grl/estados_animal.html">Estados</a> de un animal </li>
+    		<li><a href="servicio.html">Evento Servicio</a></li>
+    		<li><a href="reproduccion.html">Evento Reproducción</a></li>    		
+      </ul>
+	 	</section>
+	</body>
+</document>

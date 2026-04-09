@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Valor"
+        table="At_Valor"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_at_valor</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Valor.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="inicio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="inicio"
+        />
+
+        <property
+            name="fin"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fin"
+        />
+
+        <many-to-one
+            name="atrVariable"
+            class="ar.org.sicel.persistence.AtrVariables"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            column="atr_variable"
+            foreign-key="FK_Valo_AtVa"
+        />
+
+        <many-to-one
+            name="valorAdmAtr"
+            class="ar.org.sicel.persistence.ValorAdmAtr"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Valo_VaAd"
+            column="valor"
+            not-null="true"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Valor.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

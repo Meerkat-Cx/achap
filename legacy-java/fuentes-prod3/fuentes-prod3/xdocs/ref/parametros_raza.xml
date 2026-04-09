@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Parametros de Razas</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="sicel3, codigos, atributos,configuracion"/>
+  </head>
+  <body>
+  <section name="Valor por Defecto">
+  <table>
+  	<thead>
+  		<tr>
+  			<th>Parametro</th>
+  			<th>Descripcion</th>  		
+  			<th>Valor por Defecto</th>  	
+  		</tr>
+  	</thead>
+  	<tbody>
+  		  		<tr>
+  			<td>PT_MAX</td>
+  			<td>$at.descripcion</td>  			
+  			<td>50000</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>PT_MIN</td>
+  			<td>$at.descripcion</td>  			
+  			<td>0</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>LE_MIN</td>
+  			<td>$at.descripcion</td>  			
+  			<td>3</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>EDAD_PROD_EMBR(dias)</td>
+  			<td>Edad mínima para poder producir embriones, en dias</td>  			
+  			<td>2190</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>GR_MIN</td>
+  			<td>$at.descripcion</td>  			
+  			<td>1</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>CICLO_CELO_MINIMO(dias)</td>
+  			<td>Ciclo de celo mínimo, en dias</td>  			
+  			<td>27</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>ST_MIN</td>
+  			<td>$at.descripcion</td>  			
+  			<td>0</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>ST_MAX</td>
+  			<td>$at.descripcion</td>  			
+  			<td>50000</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>EDAD_MINIMA_MONTA</td>
+  			<td>Edad mínima de un toro para poder montar</td>  			
+  			<td>2190</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>PERIODO_GESTACION_PROMEDIO(dias)</td>
+  			<td>Periodo de gestacion promedio, en dias</td>  			
+  			<td>270</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>EDAD_SERV_NAT(dias)</td>
+  			<td>Edad minima de la hembra para poder resivir un servicio natural, en dias</td>  			
+  			<td>2190</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>EDAD_MIN_SERV_ART(dias)</td>
+  			<td>Edad minima de la hembra para poder resivir un servicio artificial, en dias</td>  			
+  			<td>1095</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>LE_MAX</td>
+  			<td>$at.descripcion</td>  			
+  			<td>50</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>GR_MAX</td>
+  			<td>$at.descripcion</td>  			
+  			<td>8</td>  			
+  		</tr>
+  		  		<tr>
+  			<td>EDAD_MINIMA_PRODUCIR_SEMEN</td>
+  			<td>Edad mínima de un toro para producir semen</td>  			
+  			<td>1095</td>  			
+  		</tr>
+  		  	</tbody>
+  </table>
+  </section>
+  
+    	<section name="Cruza de bovinos">
+  	<p>
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Parametro</th>
+  				<th>Descripcion</th>
+  				<th>Valor</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			  		</tbody>
+  	</table>
+  	</p>
+  	</section>
+     	<section name="Desconocida, bovino">
+  	<p>
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Parametro</th>
+  				<th>Descripcion</th>
+  				<th>Valor</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			  		</tbody>
+  	</table>
+  	</p>
+  	</section>
+     	<section name="Holando Argentino">
+  	<p>
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Parametro</th>
+  				<th>Descripcion</th>
+  				<th>Valor</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			  		</tbody>
+  	</table>
+  	</p>
+  	</section>
+     	<section name="Jersey">
+  	<p>
+  	<table>
+  		<thead>
+  			<tr>
+  				<th>Parametro</th>
+  				<th>Descripcion</th>
+  				<th>Valor</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			  		</tbody>
+  	</table>
+  	</p>
+  	</section>
+     
+  </body>
+</document>

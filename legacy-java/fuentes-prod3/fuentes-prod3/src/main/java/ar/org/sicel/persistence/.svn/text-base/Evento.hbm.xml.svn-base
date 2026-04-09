@@ -1,0 +1,1645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Evento"
+        table="Ev_Evento"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_ev_evento</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Evento.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="fecha"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="fecha" 
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="establecimiento"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvEstab_Estab"
+            column="establecimiento"
+            not-null="true"
+        />
+
+        <set
+            name="dependientes"
+            table="EV_DEPENDIENTES"
+            lazy="true"
+            cascade="none"
+            sort="ar.org.sicel.persistence.EventosPorFechaYTipo"
+        >
+
+            <key
+                column="idevento"
+                foreign-key="FK_EV_DEPENDIENTE"
+            >
+            </key>
+
+            <many-to-many
+                class="ar.org.sicel.persistence.Evento"
+                column="dependiente"
+                outer-join="auto"
+                foreign-key="FK_EV_DEPENDIENTE1"
+             />
+
+        </set>
+
+        <set
+            name="modificaciones"
+            table="EV_MODIFICACIONES"
+            lazy="true"
+            cascade="none"
+            sort="ar.org.sicel.persistence.EventosPorFechaYTipo"
+        >
+
+            <key
+                column="idevento"
+                foreign-key="FK_EV_MODIFICACIONES"
+            >
+            </key>
+            
+            <many-to-many
+                class="ar.org.sicel.persistence.Evento"
+                column="modificado"
+                outer-join="auto" 
+                foreign-key="FK_EV_MODIFICACIONES1"
+             />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Evento.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtAnimal"
+            table="Ev_Animal"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvAnim_Evento"
+            />
+        <property
+            name="estadoAnimal"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="estado"
+            length="2"
+        />
+
+        <property
+            name="finalizaLactancia"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="finalizaLactancia"
+        />
+
+        <property
+            name="iniciaLactancia"
+            type="boolean"
+            update="true"
+            insert="true"
+            column="iniciaLactancia"
+        />
+
+        <many-to-one
+            name="animal"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvAnim_Anim"
+            column="animal"
+            not-null="true"
+        />
+
+        <one-to-one
+            name="procEvtAnimal"
+            class="ar.org.sicel.persistence.ProcEvtAnimal"
+            cascade="delete"
+            outer-join="auto"
+            constrained="false"
+            property-ref="evtAnimal"
+        />
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtLactanciaMigrada"
+            table="Ev_LactMigrada"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvLactMig_EvAnim"
+            />
+        <property
+            name="nroLact"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="nroLact"
+        />
+
+        <property
+            name="tipoLact"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tipoLact" 
+                length="4"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="fechaInicio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="inicio"
+        />
+
+        <property
+            name="dias"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dias"
+        />
+
+        <property
+            name="anios"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="anios"
+        />
+
+        <property
+            name="meses"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="meses"
+        />
+
+        <property
+            name="tipoCert"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tipoCert" 
+                length="4"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="nroCert"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="nroCert"
+        />
+
+        <property
+            name="leche"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="leche"
+        />
+
+        <property
+            name="grasaAbsoluto"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="grasa"
+        />
+
+        <property
+            name="proteinasAbsoluto"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="proteinas"
+        />
+
+        <property
+            name="celulas"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="celulas"
+        />
+
+        <property
+            name="solidosNoGrasos"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="solidosNoGrasos"
+        />
+
+        <property
+            name="solidosTotalesAbsoluto"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="solidosTotales"
+        />
+
+        <property
+            name="urea"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="urea"
+        />
+
+        <property
+            name="tipoRegistro"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tipoRegistro" 
+                length="4"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="numeroRegistro"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="numeroRegistro" 
+                length="10"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="ordenies"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="ordenies"
+        />
+
+        <property
+            name="control"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="control" 
+                length="4"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="muestreo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="muestreo" 
+                length="4"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="analisis"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="analisis" 
+                length="4"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="epar"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="epar"
+        />
+
+        <property
+            name="eppar"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="eppar"
+        />
+
+        <property
+            name="diasa"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="diasa"
+        />
+
+        <property
+            name="ipar"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="ipar"
+        />
+
+        <property
+            name="flac"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="flac" 
+                length="1"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="ilac"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="ilac"
+        />
+
+        <property
+            name="dcon"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dcon"
+        />
+
+        <property
+            name="tlac"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="tlac"
+        />
+
+        <property
+            name="eac"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="eac" 
+                length="1"
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="cnor"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="cnor" 
+                length="2"
+                not-null="false"
+            />
+        </property>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtServicio"
+            table="Ev_Servicio"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvServicio_EvAnim"
+            />
+
+        <one-to-one
+            name="evtReproduccion"
+            class="ar.org.sicel.persistence.EvtReproduccion"
+            cascade="none"
+            outer-join="auto"
+            constrained="false"
+            property-ref="evtServicio"
+        />
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtClon"
+            table="Ev_Clon"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvClon_EvServicio"
+            />
+        <property
+            name="tejido"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tejido" 
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="donante"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvClon_Anim"
+            column="donante"
+            not-null="true"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtNuevoInd"
+            table="Ev_NuevoInd"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvNuevoInd_EvServicio"
+            />
+        <property
+            name="tipoServ"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tipoServ" 
+                length="4"
+                not-null="true"
+            />
+        </property>
+        
+        <property
+            name="finCorral"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="finCorral" 
+                not-null="false"
+            />
+        </property> 
+        
+        <many-to-one
+            name="padreGenetico"
+            class="ar.org.sicel.persistence.Macho"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvNuevoInd_Macho"
+            column="padreGen"
+        />
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtTransEmb"
+            table="Ev_TransfEmbr"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvTransfEmbr_EvNuevoInd"
+            />
+        <property
+            name="diasGestacion"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="diasGestacion" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="idEmbrion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="idEmbrion" 
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="madreGenetica"
+            class="ar.org.sicel.persistence.Hembra"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvTransfEmb_Hembra"
+            column="madreGen"
+            not-null="true"
+        />
+
+        </joined-subclass>
+
+        </joined-subclass>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtReproduccion"
+            table="Ev_Reproduccion"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvReproduc_EvAnim"
+            />
+
+        <list
+            name="evtCrias"
+            table="Ev_Cria"
+            lazy="true"
+            cascade="all"
+        >
+
+            <key
+                column="evt_reproduccion"
+                  foreign-key="FK_EvCria_EvReproduc"
+            >
+            </key>
+
+            <index
+                column="orden"
+            />
+
+            <composite-element
+                class="ar.org.sicel.persistence.EvtCria"
+            >
+        <property
+            name="tamanio"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="tamanio"
+        />
+
+        <property
+            name="pesoKg"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="peso"
+        />
+
+        <property
+            name="estadoPerinatalEsVivo"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="estadoPerinatal" 
+                not-null="true"
+            />
+        </property>
+        
+        <property
+            name="sexo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="sexo" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="dificultadNac"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dificultadNac"
+        />
+
+        <many-to-one
+            name="cria"
+            class="ar.org.sicel.persistence.Animal"
+           	cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvCria_Anim"
+            column="cria"
+        />
+
+            </composite-element>
+
+        </list>
+
+        <property
+            name="fechaServicio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="fechaServicio" 
+                not-null="false"
+            />
+        </property>
+
+        <property
+            name="diasDeGestacion"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="diasDeGestacion" 
+                not-null="true"
+            />
+        </property>
+		<property
+            name="nroLactancia"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+            	name="nroLactancia"
+            	not-null="false"            	
+        	/>
+        </property> 
+        <property
+            name="abortoLargo"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esAbortoLargo" 
+                not-null="false"
+            />
+        </property>
+		<property
+            name="asociaSicel1"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="asociaSicel1" 
+                not-null="false"
+            />
+        </property>
+		<property
+            name="usarRazaMadre"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="usarRazaMadre" 
+                not-null="false"
+            />
+        </property>
+
+        <many-to-one
+            name="evtServicio"
+            class="ar.org.sicel.persistence.EvtServicio"
+            cascade="save-update"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvRepr_EvServ"
+        >
+            <column
+                name="ev_servicio"
+                unique-key="UN_EvRepr_EvServ"
+                not-null="false"
+            />
+        </many-to-one>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtSecada"
+            table="Ev_Secada"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvSecada_EvAnim"
+            />
+        <property
+            name="motivo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="motivo" 
+                length="32"
+                not-null="false"
+            />
+        </property>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtCambioRp"
+            table="Ev_Cambio_RP"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvCambio_EvAnim"
+            />
+        <property
+            name="rpNuevo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="rp_nuevo" 
+                length="12"
+                not-null="true"
+            />
+        </property>
+        <property
+            name="rpAnterior"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="rp_anterior" 
+                length="12"
+                not-null="true"
+            />
+        </property>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtControlAnimal"
+            table="Ev_ControlAnimal"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvControl_EvAnimalEstab"
+            />
+
+        <property
+            name="idOrdenie"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            column="id_ordenie"
+        />
+
+        <many-to-one
+            name="controlEstablecimiento"
+            class="ar.org.sicel.persistence.EvtControlEstablecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Control_animal_est"
+            column="controlEstablecimiento"
+            not-null="true"
+        />
+
+        <set
+            name="ordeniesAnimal"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="evt_control"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtOrdenieAnimal"
+            />
+
+        </set>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtEstado"
+            table="Ev_Estado"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvEstado_EvAnim"
+            />
+        <property
+            name="estado"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="estado" 
+                length="4"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="cantLactTerminadas"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="cantLactTerminadas"
+        />
+
+        <property
+            name="fechaInicioLactancia"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="INICIO_LACTANCIA"
+        />
+
+        <property
+            name="numeroLactancia"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="numeroLactancia"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtPrenez"
+            table="Ev_Prenez"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvPrenez_EvAnim"
+            />
+        <property
+            name="esPositivo"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esPositivo" 
+                not-null="true"
+            />
+        </property>
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtTransferencia"
+            table="Ev_Transferencia"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvTrans_EvAnim"
+            />
+        <property
+            name="nuevoRP"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nuevoRP" 
+                length="12"
+                not-null="false"
+            />
+        </property>
+        <property
+            name="antiguoRP"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="antiguoRP" 
+                length="12"
+                not-null="false"
+            />
+        </property>
+		 <property
+            name="implicita"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="implicita" 
+                not-null="true"
+            />
+        </property>
+        <many-to-one
+            name="nuevoEstab"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvTrans_Estab"
+            column="nuevoEsta"
+            not-null="false"
+        />
+
+        <many-to-one
+            name="nuevoProp"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvTrans_Prop"
+            column="nuevoProp"
+            not-null="false"
+        />
+
+        <many-to-one
+            name="antiguoEstab"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvTrans_AntEstab"
+            column="antiguoEstab"
+            not-null="false"
+        />
+
+        <many-to-one
+            name="antiguoProp"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvTrans_AntProp"
+            column="antiguoProp"
+            not-null="false"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtInfo"
+            table="Ev_Info"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvInfo_EvAnim"
+            />
+        <property
+            name="info"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="info" 
+                length="20"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="valor"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="valor"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtBaja"
+            table="Ev_Baja"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvBaja_EvAnim"
+            />
+        <property
+            name="destino"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="destino" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="motivo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="motivo"
+        />
+
+        <property
+            name="comentario"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="comentario"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtLactancia"
+            table="Ev_Lactancia"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvLactancia_EvAnim"
+            />
+        <property
+            name="categoria"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="categoria"
+            length="255"
+        />
+
+        <property
+            name="dias"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="diasTotales"
+        />
+
+        <property
+            name="esCerrada"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="esCerrada"
+        />
+
+        <property
+            name="esOficial"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="esOficial"
+        />
+
+        <property
+            name="nroLact"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="nroLact"
+        />
+
+        <map
+            name="produccionesLactancia"
+            table="Ev_Produccion_Lactancia"
+            lazy="true"
+            sort="unsorted"
+            cascade="all"
+        >
+
+            <key
+                column="lactancia"
+                  foreign-key="FK_EvProd_EvLactancia"
+            >
+            </key>
+
+            <index
+                column="nombre"
+                type="string"
+                length="30"
+            />
+
+            <composite-element
+                class="ar.org.sicel.persistence.ProduccionLactancia"
+            >
+        <property
+            name="leche"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="leche"
+        />
+
+        <property
+            name="porcentajeProteinas"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="proteinas"
+        />
+
+        <property
+            name="porcentajeGrasa"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="grasa"
+        />
+
+        <property
+            name="celulas"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="celulas"
+        />
+
+        <property
+            name="porcentajeSolidosTotales"
+            type="java.lang.Float"
+            update="true"
+            insert="true"
+            column="solidos_totales"
+        />
+
+            </composite-element>
+
+        </map>
+
+        <map
+            name="mediciones"
+            table="Ev_Med_Lactancias"
+            lazy="true"
+            sort="unsorted"
+            cascade="all"
+        >
+
+            <key
+                column="lactancia"
+                  foreign-key="FK_EvMedL_EvLactancia"
+            >
+            </key>
+
+            <index
+                column="objeto"
+                type="string"
+                length="30"
+            />
+
+            <element
+                column="valor"
+                type="float"
+                not-null="true"
+                unique="false"
+            />
+
+        </map>
+
+        <property
+            name="fechaInicio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fechaInicio"
+        />
+
+        <property
+            name="control"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="control"
+        />
+
+        <property
+            name="ordenies"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="ordenies"
+        />
+
+        </joined-subclass>
+
+		<joined-subclass
+            name="ar.org.sicel.persistence.EvtAnimalModificacion"
+            table="EV_ANIMAL_MODIFICACION"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvtAnimalModif_Evento"
+            />
+            
+        <many-to-one
+            name="evtAnimalModificado"
+            class="ar.org.sicel.persistence.EvtAnimal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvtAnimalModif_EvtAnimal"
+            column="idEvtAnimalModificado"
+            not-null="true"
+        />    
+        </joined-subclass>
+
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtEstablecimiento"
+            table="Ev_Establecimiento"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvEstab_Evento"
+            />
+
+        <one-to-one
+            name="procEvtEst"
+            class="ar.org.sicel.persistence.ProcEvtEst"
+            cascade="delete"
+            outer-join="auto"
+            constrained="false"
+            property-ref="evtEstablecimiento"
+        />
+
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtAlta"
+            table="Ev_Alta"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvAlta_EvEstab"
+            />
+
+        <many-to-one
+            name="animal"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="all"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvAlta_Anim"
+            column="animal"
+            not-null="true"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtSemen"
+            table="Ev_Semen"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvSemen_EvEstab"
+            />
+        <property
+            name="cantDosis"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="cantDosis" 
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="donante"
+            class="ar.org.sicel.persistence.Macho"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvSemen_Macho"
+            column="donante"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="proveeSmn"
+            class="ar.org.sicel.persistence.ProveeSmn"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvSemen_ProvSmn"
+            column="proveedor"
+            not-null="true"
+        />
+
+        </joined-subclass>
+        <joined-subclass
+            name="ar.org.sicel.persistence.EvtControlEstablecimiento"
+            table="Ev_Ordenie"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvOrd_EvEstab"
+            />
+        <property
+            name="numOrdenies"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nroOrdenies" 
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="metodoControl"
+            class="ar.org.sicel.persistence.MetodoControl"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvControl_MetControl"
+            not-null="true"
+        />
+
+        <property
+            name="controlEsAM"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="control_es_AM" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="muestreoEsAM"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="muestreo_es_AM" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="tipoMuestreo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="tipoMuestreo" 
+                length="20"
+                not-null="true"
+            />
+        </property>
+        
+        <property
+            name="horaIniOrdenie1"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="horaIniOrdenie1" 
+                not-null="true"
+            />
+        </property> 
+        
+        <property
+            name="horaFinOrdenie1"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="horaFinOrdenie1" 
+                not-null="true"
+            />
+        </property>
+
+		<property
+            name="horaIniOrdenie2"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="horaIniOrdenie2" 
+                not-null="false"
+            />
+        </property>
+        
+        <property
+            name="horaFinOrdenie2"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="horaFinOrdenie2" 
+                not-null="false"
+            />
+        </property>
+        
+        <property
+            name="horaIniOrdenie3"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="horaIniOrdenie3" 
+                not-null="false"
+            />
+        </property>
+        
+        <property
+            name="horaFinOrdenie3"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="horaFinOrdenie3" 
+                not-null="false"
+            />
+        </property>
+
+        <many-to-one
+            name="estab"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvControl_Estab"
+            not-null="true"
+        />
+
+        <set
+            name="controlesAnimales"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="controlEstablecimiento"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.EvtControlAnimal"
+            />
+
+        </set>
+
+        </joined-subclass>
+
+		<joined-subclass
+            name="ar.org.sicel.persistence.EvtBajaEvento"
+            table="Ev_Baja_Ev"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvBajaEv_EvEstab"
+            />
+        <property
+            name="idEventoBaja"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="idEventoBaja" 
+                not-null="true"
+            />
+        </property>
+
+
+        </joined-subclass>
+
+
+		<joined-subclass
+            name="ar.org.sicel.persistence.EvtEstModificacion"
+            table="EV_EST_MODIFICACION"
+            lazy="true"
+        >
+            <key
+                column="id"
+                foreign-key="FK_EvtEstModif_Evento"
+            />
+            
+        <many-to-one
+            name="evtEstModificado"
+            class="ar.org.sicel.persistence.EvtEstablecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_EvEstModificacion_EvtEst"
+            column="idEvtEstModificado"
+            not-null="true"
+        />    
+        </joined-subclass>
+
+
+        </joined-subclass>
+
+    </class>
+
+</hibernate-mapping>

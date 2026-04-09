@@ -1,0 +1,347 @@
+/*
+ * This class was automatically generated with 
+ * <a href="http://www.castor.org">Castor 0.9.6</a>, using an XML
+ * Schema.
+ * $Id$
+ */
+
+package ar.org.sicel.proc.v1.anmodif;
+
+  //---------------------------------/
+ //- Imported classes and packages -/
+//---------------------------------/
+
+import org.exolab.castor.mapping.AccessMode;
+import org.exolab.castor.xml.TypeValidator;
+import org.exolab.castor.xml.XMLFieldDescriptor;
+import org.exolab.castor.xml.validators.*;
+
+/**
+ * Class TAnimRegDescriptor.
+ * 
+ * @version $Revision$ $Date$
+ */
+public class TAnimRegDescriptor extends org.exolab.castor.xml.util.XMLClassDescriptorImpl {
+
+
+      //--------------------------/
+     //- Class/Member Variables -/
+    //--------------------------/
+
+    /**
+     * Field nsPrefix
+     */
+    private java.lang.String nsPrefix;
+
+    /**
+     * Field nsURI
+     */
+    private java.lang.String nsURI;
+
+    /**
+     * Field xmlName
+     */
+    private java.lang.String xmlName;
+
+    /**
+     * Field identity
+     */
+    private org.exolab.castor.xml.XMLFieldDescriptor identity;
+
+
+      //----------------/
+     //- Constructors -/
+    //----------------/
+
+    public TAnimRegDescriptor() {
+        super();
+        xmlName = "TAnimReg";
+        
+        //-- set grouping compositor
+        setCompositorAsSequence();
+        org.exolab.castor.xml.util.XMLFieldDescriptorImpl  desc           = null;
+        org.exolab.castor.xml.XMLFieldHandler              handler        = null;
+        org.exolab.castor.xml.FieldValidator               fieldValidator = null;
+        //-- initialize attribute descriptors
+        
+        //-- initialize element descriptors
+        
+        //-- _raza
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(ar.org.sicel.proc.v1.anmodif.types.STRaza.class, "_raza", "raza", org.exolab.castor.xml.NodeType.Element);
+        handler = (new org.exolab.castor.xml.XMLFieldHandler() {
+            public java.lang.Object getValue( java.lang.Object object ) 
+                throws IllegalStateException
+            {
+                TAnimReg target = (TAnimReg) object;
+                return target.getRaza();
+            }
+            public void setValue( java.lang.Object object, java.lang.Object value) 
+                throws IllegalStateException, IllegalArgumentException
+            {
+                try {
+                    TAnimReg target = (TAnimReg) object;
+                    target.setRaza( (ar.org.sicel.proc.v1.anmodif.types.STRaza) value);
+                }
+                catch (java.lang.Exception ex) {
+                    throw new IllegalStateException(ex.toString());
+                }
+            }
+            public java.lang.Object newInstance( java.lang.Object parent ) {
+                return null;
+            }
+        } );
+        desc.setHandler( new org.exolab.castor.xml.handlers.EnumFieldHandler(ar.org.sicel.proc.v1.anmodif.types.STRaza.class, handler));
+        desc.setImmutable(true);
+        desc.setMultivalued(false);
+        addFieldDescriptor(desc);
+        
+        //-- validation code for: _raza
+        fieldValidator = new org.exolab.castor.xml.FieldValidator();
+        { //-- local scope
+        }
+        desc.setValidator(fieldValidator);
+        //-- _pais
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(ar.org.sicel.proc.v1.anmodif.types.STPais.class, "_pais", "pais", org.exolab.castor.xml.NodeType.Element);
+        handler = (new org.exolab.castor.xml.XMLFieldHandler() {
+            public java.lang.Object getValue( java.lang.Object object ) 
+                throws IllegalStateException
+            {
+                TAnimReg target = (TAnimReg) object;
+                return target.getPais();
+            }
+            public void setValue( java.lang.Object object, java.lang.Object value) 
+                throws IllegalStateException, IllegalArgumentException
+            {
+                try {
+                    TAnimReg target = (TAnimReg) object;
+                    target.setPais( (ar.org.sicel.proc.v1.anmodif.types.STPais) value);
+                }
+                catch (java.lang.Exception ex) {
+                    throw new IllegalStateException(ex.toString());
+                }
+            }
+            public java.lang.Object newInstance( java.lang.Object parent ) {
+                return null;
+            }
+        } );
+        desc.setHandler( new org.exolab.castor.xml.handlers.EnumFieldHandler(ar.org.sicel.proc.v1.anmodif.types.STPais.class, handler));
+        desc.setImmutable(true);
+        desc.setMultivalued(false);
+        addFieldDescriptor(desc);
+        
+        //-- validation code for: _pais
+        fieldValidator = new org.exolab.castor.xml.FieldValidator();
+        { //-- local scope
+        }
+        desc.setValidator(fieldValidator);
+        //-- _sexo
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(ar.org.sicel.proc.v1.anmodif.types.STSexo.class, "_sexo", "sexo", org.exolab.castor.xml.NodeType.Element);
+        handler = (new org.exolab.castor.xml.XMLFieldHandler() {
+            public java.lang.Object getValue( java.lang.Object object ) 
+                throws IllegalStateException
+            {
+                TAnimReg target = (TAnimReg) object;
+                return target.getSexo();
+            }
+            public void setValue( java.lang.Object object, java.lang.Object value) 
+                throws IllegalStateException, IllegalArgumentException
+            {
+                try {
+                    TAnimReg target = (TAnimReg) object;
+                    target.setSexo( (ar.org.sicel.proc.v1.anmodif.types.STSexo) value);
+                }
+                catch (java.lang.Exception ex) {
+                    throw new IllegalStateException(ex.toString());
+                }
+            }
+            public java.lang.Object newInstance( java.lang.Object parent ) {
+                return null;
+            }
+        } );
+        desc.setHandler( new org.exolab.castor.xml.handlers.EnumFieldHandler(ar.org.sicel.proc.v1.anmodif.types.STSexo.class, handler));
+        desc.setImmutable(true);
+        desc.setMultivalued(false);
+        addFieldDescriptor(desc);
+        
+        //-- validation code for: _sexo
+        fieldValidator = new org.exolab.castor.xml.FieldValidator();
+        { //-- local scope
+        }
+        desc.setValidator(fieldValidator);
+        //-- _tReg
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(ar.org.sicel.proc.v1.anmodif.types.STTReg.class, "_tReg", "tReg", org.exolab.castor.xml.NodeType.Element);
+        handler = (new org.exolab.castor.xml.XMLFieldHandler() {
+            public java.lang.Object getValue( java.lang.Object object ) 
+                throws IllegalStateException
+            {
+                TAnimReg target = (TAnimReg) object;
+                return target.getTReg();
+            }
+            public void setValue( java.lang.Object object, java.lang.Object value) 
+                throws IllegalStateException, IllegalArgumentException
+            {
+                try {
+                    TAnimReg target = (TAnimReg) object;
+                    target.setTReg( (ar.org.sicel.proc.v1.anmodif.types.STTReg) value);
+                }
+                catch (java.lang.Exception ex) {
+                    throw new IllegalStateException(ex.toString());
+                }
+            }
+            public java.lang.Object newInstance( java.lang.Object parent ) {
+                return null;
+            }
+        } );
+        desc.setHandler( new org.exolab.castor.xml.handlers.EnumFieldHandler(ar.org.sicel.proc.v1.anmodif.types.STTReg.class, handler));
+        desc.setImmutable(true);
+        desc.setMultivalued(false);
+        addFieldDescriptor(desc);
+        
+        //-- validation code for: _tReg
+        fieldValidator = new org.exolab.castor.xml.FieldValidator();
+        { //-- local scope
+        }
+        desc.setValidator(fieldValidator);
+        //-- _nReg
+        desc = new org.exolab.castor.xml.util.XMLFieldDescriptorImpl(java.lang.String.class, "_nReg", "nReg", org.exolab.castor.xml.NodeType.Element);
+        desc.setImmutable(true);
+        handler = (new org.exolab.castor.xml.XMLFieldHandler() {
+            public java.lang.Object getValue( java.lang.Object object ) 
+                throws IllegalStateException
+            {
+                TAnimReg target = (TAnimReg) object;
+                return target.getNReg();
+            }
+            public void setValue( java.lang.Object object, java.lang.Object value) 
+                throws IllegalStateException, IllegalArgumentException
+            {
+                try {
+                    TAnimReg target = (TAnimReg) object;
+                    target.setNReg( (java.lang.String) value);
+                }
+                catch (java.lang.Exception ex) {
+                    throw new IllegalStateException(ex.toString());
+                }
+            }
+            public java.lang.Object newInstance( java.lang.Object parent ) {
+                return null;
+            }
+        } );
+        desc.setHandler(handler);
+        desc.setRequired(true);
+        desc.setMultivalued(false);
+        addFieldDescriptor(desc);
+        
+        //-- validation code for: _nReg
+        fieldValidator = new org.exolab.castor.xml.FieldValidator();
+        fieldValidator.setMinOccurs(1);
+        { //-- local scope
+            StringValidator typeValidator = new StringValidator();
+            typeValidator.setWhiteSpace("preserve");
+            fieldValidator.setValidator(typeValidator);
+        }
+        desc.setValidator(fieldValidator);
+    } //-- ar.org.sicel.proc.v1.anmodif.TAnimRegDescriptor()
+
+
+      //-----------/
+     //- Methods -/
+    //-----------/
+
+    /**
+     * Method getAccessMode
+     * 
+     * 
+     * 
+     * @return AccessMode
+     */
+    public org.exolab.castor.mapping.AccessMode getAccessMode()
+    {
+        return null;
+    } //-- org.exolab.castor.mapping.AccessMode getAccessMode() 
+
+    /**
+     * Method getExtends
+     * 
+     * 
+     * 
+     * @return ClassDescriptor
+     */
+    public org.exolab.castor.mapping.ClassDescriptor getExtends()
+    {
+        return null;
+    } //-- org.exolab.castor.mapping.ClassDescriptor getExtends() 
+
+    /**
+     * Method getIdentity
+     * 
+     * 
+     * 
+     * @return FieldDescriptor
+     */
+    public org.exolab.castor.mapping.FieldDescriptor getIdentity()
+    {
+        return identity;
+    } //-- org.exolab.castor.mapping.FieldDescriptor getIdentity() 
+
+    /**
+     * Method getJavaClass
+     * 
+     * 
+     * 
+     * @return Class
+     */
+    public java.lang.Class getJavaClass()
+    {
+        return ar.org.sicel.proc.v1.anmodif.TAnimReg.class;
+    } //-- java.lang.Class getJavaClass() 
+
+    /**
+     * Method getNameSpacePrefix
+     * 
+     * 
+     * 
+     * @return String
+     */
+    public java.lang.String getNameSpacePrefix()
+    {
+        return nsPrefix;
+    } //-- java.lang.String getNameSpacePrefix() 
+
+    /**
+     * Method getNameSpaceURI
+     * 
+     * 
+     * 
+     * @return String
+     */
+    public java.lang.String getNameSpaceURI()
+    {
+        return nsURI;
+    } //-- java.lang.String getNameSpaceURI() 
+
+    /**
+     * Method getValidator
+     * 
+     * 
+     * 
+     * @return TypeValidator
+     */
+    public org.exolab.castor.xml.TypeValidator getValidator()
+    {
+        return this;
+    } //-- org.exolab.castor.xml.TypeValidator getValidator() 
+
+    /**
+     * Method getXMLName
+     * 
+     * 
+     * 
+     * @return String
+     */
+    public java.lang.String getXMLName()
+    {
+        return xmlName;
+    } //-- java.lang.String getXMLName() 
+
+}

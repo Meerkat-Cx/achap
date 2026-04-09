@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Material de Referencia</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="documentacion,parametro,mensajes,referencia"/>
+  </head>
+  <body>
+    <section name="Material de Referencia">
+    <p>
+	   En esta sección presentaremos material útil para el entendimiento y utilización del sistema, como
+	   reportes explicando  todos los codigos de mensaje existentes, los parametros de configuracion
+	   posibles, etc.
+    </p>
+    </section>
+  </body>
+</document>

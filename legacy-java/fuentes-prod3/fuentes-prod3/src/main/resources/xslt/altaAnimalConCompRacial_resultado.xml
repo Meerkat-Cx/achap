@@ -1,0 +1,3240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Diego Palmisano (DIE-ADO) -->
+<lote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.0" xsi:type="lote">
+	<sistema>
+		<nombre>pichulo</nombre>
+		<version>1.0b</version>
+	</sistema>
+	<informante>164</informante>
+	<IDLoteInte>-9</IDLoteInte>
+	<IDLoteSicel>76</IDLoteSicel>
+	<tiempos>
+		<tEnvi>2004-12-04T12:00:00.000-03:00</tEnvi>
+	</tiempos>
+	<rdos>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>NECLO</codigoMsg>
+			<info>El nombre de la Entidad Informante es ASOCIACION PRODUCTORES LECHEROS DE SACANTA         </info>
+			<vals>
+				<val xsi:type="java:java.lang.String">ASOCIACION PRODUCTORES LECHEROS DE SACANTA        </val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTOK</codigoMsg>
+			<info>Se han procesado 1 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">1</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+		<rdo>
+			<nivelErr>30</nivelErr>
+			<codigoMsg>ESTERROR</codigoMsg>
+			<info>No se han procesado 0 establecimientos</info>
+			<vals>
+				<val xsi:type="java:java.lang.String">0</val>
+			</vals>
+		</rdo>
+	</rdos>
+	<estabs>
+		<estab>
+			<IDEstab>15379</IDEstab>
+			<rdos>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+			</rdos>
+			<evtsEstab>
+				<altas>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+				</altas>
+			</evtsEstab>
+		</estab>
+		<estab>
+			<IDEstab>15379</IDEstab>
+			<rdos>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+			</rdos>
+			<evtsEstab>
+				<altas>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+				</altas>
+			</evtsEstab>
+		</estab>
+		<estab>
+			<IDEstab>15379</IDEstab>
+			<rdos>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+			</rdos>
+			<evtsEstab>
+				<altas>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+				</altas>
+			</evtsEstab>
+		</estab>
+		<estab>
+			<IDEstab>15379</IDEstab>
+			<rdos>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>NESTAB</codigoMsg>
+					<info>El nombre del Establecimiento es DON  LUIS                      </info>
+					<vals>
+						<val xsi:type="java:java.lang.String">DON  LUIS                     </val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>80</nivelErr>
+					<codigoMsg>RPNOUNI</codigoMsg>
+					<info>Ya existe otro animal, el HBA -151515,  con este mismo RP en el establecimiento</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">HBA -151515</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTOK</codigoMsg>
+					<info>Se han procesado 0 eventos de establecimientos en forma correcta</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>EVESTERR</codigoMsg>
+					<info>No se han procesado 1 eventos de establecimientos</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">1</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>ANIMOK</codigoMsg>
+					<info>Se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+				<rdo>
+					<nivelErr>30</nivelErr>
+					<codigoMsg>AnimErr</codigoMsg>
+					<info>No se han procesado 0 animales</info>
+					<vals>
+						<val xsi:type="java:java.lang.String">0</val>
+					</vals>
+				</rdo>
+			</rdos>
+			<evtsEstab>
+				<altas>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+					<alta>
+						<IDEvt>-110</IDEvt>
+						<IdEvtSicel>-110</IdEvtSicel>
+						<fecha>2004-12-04T12:00:00.000-03:00</fecha>
+						<rp>-27</rp>
+						<raza>JY</raza>
+						<nombre>Cacho</nombre>
+						<sexo>M</sexo>
+						<registro>
+							<tReg>P</tReg>
+							<nReg>-151515</nReg>
+						</registro>
+						<compoRacial>
+							<elemRacial>
+								<raza>JY</raza>
+								<valor>1.0</valor>
+							</elemRacial>
+						</compoRacial>
+					</alta>
+				</altas>
+			</evtsEstab>
+		</estab>
+	</estabs>
+</lote>

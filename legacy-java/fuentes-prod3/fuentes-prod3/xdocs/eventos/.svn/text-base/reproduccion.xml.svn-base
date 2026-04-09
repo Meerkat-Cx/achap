@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Partos y Abortos</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="jakarta, java"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>Básicamente, los tipos de eventos que se pueden informar son:
+		<ul>
+			<li>Abortos <ul>
+				<li>especificando la fecha del servicio causante de la inseminacion y posterior aborto </li>
+				<li>especificando si se trata de un aborto corto o largo </li>
+				<li>sin especificar fecha de servicio ni si se trata de un corto o largo</li>
+				</ul>
+			</li>
+			<li>Partos <ul>
+				<li>especificando la fecha del servicio causante de la inseminacion y posterior parto </li>
+				<li>sin especificar la fecha del serivio causante del parto </li>
+				</ul>
+			</li>
+		</ul>
+		Todos estos casos se engloban en lo que en el sistema se denomina "evento de reproduccion". Es decir,
+		tanto los abortos como partos caen dentro de esta categoria</p>
+	 </section>
+	 <section name="Requisitos Previos">
+	 <p>El caso normal, es que antes de informar de un evento reproduccion, se hayan
+	 informado de <a href="servicio.html">eventos servicios</a>, los cuales se analizaran para encontrar
+	 el causante de la inseminacion. Es decir, que en el caso normal, el animal se
+	 encontrara en alguno de los dos estados de preñes, o en alguno de los dos estados de servido.
+         Ver <a href="grl/estados_animal.html">Estados de Animal</a></p>
+	 <p>Sin embargo, dado que no siempre se podra informar de los servicios ocurridos (por ejemplo
+	 	  en caso de un servicio por robo), se brinda mas flexibilidad en este aspecto, a saber:
+	    <ul>
+	    	 <li>Si se informa la fecha de servicio, entonces se utilizara esta, siempre y cuando se halla informado
+	    	     previamente de un servicio en la fecha dada, caso contrario se rechazara el evento </li>
+	    	  <li>Si no se informa la fecha, y es un parto, se utilizara el servicio que Sicel considere mas
+	    	      apropiado para el parto, en caso de que haya alguno. Caso contrario se considerara al padre
+	    	      como desconocido</li>
+	    	  <li>Si no se informa la fecha de servicio, y es un aborto, entonces se debera especificar si se trata de un aborto
+	    	      corto o uno largo. Si hay algun servicio compatible con lo informado se utilizara, pero si no hay
+	    	      no se produce un error y el evento igualmente se aceptara con la informacion dada </li>
+	    </ul>
+	    El algoritmo utilizado se puede ver en el siguiente <a href="imagenes/ElecciondelServicio.jpg">diagrama</a>
+	  </p>
+	 </section>
+	 <section name="Abortos">
+		 <subsection name="Introduccion">
+			 <p>Un aborto se caracteriza por la informacion de un evento reproduccion,
+                            en el cual no se informa de ninguna cria <b>viva</b>.</p>
+              <p>Se puede informar la fecha del servicio causante, si es que esta se  conoce. De lo contrario es 
+	      obligatorio informar si se trata de un aborto corto o uno  largo. </p>              
+		 </subsection>
+	 </section>
+
+ 	 <section name="Partos">
+		 <subsection name="Introduccion">
+	 			 	 <p>	Un parto se informa mediante un evento reproduccion con  al 
+							menos una cria viva.</p>
+	 			 	 <p>	La composicion racial de las crias se calcula en base a los padres
+							 geneticos de esta (notar que la madre genetica puede no ser
+							 la misma que la madre de parto, en caso por ejemplo de una
+							 transferencia embrionaria</p>
+					<p>   Se puede informar ademas, independientemente de los calculos 
+							 de Sicel, una Raza Declarada para las crias. Esto se hace
+							  utilizando el elemento "usarRazaMadre".  Si se especifica
+							  que se utilize la raza de la madre en las crias, entonces todas
+							  las crias tendran la misma raza declarada que la madre. De lo
+							  contrario, no tendran una raza declarada y se utilizara la
+							  calculada por Sicel3.</p>		 
+					  <p>  Al igual que en los abortos, se puede informar la fecha del 
+							  servicio causante, si es que esta se  conoce. De lo contrario se
+							  buscara el servicio que se considere mas apropiado (Ver seccion "Requisitos Previos") .
+						</p>
+		 </subsection>
+		 
+		 <subsection name="Propietario de las crias">
+			 <p>	El propietario al que se asignaran las crias es el propietario del 
+					establecimiento en el cual se informa del parto. Si el propietario de
+					la hembra que parió es distinto al del establecimiento, se emitira un
+					mensaje de advertencia.
+			 </p>
+			 <p> Notar que el propietario de las crias se podra cambiar luego mediante
+  				    <a href="/eventos/transferencia.html">eventos transferencia</a>.
+			 </p>
+		 
+		 </subsection>
+	 </section>
+	 
+	 <section name="Principales reglas a controlar">
+	 <ul>
+	 <li>No se acepta que se inscriban crias muertas</li>
+	 
+	 <li>El parto no puede estar distanciado por menos de 
+	 (<a href="../ref/parametros_especie.html">PERIODO_GESTACION_MINIMO +  PERIODO_DESCANZO_MINIMO</a>) del parto parto/aborto anterior</li>
+
+	 <li>La edad de la hembra al momento del parto no puede superar <a href="../ref/parametros_especie.html">EDAD_MAX_FERTIL</a></li>
+	 
+	 <li><a href="../ref/configuracion.html">regla: INSCRIBIR_MACHO_ACEPTA</a></li>
+	 <li><a href="../ref/configuracion.html">regla: INSCRIBIR_HEMBRA_OBLIGA</a></li>
+	 <li><a href="../ref/configuracion.html">regla: ACEPTA_PARTO_SIN_SERVICIO</a></li>
+	 <li><a href="../ref/configuracion.html">regla: ACEPTA_USAR_RAZA_MADRE_EN_PARTO</a></li>
+	 <li><a href="../ref/configuracion.html">regla: ACEPTA_FECHA_SERVICIO_EN_PARTO</a></li>
+	 <li><a href="../ref/configuracion.html">regla: OBLIGA_FECHA_SERVICIO_EN_PARTO</a></li>
+	 <li><a href="../ref/configuracion.html">regla: ACEPTA_SERVICIO_ESPECIFICADO_NO_MAS_APROPIADO</a></li>
+	 </ul>
+	 </section>
+
+	 <section name="Informacion Relacionada">
+          <ul>
+              <li>Los partos y abortos tienen influencia en la delimitacion de las lactancias. Ver <a href="/eventos/lactancia.html">Lactancia</a></li>
+              <li>La madre y padre geneticos asignados a las crias de un parto son calculados de acuerdo al servicio. Ver <a href="servicio.html">servicios</a></li>
+         </ul>
+	 </section>
+	 
+
+ </body>
+</document>

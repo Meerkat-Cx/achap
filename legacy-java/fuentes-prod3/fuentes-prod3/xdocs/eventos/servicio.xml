@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Servicios</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="jakarta, java"/>
+  </head>
+  <body>
+    <section name="Introduccion">
+		<p>Sicel3 acepta informacion de diferentes tipos de servicios, a saber
+		<ul>
+			<li>Transferencias Embrionarias </li>
+			<li>Servicios con Semen 
+				<ul>
+					<li>Inseminacion Artificial</li>
+					<li>A Corral</li>
+					<li>A Campo</li>
+				</ul>
+			</li>
+			<li>Clonaciones (actualmente no se aceptarán)</li>
+		</ul>
+		Todos estos casos se engloban en lo que en el sistema se denomina "evento de servicio". 
+		</p>
+	 </section>
+	 <section name="Requisitos Previos">
+	 <p>	Existen algunas restricciones en cuanto al momento en que se puede
+			o no informar un evento de este tipo.</p>
+	<p>	Ejemplos:
+<source>
+ si servicio.fecha dentro animal.periodoDescanzo
+	 entonces MSG_ServicioEnPeriodoDescanzo con nivel de WARNNING
+</source>								
+			El evento se acepta, pero se emite una advertencia. Ademas ese servicio
+			no se tomara en cuenta en el caso de un parto/aborto futuro.
+	</p>
+	<p>
+<source>
+si (servicio.tipo = InseminacionArtificial y 
+animal.edad &lt; raza.edadMinimaServicioArtificial )
+	entonces si CONTROLAR_EDAD_MINIMA_SERVICIO 
+		entonces EDAD_MINIMA_INVALIDA_SERVICIO con nivel de ERROR
+		sino EDAD_MINIMA_INVALIDA_SERVICIO con nivel de WARNNING
+</source>		
+			No se acepta una inseminacion artificial si la edad del animal al momento
+			de recivirla es menor que la edad minima establecida para animales de su raza.
+			Asimismo, la regla puede estar desactivada, por lo que en lugar de no aceptar 
+			el evento, se lo acepta y se emite una advertencia.
+	</p>
+	<p>	Un mecanismo similar al anterior se aplica para las edades permitidas
+			para los diferentes tipos de servicios.</p>
+	<p>	Lo mismo sucede con las edades de los toros que intervienen en la inseminacion.</p>
+	 
+	 </section>
+	 <section name="Transferencia Embrionaria">
+			 <p>	Se debe especificar la madre y el padre genetico del embrion, asi como el id de este y los dias de gestacion.</p>
+			 <p>	Las crias nacidas como consecuencia de una transferencia embrionaria tendran
+					como madre de parto a este animal, y como madre y padre genetico a los
+					informados en la	transferencia embrionaria. 
+					Ver <a href="reproduccion.html">evento reproduccion</a>
+			</p>
+	 </section>
+ 	
+	 <section name="Informacion Relacionada">
+          <ul>
+              <li><a href="reproduccion.html">Partos y Abortos</a></li>
+         </ul>
+	 </section>
+	 
+ </body>
+</document>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database
+END
+TestAtributoEstablecimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database/TestAtributoEstablecimiento.java
+END
+TestEclo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database/TestEclo.java
+END
+TestEstablecimiento.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database/TestEstablecimiento.java
+END
+TestTransicion.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database/TestTransicion.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database/AllTests.java
+END
+TestPropietario.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ACHA/SICELV3/!svn/ver/3614/branches/sinmaven/fuentes-prod3/src/test/java/ar/org/sicel/test/database/TestPropietario.java
+END

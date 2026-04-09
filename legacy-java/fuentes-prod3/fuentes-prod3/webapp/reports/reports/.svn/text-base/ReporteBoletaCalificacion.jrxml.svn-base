@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="ReporteBoletaCalificacion"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="XXXXXX" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" isForPrompting="true" class="java.lang.String">
+		<defaultValueExpression ><![CDATA[".\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="calificacion" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="whereClause" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["in("+$P{calificacion}+")"]]></defaultValueExpression>
+	</parameter>
+	<queryString><![CDATA[SELECT c.id,c.animal,c.fecha, c.catpuntaje,c.puntaje,c.modelo,est.PROPIETARIO,
+         c.ESTABLECIMIENTO tambo, a.RP,a.eshembra,c.boleta,
+          to_char(a.fnac,'dd/MM/yyyy')fnac,c.CALIFICADOR, to_char(c.inilact,'dd/MM/yyyy')inilact,
+          c.numlact,to_char(c.fecha,'dd/MM/yyyy')fecha,r.treg,r.numero,
+          c.estancia establecimiento,(select c3.puntaje
+from ca_calif c3
+where c3.id = (select max(c1.id) from ca_calif c1
+          where c1.animal = c.animal 
+            and c1.fecha < c.fecha  
+           and not exists (select 1 from ca_calif c2 
+                            where c1.animal = c2.animal 
+                                and c1.id != c2.id
+                                and c2.fecha > c1.fecha 
+                                and c2.fecha < c.fecha
+                                 )))puntAnt,r.treg,r.numero
+
+
+FROM CA_CALIF c
+left join AN_ANIMAL a on c.ANIMAL=a.ID
+left join EN_ESTABLECIMIENTO est on est.id=c.ESTABLECIMIENTO
+left join an_registro r on a.regori = r.id
+
+where c.id $P!{whereClause}]]></queryString>
+
+	<field name="id" class="java.lang.String"/>
+	<field name="modelo" class="java.lang.String"/>
+	<field name="PROPIETARIO" class="java.lang.String"/>
+	<field name="tambo" class="java.lang.String"/>
+	<field name="RP" class="java.lang.String"/>
+	<field name="FNAC" class="java.lang.String"/>
+	<field name="CALIFICADOR" class="java.lang.String"/>
+	<field name="inilact" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="establecimiento" class="java.lang.String"/>
+	<field name="numlact" class="java.lang.String"/>
+	<field name="puntAnt" class="java.lang.String"/>
+	<field name="treg" class="java.lang.String"/>
+	<field name="numero" class="java.lang.String"/>
+	<field name="catpuntaje" class="java.lang.String"/>
+	<field name="puntaje" class="java.lang.String"/>
+	<field name="eshembra" class="java.lang.String"/>
+	<field name="boleta" class="java.lang.String"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+				<line direction="TopDown">
+					<reportElement
+						x="489"
+						y="-166"
+						width="0"
+						height="22"
+						key="line-51"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="132"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="4"
+						width="535"
+						height="18"
+						key="staticText-1">
+							<printWhenExpression><![CDATA[$F{eshembra}.equals("1")]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="14" isBold="true"/>
+					</textElement>
+				<text><![CDATA[BOLETA DE CALIFICACIÓN HEMBRA]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="0"
+						y="27"
+						width="535"
+						height="74"
+						key="rectangle-1"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="44"
+						width="535"
+						height="0"
+						key="line-1"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="62"
+						width="535"
+						height="0"
+						key="line-2"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="76"
+						y="27"
+						width="0"
+						height="74"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="297"
+						y="27"
+						width="0"
+						height="35"
+						key="line-4"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="173"
+						y="27"
+						width="0"
+						height="74"
+						key="line-5"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="245"
+						y="27"
+						width="0"
+						height="74"
+						key="line-6"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="360"
+						y="27"
+						width="0"
+						height="74"
+						key="line-7"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="413"
+						y="27"
+						width="0"
+						height="35"
+						key="line-8"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<staticText>
+					<reportElement
+						x="1"
+						y="29"
+						width="75"
+						height="13"
+						key="staticText-2"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[ESTAB.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="76"
+						y="29"
+						width="97"
+						height="13"
+						key="staticText-3"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[PROPIETARIO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="174"
+						y="29"
+						width="70"
+						height="13"
+						key="staticText-4"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[TAMBO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="245"
+						y="29"
+						width="52"
+						height="13"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[R.P.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="297"
+						y="29"
+						width="63"
+						height="13"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[FECHA NAC.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="360"
+						y="29"
+						width="53"
+						height="13"
+						key="staticText-7"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[TIPO REG.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="413"
+						y="29"
+						width="122"
+						height="13"
+						key="staticText-8"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[NUMERO]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="81"
+						width="535"
+						height="0"
+						key="line-9"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="2"
+						y="46"
+						width="74"
+						height="15"
+						key="textField-1">
+							<printWhenExpression><![CDATA[$F{establecimiento}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{establecimiento}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="78"
+						y="46"
+						width="97"
+						height="15"
+						key="textField-2"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{PROPIETARIO}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="175"
+						y="46"
+						width="69"
+						height="15"
+						key="textField-3"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{tambo}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="246"
+						y="46"
+						width="51"
+						height="15"
+						key="textField-4"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="298"
+						y="46"
+						width="62"
+						height="15"
+						key="textField-5"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{FNAC}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="360"
+						y="46"
+						width="53"
+						height="15"
+						key="textField-6"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{treg}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="413"
+						y="46"
+						width="122"
+						height="15"
+						key="textField-7"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{numero}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="1"
+						y="84"
+						width="74"
+						height="15"
+						key="textField-8">
+							<printWhenExpression><![CDATA[$F{inilact}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{inilact}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="78"
+						y="84"
+						width="97"
+						height="15"
+						key="textField-9">
+							<printWhenExpression><![CDATA[$F{numlact}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{numlact}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="176"
+						y="84"
+						width="68"
+						height="15"
+						key="textField-10"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CALIFICADOR}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="247"
+						y="84"
+						width="113"
+						height="15"
+						key="textField-11"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{fecha}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="360"
+						y="84"
+						width="76"
+						height="15"
+						key="textField-12">
+							<printWhenExpression><![CDATA[$F{puntAnt}!=null]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{puntAnt}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="1"
+						y="66"
+						width="75"
+						height="13"
+						key="staticText-9"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[FECHA PARTO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="77"
+						y="66"
+						width="97"
+						height="13"
+						key="staticText-10"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[Nº PARTO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="174"
+						y="66"
+						width="70"
+						height="13"
+						key="staticText-11"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[CALIFICADOR]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="245"
+						y="66"
+						width="115"
+						height="13"
+						key="staticText-12"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[FECHA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="360"
+						y="66"
+						width="76"
+						height="13"
+						key="staticText-14"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[CALIF. ANT.]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement
+						x="0"
+						y="115"
+						width="535"
+						height="17"
+						key="rectangle-7"
+						positionType="Float"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="76"
+						y="115"
+						width="0"
+						height="17"
+						key="line-48"
+						positionType="Float"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="173"
+						y="115"
+						width="0"
+						height="17"
+						key="line-50"
+						positionType="Float"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<staticText>
+					<reportElement
+						x="1"
+						y="117"
+						width="75"
+						height="13"
+						key="staticText-172"
+						positionType="Float"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Puntaje Final:]]></text>
+				</staticText>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="104"
+						width="535"
+						height="7"
+						key="subreport-3"/>
+					<subreportParameter  name="SUBREPORT_DIR">
+						<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="calificacion">
+						<subreportParameterExpression><![CDATA[$F{id}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="modelo">
+						<subreportParameterExpression><![CDATA[$F{modelo}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "SubreporteCalificacionDetalle.jasper"]]></subreportExpression>
+				</subreport>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="89"
+						y="116"
+						width="29"
+						height="15"
+						key="textField-13"
+						positionType="Float"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{catpuntaje}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="118"
+						y="116"
+						width="29"
+						height="15"
+						key="textField-14"
+						positionType="Float"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{puntaje}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="-4"
+						y="4"
+						width="535"
+						height="18"
+						key="staticText-173">
+							<printWhenExpression><![CDATA[$F{eshembra}.equals("0")]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="14" isBold="true"/>
+					</textElement>
+				<text><![CDATA[BOLETA DE CALIFICACIÓN MACHO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="454"
+						y="65"
+						width="76"
+						height="13"
+						key="staticText-174"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<text><![CDATA[Nº BOLETA]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="447"
+						y="62"
+						width="0"
+						height="39"
+						key="line-52"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="454"
+						y="84"
+						width="76"
+						height="15"
+						key="textField-15"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{boleta}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

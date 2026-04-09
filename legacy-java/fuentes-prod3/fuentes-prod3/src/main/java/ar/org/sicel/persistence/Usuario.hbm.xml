@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="ar.org.sicel.persistence.Usuario" table="Sg_Usuario" lazy="true">
+
+        <id name="id" column="id" type="java.lang.Long">
+            <generator class="native">
+                <param name="sequence">gen_sg_usuario</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Usuario.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property name="activo" column="activo" update="true" insert="true" type="boolean" not-null="true"/>
+
+        <property name="nombre" type="java.lang.String" update="true" insert="true">
+            <column name="nombre" length="100" not-null="true"/>
+        </property>
+
+        <property name="apellido" type="java.lang.String" update="true" insert="true">
+            <column name="apellido" length="150" not-null="true"/>
+        </property>
+
+        <property name="username" type="java.lang.String" update="true" insert="true" unique="true"> 
+        	<column name="username" not-null="true" length="20" unique-key="UK_SG_USUARIO"/>
+        </property>	
+
+        <property name="clave" type="java.lang.String" update="true" insert="true">
+            <column name="clave"  not-null="true" length="50"/>
+        </property>
+
+        <property name="email" type="java.lang.String" update="true" insert="true">
+            <column name="email"  not-null="true" length="50"/>
+        </property>
+
+		<many-to-one name="rol" class="ar.org.sicel.persistence.Rol" foreign-key="FK_SG_USUARIO">
+			<column name="rol" not-null="true"/>
+		</many-to-one>
+		
+		<many-to-one name="contacto" class="ar.org.sicel.persistence.Contacto" foreign-key="FK_USUARIO_CONTACTO">
+			<column name="contacto" />
+		</many-to-one>
+		
+    
+    </class>
+
+</hibernate-mapping>

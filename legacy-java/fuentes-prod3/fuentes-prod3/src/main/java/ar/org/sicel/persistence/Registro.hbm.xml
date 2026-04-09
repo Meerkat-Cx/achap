@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Registro"
+        table="An_Registro"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_an_registro</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Registro.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="numero"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="numero" 
+                length="20"
+                not-null="true"
+            />
+        </property>
+
+        <many-to-one
+            name="tipoRegistro"
+            class="ar.org.sicel.persistence.TipoRegistro"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Regi_TReg"
+            column="treg"
+            not-null="true"
+        />
+
+        <many-to-one
+            name="animal"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Regi_Anim"
+            column="animal"
+        />
+
+		 <property
+            name="codigoBaja"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="cbaj"
+        />
+        
+        <property
+            name="fechaBaja"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fbaj"
+        />
+        
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Registro.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

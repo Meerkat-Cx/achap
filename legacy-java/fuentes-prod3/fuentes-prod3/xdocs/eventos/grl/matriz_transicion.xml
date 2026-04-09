@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+  <properties>
+    <author email="ppolv@yahoo.com.ar">Pablo Polvorin</author>
+    <title>Matriz de Transición de Estados</title>
+  </properties>
+  <head>
+    <meta name="keyword" content="evento,animal,estado,transicion,matriz"/>
+  </head>
+  <body>
+    <section name="Matriz de Transición de Estados">
+    <p>
+    Como se introdujo cuando se explico el <a href="modelo_eventos.html">modelo de eventos</a>,
+    en la Matriz de Transición de estados esta resumida la información referida a que eventos
+    son aceptados/rechazados en cada	estado, y que computo realizar en cada caso.
+    </p>
+    <p>
+    Esta es información referida a la implementación elegida para Sicel 3, los PSCL de ninguna
+    manera estan obligados a elegir una implementación similar. Sicel 3 adopto esta opción para
+    permitir flexibilizar el tratamiento a dar a algunos eventos que, o bien no estan 100% reglamentados
+    al dia de hoy, o se ve como posible su cambio en un futuro. 
+    </p>
+    <p>
+    Como la información contenida en la matriz es configurable en Sicel 3, es posible
+    cambiar cierta funcionalidad sin necesidad de cambios adicionales.
+    Por ejemplo: 
+    <source>
+Hoy, la transferencia de un animal de un establecimiento a otro del mismo
+propietario no produce que se cierre la lactancia en curso (en caso de estar
+una abierta) y se empieze una nueva. 
+
+Dentro de seis meses, A.C.H.A. puede decidir que las transferencias entre
+establecimientos obligan a comenzar una nueva lactancia.
+ </source>
+    Obviamente, cualquier cambio de politicas de este estilo será devidamente notificado.
+    Los eventos ocurridos antes del cambio, se trataran con la politica anterior, los posteriores con
+    la actualizada.
+   </p>
+   <p>
+   Dado un estado del Animal y un Evento, la informacion que se puede parametrizar en la matriz es la siguiente:
+   <ul>
+	  <li>Si el evento se acepta o no (un nivel de error de 0 a 100, si es mayor o igual a 80, 
+	  el evento se rechaza). Ver <a href="../../procesamiento/mensajes_niveles.html">niveles de error</a> </li>
+	  <li>Un codigo de mensaje a emitir (por ejemplo, de error si no se acepta el evento)</li>
+	  <li>El nuevo estado al cual el animal pasa (en caso de aceptar el evento)</li>
+	  <li>Si finaliza la lactancia</li>
+	  <li>Si comienza una nueva lactancia</li>
+   </ul>
+   El estado actual de estos parametros se puede ver <a href="../../ref/matriz.html">aquí</a>
+   </p>
+    </section>
+  </body>
+</document>

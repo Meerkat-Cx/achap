@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class name="ar.org.sicel.persistence.LogContacto" table="pr_Log_Contacto" lazy="false">
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long">
+			
+			<generator class="native">
+                <param name="sequence">GEN_LOG_CONTACTO</param>
+            </generator> 
+
+
+        </id>
+
+
+        <property
+            name="fecha"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="FECHA" 
+            />
+         </property>
+		<!--  <property name="activo" column="activo" update="true" insert="true" type="boolean" not-null="true"/> -->
+	   <property name="accion" type="java.lang.String" update="true" insert="true">
+            <column name="accion"  not-null="true" length="50"/>
+        </property>
+	 
+	 <many-to-one
+            name="usuario"
+            class="ar.org.sicel.persistence.Usuario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_USUARIO_REGISTRO"
+            column="usuario"
+            not-null="true"
+        />
+        <many-to-one
+            name="contacto"
+            class="ar.org.sicel.persistence.Contacto"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_LOG_CONTACTO"
+            column="contacto"
+            not-null="false"
+        />
+        <many-to-one
+            name="centro"
+            class="ar.org.sicel.persistence.CentroDeComputo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_LOG_CENTRO"
+            column="centro"
+            not-null="false"
+        />
+        
+        <many-to-one
+            name="metodoControl"
+            class="ar.org.sicel.persistence.MetodoControl"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_LOG_METODO_CONTROL"
+            column="metodoControl"
+            not-null="false"
+        />
+         <many-to-one
+            name="metodoControlNuevo"
+            class="ar.org.sicel.persistence.MetodoControl"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_LOG_METODO_CONTROL_NUEVO"
+            column="metodo_Control_nuevo"
+            not-null="false"
+        />
+        <many-to-one
+            name="eclo"
+            class="ar.org.sicel.persistence.Eclo"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="prLogContacto_Eclo"
+            column="eclo"
+            not-null="false"
+        />
+        
+    </class>
+
+</hibernate-mapping>

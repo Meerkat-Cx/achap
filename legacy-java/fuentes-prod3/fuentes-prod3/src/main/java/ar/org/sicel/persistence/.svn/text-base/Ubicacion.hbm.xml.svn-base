@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.Ubicacion"
+        table="En_Ubicacion"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_en_ubicacion</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-Ubicacion.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="ciudad"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="ciudad" 
+                length="60"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="provinciaRegion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="prov_reg" 
+                length="15"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="pais"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="pais" 
+                length="30"
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="direccion"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="direccion" 
+                length="60"
+            />
+        </property>
+
+        <property
+            name="codigoPostal"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="codigo_postal" 
+                length="10"
+            />
+        </property>
+
+        <property
+            name="mail"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="email" 
+                length="40"
+            />
+        </property>
+
+        <property
+            name="telefono"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="telefono" 
+                length="80"
+            />
+        </property>
+
+        <many-to-one
+            name="contacto"
+            class="ar.org.sicel.persistence.Contacto"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Ubic_Cont"
+            column="contacto"
+            not-null="true"
+        />
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-Ubicacion.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>

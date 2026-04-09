@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Pablo Polvorin (Facultad de Ciencias Exactas - UNICEN) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by ala (ala_org) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xs:element name="lote">
+		<xs:annotation>
+			<xs:documentation>Lote de eventos para procesar v0.9.4</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="TLote"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="evts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="evt" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="baja" type="TEvtBaja">
+								<xs:annotation>
+									<xs:documentation>TODO</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="estado" type="TEvtEstado"/>
+							<xs:element name="info" type="TEvtInfo">
+								<xs:annotation>
+									<xs:documentation>TODO</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="prod" type="TEvtProd">
+								<xs:annotation>
+									<xs:documentation>las mediciones son respecto de lo sobjetos, es solo UNA mediciones. Testing TODO tipo para los objetos medibles admitidos</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="reprod" type="TEvtReprod">
+								<xs:annotation>
+									<xs:documentation>TODO</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="serv" type="TEvtServ">
+								<xs:annotation>
+									<xs:documentation>y transf embrionaria</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="trans" type="TEvtTrans"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="evtsEstab">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="altas" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="alta" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="TEvtAlta"/>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="semens" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="semen" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="TEvtSemen"/>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rdos">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="TRdo">
+					<xs:sequence>
+						<xs:element name="rdo" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="nivelErr" type="xs:long"/>
+									<xs:element name="codigoMsg" type="xs:string"/>
+									<xs:element name="info" type="xs:string"/>
+									<xs:element name="vals">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="val" minOccurs="0" maxOccurs="unbounded"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="raza" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>TODO type por defecto holando</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="padreGen" type="TAnimReg"/>
+	<xs:element name="donante" type="TAnimReg"/>
+	<xs:element name="madreGen" type="TAnimReg">
+		<xs:annotation>
+			<xs:documentation>la madre parto no esta porque si se supiera se deberia informar un ev sobre esa madre</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="TLote">
+		<xs:annotation>
+			<xs:documentation>Eventos que conforman un lote que se envía como una unidad</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="sistema">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nombre"/>
+						<xs:element name="version"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="informante" type="xs:long"/>
+			<xs:element name="IDLoteInte" type="xs:long"/>
+			<xs:element name="IDLoteSicel" type="xs:long" minOccurs="0"/>
+			<xs:element name="tiempos">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="tCrea" type="xs:dateTime" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Fecha hora de creación por el informante</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="tEnvi" type="xs:dateTime">
+							<xs:annotation>
+								<xs:documentation>Fecha hora de envio a ACHA</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="tRece" type="xs:dateTime" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Fecha hora de recepcion en ACHA</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="tProcIni" type="xs:dateTime" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Fecha hora de  inicio del proceso</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="tProcFin" type="xs:dateTime" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Fecha hora de fin de proceso</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="tReto" type="xs:dateTime" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Fecha hora de retorno de ACHA hacia el informante</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="rdos" minOccurs="0"/>
+			<xs:element name="estabs">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="estab" type="TEstab" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="1.0"/>
+	</xs:complexType>
+	<xs:complexType name="TEstab">
+		<xs:annotation>
+			<xs:documentation>Eventos de un mismo rebaño</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="IDEstab" type="xs:long"/>
+			<xs:element ref="rdos" minOccurs="0"/>
+			<xs:element ref="evtsEstab" minOccurs="0"/>
+			<xs:element name="anims" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="animal" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="rp" type="xs:string"/>
+									<xs:element name="reg" type="TAnimReg"/>
+									<xs:element ref="rdos" minOccurs="0"/>
+									<xs:element ref="evts"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TEvento">
+		<xs:annotation>
+			<xs:documentation>Superclase de todos los eventos</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="modifica" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="IDEvt" type="xs:long"/>
+						<xs:element name="informante" type="xs:long"/>
+						<xs:element ref="rdos"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IDEvt" type="xs:long"/>
+			<xs:element name="IdEvtSicel" type="xs:long" minOccurs="0"/>
+			<xs:element name="fecha" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>http://www.iso.org/iso/en/prods-services/popstds/datesandtime.html</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IDAnim" type="xs:long" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>si bien el evt alta o semen no lleva el anim, luego del proceso deberia tener el nuevo anim o el anim del semen</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="rdos" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TEvtAlta">
+		<xs:annotation>
+			<xs:documentation>Evento alta de animal, sin estado (SV por defecto) y sin treg, que será asignado</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="rp" type="xs:string"/>
+					<xs:element ref="raza" minOccurs="0"/>
+					<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+					<xs:element ref="sexo"/>
+					<xs:element name="registro" type="TAnimReg" minOccurs="0"/>
+					<xs:element name="fechaNacimiento" type="xs:dateTime" minOccurs="0"/>
+					<xs:choice minOccurs="0">
+						<xs:element name="padres">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="padreGen" minOccurs="0"/>
+									<xs:element ref="madreGen" minOccurs="0"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="compoRacial">
+							<xs:complexType>
+								<xs:sequence maxOccurs="unbounded">
+									<xs:element name="elemRacial">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element ref="raza"/>
+												<xs:element name="valor" type="xs:float">
+													<xs:annotation>
+														<xs:documentation>TODO Type float</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtBaja">
+		<xs:annotation>
+			<xs:documentation>Evento baja, el animal no recinirá mas eventos</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="destino">
+						<xs:annotation>
+							<xs:documentation>TODO type venta a tercero no ctrl lechero - venta a frigorifico - muerte - exportacion aparte con destiatario en comentario</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="motivo">
+						<xs:annotation>
+							<xs:documentation>TODO arbol - productivos, reprod, sanitarios, sanidad de ubre</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="comentarios"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtEstado">
+		<xs:annotation>
+			<xs:documentation>Evento estado</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="estado" type="STEstadosAnim"/>
+					<xs:element name="cantLactTerm">
+						<xs:annotation>
+							<xs:documentation>TODO type</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtInfo">
+		<xs:annotation>
+			<xs:documentation>Evento productivo, con mediciones</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="info">
+						<xs:annotation>
+							<xs:documentation>TODO arbol de títulos</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="valor">
+						<xs:annotation>
+							<xs:documentation>por ej si es un evento de tomada de peso, los kg</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtProd">
+		<xs:annotation>
+			<xs:documentation>Evento producción</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="numOrdenes" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO 1 2 o 3</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="metodoControl" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO a4 a6 c4 a4sm</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="controlEsAM" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO 0 pm 1 am </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="tipoMuestreo" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO DOAN MUPR MUCO.  ALTE</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="muestreoEsAM" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO 0 pm 1 am</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="meds">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="medicion" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="objeto" type="xs:string"/>
+											<xs:element name="valor" type="xs:float"/>
+											<xs:element ref="rdos" minOccurs="0"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtReprod">
+		<xs:annotation>
+			<xs:documentation>Evento reproductivo (partos/abortos)</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="cria" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="sexo" type="STSexo" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>TODO type</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="dificultad" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>TODO type (de 1 a 5 o una descripcion)</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="estadoPerinatal">
+									<xs:annotation>
+										<xs:documentation>TODO viva muerta</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="tamano" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>tamaño al nacer, peq med gde</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="peso" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>peso en kg al nacer. el peso en otro estadio de la vida del animal se puede informar en el evento info</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="inscribir">
+									<xs:annotation>
+										<xs:documentation>TODO boolean o integer?</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="rp" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>TODO type - en ev reprod el rp es unico por estab, es decir, no puede haber un macho y una hembra con = rp</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+								<xs:element ref="rdos" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtServ">
+		<xs:annotation>
+			<xs:documentation>Evento servicio y te</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:choice>
+						<xs:element name="clon">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="donante"/>
+									<xs:element name="tegido"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="nuevo">
+							<xs:complexType>
+								<xs:choice>
+									<xs:element name="servsemen">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element ref="padreGen"/>
+												<xs:element name="tipoServ" type="STTipoServicio">
+													<xs:annotation>
+														<xs:documentation>TODO type a campo a corral robo (no deberia, ver problema raza padre en parto) te isem art</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="embrion">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element ref="madreGen"/>
+												<xs:element ref="padreGen"/>
+												<xs:element name="dias" type="xs:integer">
+													<xs:annotation>
+														<xs:documentation>TODO type dias de maduracin del transplane</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="idEmbrion" type="xs:string" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>TODO no deberia ser opcional, pero no se que puede ir</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:choice>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtTrans">
+		<xs:annotation>
+			<xs:documentation>Evento transferencia</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element name="propNuevo" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO type</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="estabNuevo" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>TODO type</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="rpNuevo">
+						<xs:annotation>
+							<xs:documentation>TODO type para rpNuevo con el mismo de rp</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TEvtSemen">
+		<xs:annotation>
+			<xs:documentation>Evento compra de semen por un estab</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="TEvento">
+				<xs:sequence>
+					<xs:element ref="donante"/>
+					<xs:element name="cantDosis">
+						<xs:annotation>
+							<xs:documentation>TODO type</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="proveedor" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TAnimReg">
+		<xs:annotation>
+			<xs:documentation>Identificación de un animal por alguno de sus registros. Se debe indicar Tipo de registro (ver STTReg) y número</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="raza" type="STRaza" minOccurs="0"/>
+			<xs:element name="pais" type="STPais" minOccurs="0"/>
+			<xs:element ref="sexo" minOccurs="0"/>
+			<xs:element name="tReg" type="STTReg" minOccurs="0"/>
+			<xs:element name="nReg" type="STNReg"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TRdo">
+		<xs:annotation>
+			<xs:documentation>Resultados del proceso del lote para retornar al informante</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:simpleType name="STRaza">
+		<xs:annotation>
+			<xs:documentation>Raza de un animal.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="H">
+				<xs:annotation>
+					<xs:documentation>Holando argentino</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="STPais">
+		<xs:annotation>
+			<xs:documentation>Pais de un registro de un animal.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AR">
+				<xs:annotation>
+					<xs:documentation>ISO country code de Argentina</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="STSexo">
+		<xs:annotation>
+			<xs:documentation>Sexo de un registro de un animal segun ISO</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="M">
+				<xs:annotation>
+					<xs:documentation>Male, macho</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="F">
+				<xs:annotation>
+					<xs:documentation>Female, hembra</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="STTReg">
+		<xs:annotation>
+			<xs:documentation>Tipos de registro</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="P">
+				<xs:annotation>
+					<xs:documentation>pedigri</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C">
+				<xs:annotation>
+					<xs:documentation>registro de ACHA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="STNReg">
+		<xs:annotation>
+			<xs:documentation>Número de registro</xs:documentation>
+			<xs:documentation>TODO pattern que diga q no se puede espacios o ceros delante</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="STEstadosAnim">
+		<xs:annotation>
+			<xs:documentation>Estado porductivo y reproductivo de un animal</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SV">
+				<xs:annotation>
+					<xs:documentation>seca vacia</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SS">
+				<xs:annotation>
+					<xs:documentation>seca servida</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SP">
+				<xs:annotation>
+					<xs:documentation>seca preñada</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PV">
+				<xs:annotation>
+					<xs:documentation>en producción vacía</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PS">
+				<xs:annotation>
+					<xs:documentation>en producción servida</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PP">
+				<xs:annotation>
+					<xs:documentation>en producción preñada</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BA">
+				<xs:annotation>
+					<xs:documentation>baja</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="STTipoServicio">
+		<xs:annotation>
+			<xs:documentation>Tipo de Servicio de un evento Servicio Nuevo Individuo</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CORR">
+				<xs:annotation>
+					<xs:documentation>Inseminacion a Corral</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CAMP">
+				<xs:annotation>
+					<xs:documentation>Inseminacion artificial</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="INAR">
+				<xs:annotation>
+					<xs:documentation>Transferencia Embrionaria</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="sexo" type="STSexo"/>
+</xs:schema>

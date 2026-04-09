@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.AnimalSinonimo"
+        table="An_Animal_Sinonimo"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_an_animal_sinonimo</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-AnimalSinonimo.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <discriminator
+            column="esHembra"
+            type="boolean"
+        />
+
+        <property
+            name="nombre"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="nombre" 
+                length="60"
+            />
+        </property>
+
+        <property
+            name="categoria"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="categoria" 
+                length="4"
+            />
+        </property>
+
+
+        <property
+            name="RP"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="rP" 
+                length="12"
+            />
+        </property>
+		<property
+            name="rpSenasa"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="RP_SENASA" 
+                length="12"
+            />
+        </property>
+        <property
+            name="codigoVerificador"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+            	name="CODIGO_VERIF_SENASA"
+            	not-null="false"            	
+        	/>
+        </property>
+        <property
+            name="fechaNac"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fnac"
+        />
+        
+        <property
+            name="nroLactancia"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        >
+            <column
+            	name="nroLactancia"
+            	not-null="false"            	
+        	/>
+        </property> 
+
+<!--        <property
+            name="esActivo"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esActivo" 
+                not-null="true"
+            />
+        </property>
+
+        <property
+            name="esBaja"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="esBaja" 
+                not-null="true"
+            />
+        </property>-->
+
+        <property
+            name="categoriaV3"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="categoriaV3" 
+                length="4"
+            />
+        </property>
+
+ <property
+            name="taraG"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+        >
+            <column
+                name="taraG" 
+                length="45"
+            />
+        </property>
+
+
+        <property
+            name="SRAFesb"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="SRAFesb"
+        />
+
+        <property
+            name="asoc"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="dadorSemen"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="dado"
+        />
+
+        <property
+            name="numeroTransf"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="tran"
+        />
+
+        <property
+            name="numeroAnalADN"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="anls"
+        />
+
+        <property
+            name="donante"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dona"
+        />
+       
+        <property
+            name="mellizo"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="mell"
+        />
+        
+       <property
+            name="transferencia"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="trns"
+        />
+        
+        <property
+            name="tipoServicio"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="tserv"
+        />
+        
+       <property
+            name="asop"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        />
+        
+       <property
+            name="asom"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+        />
+
+        <property
+            name="fechaUltObs"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fobs"
+        />
+
+        <property
+            name="fechaTransf"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="ftrf"
+        />
+        
+        <property
+            name="fechaServicio"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="fser"
+        />
+        
+        <property
+            name="apodo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="apdo"
+        />
+        
+       
+        <property
+            name="rpti"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="rpti"
+        />
+        
+        <property
+            name="tipoRegistro"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="treg"
+        />
+        
+            <property
+            name="numeroRegistro"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="numreg"
+        />
+       
+
+        <many-to-one
+            name="razaDeclarada"
+            class="ar.org.sicel.persistence.Raza"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_RazaDeclarada"
+            column="razaDeclara"
+            not-null="false"
+        />
+        
+        <many-to-one
+            name="foto"
+            class="ar.org.sicel.persistence.Foto"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_foto"
+            column="foto"
+            not-null="false"
+        />
+        
+   
+
+      <many-to-one
+            name="padre"
+            class="ar.org.sicel.persistence.Macho"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_Padre"
+            column="padre"
+        />
+
+       
+         <many-to-one
+            name="madreGenetica"
+            class="ar.org.sicel.persistence.Hembra"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+			foreign-key="FK_Anim_Sinonimo_MadreGen"
+          	column="madreGen"
+             
+        />
+        
+
+        <many-to-one
+            name="madreParto"
+            class="ar.org.sicel.persistence.Hembra"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_MadreParto"
+            column="madreParto"
+        />
+
+        <many-to-one
+            name="propietario"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_Prop"
+            column="propietario"
+        />
+
+        <many-to-one
+            name="propietarioCriador"
+            class="ar.org.sicel.persistence.Propietario"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Prop_Sinonimo_Criador"
+            column="prop_Criador"
+        />
+
+        <many-to-one
+            name="establecimiento"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_Estab"
+            column="estab"
+        />
+         <many-to-one
+            name="estancia"
+            class="ar.org.sicel.persistence.Estancia"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_Estancia"
+            column="estancia"
+        />
+		<many-to-one
+            name="establecimientoCriador"
+            class="ar.org.sicel.persistence.Establecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_Estab_Criador"
+            column="estab_Criador"
+        />
+        
+        <many-to-one
+            name="sinonimo"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Anim_Sinonimo_Animal"
+            column="sinonimo"
+        />
+      
+      
+    </class>
+
+</hibernate-mapping>

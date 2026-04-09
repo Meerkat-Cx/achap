@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="ar.org.sicel.persistence.ProcAnimal"
+        table="Pr_Animal"
+        lazy="true"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+        >
+            <generator class="native">
+                <param name="sequence">gen_pr_animal</param>
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-ProcAnimal.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+
+        <set
+            name="procMsgsses"
+            table="Pr_MsgAnim"
+            lazy="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="pr_anim"
+                  foreign-key="FK_Pr_mani_pran"
+            >
+            </key>
+
+            <many-to-many
+                class="ar.org.sicel.persistence.ProcMsg"
+                column="msg"
+                outer-join="auto"
+                foreign-key="FK_Pr_mani_msg"
+             />
+
+        </set>
+
+        <many-to-one
+            name="animal"
+            class="ar.org.sicel.persistence.Animal"
+            cascade="none"
+            outer-join="auto"
+            foreign-key="FK_Pr_anim_anim"
+            column="animal"
+            not-null="true"
+        />
+        
+
+        <many-to-one
+            name="procEstablecimiento"
+            class="ar.org.sicel.persistence.ProcEstablecimiento"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            foreign-key="FK_Pr_Anim_PrEs"
+            column="pr_estab"
+        />
+
+        <set
+            name="procEvtAnimals"
+            lazy="true"
+            inverse="true"
+            cascade="all"
+            sort="unsorted"
+        >
+
+            <key
+                column="pr_animal"
+            >
+            </key>
+
+            <one-to-many
+                  class="ar.org.sicel.persistence.ProcEvtAnimal"
+            />
+
+        </set>
+
+        <!--
+            To add non XDoclet property mappings, create a file named
+                hibernate-properties-ProcAnimal.xml
+            containing the additional properties and place it in your merge dir.
+        -->
+
+    </class>
+
+</hibernate-mapping>
